@@ -31,7 +31,7 @@ import github from '../../images/footer/github-icon.svg';
 import slack from '../../images/footer/slack-icon.svg';
 import youtube from '../../images/footer/youtube-icon.svg';
 import twitter from '../../images/footer/twitter-icon.svg';
-import pixieLogo from '../../images/pixie-new-logo.svg';
+import pixieLogo from '../../images/pixie-oss.svg';
 
 import { docsRedirect, loginRedirect, signupRedirect } from '../shared/tracking-utils';
 import HeaderDropdown from './header-dropdown';
