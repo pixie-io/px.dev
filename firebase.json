@@ -1,0 +1,19 @@
+{
+  "hosting": [{
+    "target": "pixielabs-website",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },{
+    "target": "pixielabs-website-prod",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }]
+}

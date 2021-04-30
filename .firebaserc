@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "pixielabs-website"
+  },
+  "targets": {
+    "pixielabs-website": {
+      "hosting": {
+        "pixielabs-website": [
+          "pixielabs-website"
+        ],
+        "pixielabs-website-prod": [
+          "pixielabs-website-prod"
+        ]
+      }
+    }
+  }
+}
