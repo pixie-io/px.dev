@@ -1,0 +1,550 @@
+/*
+ * Copyright 2018- The Pixie Authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import "../../scss/partials/variables";
+
+.community-page {
+  position: relative;
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 49px;
+    color: $white;
+    @media (max-width: 768px) {
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+
+  h3 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: $white;
+    margin-bottom: 37px;
+  }
+
+  .starField {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .starsBackground {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+  }
+
+  .community-hero {
+    margin-top: 0 !important;
+    position: relative;
+    padding-bottom: 0;
+    width: 100%;
+
+    @media (max-width: 1000px) {
+      padding-bottom: 0;
+      text-align: left;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    ul.inlineNav {
+      margin: 0;
+      padding: 50px 0;
+      text-align: center;
+
+      @media (max-width: 1000px) {
+        padding: 25px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+      }
+
+      li {
+        list-style: none;
+        display: inline;
+        color: #12D6D6;
+        font-weight: bold;
+        font-size: inherit;
+        line-height: inherit;
+
+        padding-right: 20px;
+        cursor: pointer;
+        @media (max-width: 1000px) {
+          padding-right: 6px;
+        }
+
+        &:after {
+          content: " \00b7";
+          padding-left: 20px;
+          @media (max-width: 1000px) {
+            padding-left: 4px;
+          }
+        }
+
+        &:last-child:after {
+          content: none;
+        }
+
+        @media (max-width: 1000px) {
+          display: block;
+          text-align: left;
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+
+    .button {
+      display: block;
+      width: fit-content;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      color: #12D6D6;
+      letter-spacing: 0.4em;
+      border: 2px solid #12D6D6;
+      box-sizing: border-box;
+      border-radius: 5px;
+      background-color: transparent;
+      margin-top: 60px;
+      @media (max-width: $breakpoint) {
+        margin: 0 auto;
+      }
+    }
+
+
+    .spaceStation {
+      width: 70%;
+      position: relative;
+      display: block;
+      margin-left: auto;
+      height: auto;
+      @media (max-width: 1000px) {
+        width: 85%;
+        margin-top: 145px;
+      }
+    }
+
+    .heroSubtitle {
+      color: $grey1;
+      max-width: 825px;
+      text-align: center;
+      margin-bottom: 0;
+      @media (max-width: 1000px) {
+        text-align: left;
+      }
+    }
+
+
+    .hero-container {
+      z-index: 1;
+
+      h1 {
+        margin-top: 265px;
+        font-weight: normal;
+        color: $color-white;
+        font-size: 64px;
+        line-height: 88px;
+        text-align: center;
+
+        @media (max-width: 1000px) {
+          margin-top: 0;
+          text-align: left;
+          font-size: 36px;
+          line-height: 45px;
+        }
+        @media (max-width: 768px) {
+          margin-top: 0;
+          font-size: 36px;
+          line-height: 45px;
+        }
+      }
+
+      h2 {
+        padding-bottom: 20px;
+      }
+
+    }
+
+    margin-bottom: 75px;
+
+  }
+
+  .become {
+    position: relative;
+
+    ul.verticalLinks {
+      padding: 0;
+
+      li {
+        list-style: none;
+        color: $white;
+        font-weight: 500;
+        margin-top: 10px;
+        @media (max-width: 1000px) {
+          margin-top: 0;
+        }
+
+        a, span {
+          font-weight: inherit;
+          color: #12D6D6;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+
+    ul.platformLinks {
+      padding: 40px 0 0;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 1000px) {
+        justify-content: flex-start;
+      }
+
+      li {
+        list-style: none;
+        width: 52px;
+        height: 52px;
+        background-color: #DBDDE0;
+        border-radius: 50%;
+        @media (max-width: 1000px) {
+          width: 52px;
+          height: 52px;
+          margin-right: 10px;
+        }
+
+
+        a {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+
+        }
+
+        &:hover {
+          background-color: #12D6D6;
+
+          img {
+            filter: invert(1);
+          }
+        }
+
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+      }
+
+    }
+
+    .catTitle {
+      position: relative;
+      padding-left: 180px;
+      @media (max-width: 1000px) {
+        padding-left: 130px;
+      }
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-height: 100%;
+        height: 125px;
+        @media (max-width: 1000px) {
+          max-height: 80px
+        }
+      }
+    }
+
+
+  }
+
+  .events {
+
+    h2 {
+      text-align: center;
+
+    }
+
+    .heroSubtitle {
+      color: $grey1;
+      max-width: 688px;
+      display: block;
+      text-align: center;
+      margin: 0 auto 70px;
+
+    }
+
+    .eventItem {
+      border: 1px solid #596274;
+      border-radius: 7px;
+      padding: 30px;
+      margin-bottom: 30px;
+      @media (max-width: 1000px) {
+        border: none;
+        padding: 30px 0;
+      }
+
+      .eventItemTitle {
+        @media (max-width: 1000px) {
+          text-align: center;
+        }
+
+        p {
+          color: $white;
+          margin-top: 0;
+
+          span {
+            color: #A9ADB1;
+            display: block;
+            padding-top: 8px;
+          }
+        }
+
+        span {
+          color: #A9ADB1;
+        }
+
+        img {
+          padding-right: 20px;
+        }
+      }
+
+      .eventItemDetails {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 92px;
+
+        p {
+          color: #A9ADB1;
+          text-align: center;
+          padding: 0;
+          margin-top: 0;
+        }
+
+        button {
+          @media (max-width: 1000px) {
+            margin-top: 16px;
+          }
+          display: block;
+          position: relative;
+          font-size: 14px;
+          line-height: 18px;
+          color: #12D6D6;
+          background: transparent;
+          border: 1px solid #12D6D6;
+          border-radius: 5px;
+          padding: 18px 30px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .people {
+    padding: 30px;
+    background: $color-dark;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      display: block;
+      width: calc((100% - 192px) / 6);
+      margin: 16px;
+      @media (max-width: 1000px) {
+        margin: 4px;
+        width: calc((100% - 48px) / 6);
+        //  max-width: calc(33% - 16px);
+      }
+    }
+
+  }
+
+  .goodies {
+    .heroSubtitle {
+      color: $grey1;
+      max-width: 825px;
+      text-align: left;
+      margin-bottom: 70px;
+      @media (max-width: 1000px) {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+    }
+
+    .spaceshipDrive {
+      max-width: 70%;
+      margin: 70px auto;
+    }
+
+
+    color: #A9ADB1;
+    position: relative;
+
+
+    .file {
+      display: table;
+      width: 100%;
+      position: relative;
+      margin-bottom: 30px;
+
+
+      a {
+        display: block;
+        height: 100%;
+        padding-left: 40px;
+        background-color: #2A353A;
+
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 24px;
+          opacity: .5;
+        }
+
+        p {
+          color: $white;
+          float: left;
+          display: block;
+          width: 100%;
+          margin: 0 0 5px;
+
+        }
+
+        span {
+          float: left;
+          display: block;
+          color: #4F4F4F;
+        }
+
+      }
+    }
+
+
+  }
+
+  .hostEvents {
+    margin-top: 250px;
+    position: relative;
+
+
+    @media (max-width: 1000px) {
+      margin-bottom: 150px !important;;
+
+    }
+    @media (max-width: 670px) {
+      margin-bottom: 50px !important;;
+    }
+
+    h4 {
+      color: $color-red;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    .hostEvent {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+      transform: translateX(-50%);
+      max-width: 1900px;
+
+      @media (max-width: 1000px) {
+        position: absolute;
+        top: 110%;
+      }
+
+      a {
+        padding: 14px 46px;
+      }
+    }
+
+  }
+
+  .inlineStars {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    z-index: -1;
+    @media (max-width: 768px) {
+      top: 50%;
+    }
+  }
+
+  .sidePlanet {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    z-index: -1;
+    display: none;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  .community-hero, .people, .driveTogether, .goodies, .hostEvents, .events, .become {
+    color: $grey1;
+    margin-bottom: 125px;
+    margin-top: 125px;
+    @media (max-width: 1000px) {
+      margin-bottom: 75px;
+      margin-top: 75px;
+    }
+
+    .regular {
+      color: $grey1;
+      text-align: left;
+    }
+  }
+
+  .people {
+    @media (max-width: 1000px) {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,379 @@
+/*
+ * Copyright 2018- The Pixie Authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import "../../scss/partials/variables";
+@import "../../scss/partials/ornaments";
+
+.careers-hero {
+  background: $color-dark;
+  position: relative;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .hero-container {
+    @media (max-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-jobs {
+      order: 2;
+
+      button {
+        @media (max-width: $breakpoint) {
+          margin-left: 35px;
+        }
+      }
+    }
+  }
+
+  h1 {
+    margin: 30px 0 30px;
+    font-weight: normal;
+    color: $color-white;
+    position: relative;
+
+    @media (max-width: 1000px) {
+      font-size: 36px;
+      margin-top: 32px;
+      padding-left: 35px;
+    }
+
+    .ornament-title {
+      top: 10px;
+      height: 60px;
+    }
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 44px;
+    margin: 0 0 32px;
+    color: $color-grey1;
+
+    @media (max-width: 1000px) {
+      @include padding-mobile;
+      font-size: 18px;
+      line-height: 36px;
+    }
+
+    &:first-child {
+      margin-bottom: 44px;
+    }
+  }
+
+
+}
+
+.careers-content {
+
+  .ornament-top-right {
+    background-image: url('../../images/homepage-ornament-bottom-left.png');
+    background-repeat: no-repeat;
+    width: 149px;
+    height: 149px;
+    left: 30px;
+    top: 30px;
+    position: absolute;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+
+  background: $color-dark;
+  position: relative;
+  @media (max-width: $breakpoint) {
+    background: $color-white;
+  }
+
+  .content-jobs {
+    background: $color-white;
+    padding-bottom: 135px;
+    @media (max-width: $breakpoint) {
+      padding-bottom: 40px;
+    }
+  }
+
+  h3 {
+    font-size: 32px;
+    color: $color-dark;
+    font-weight: normal;
+    margin: 152px 0 100px;
+    position: relative;
+    @media (max-width: $breakpoint) {
+      margin: 115px 15px 52px;
+      font-size: 28px;
+    }
+
+    br {
+      @include hideOnMobile;
+    }
+  }
+
+  .job-list {
+
+    .job-item {
+      border-radius: 6px;
+      box-shadow: 0px 30px 60px rgba(89, 98, 116, 0.1);
+      padding: 30px;
+      margin-bottom: 22px;
+      &:hover {
+        border: 1px solid #3FE7E7;
+        box-shadow: 0px 30px 60px rgba(89, 98, 116, 0.3);
+        border-radius: 6px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        margin-bottom: 0px;
+        @media (max-width: $breakpoint) {
+          margin-bottom: 68px;
+        }
+      }
+
+      @media (max-width: $breakpoint) {
+        margin-bottom: 90px;
+        @include padding-mobile;
+        width: calc(100% - 70px);
+      }
+
+      h4 {
+        font-size: 26px;
+        line-height: 33px;
+        font-weight: normal;
+        color: #000000;
+        @media (max-width: $breakpoint) {
+          margin: 40px 0 15px;
+          font-size: 24px;
+        }
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 60px;
+      }
+
+      .jobItemLink {
+        color: #12D6D6;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+      }
+
+      i {
+        background: $color-red;
+        font-size: 19px;
+        padding: 14px;
+        color: $color-white;
+        margin-bottom: 38px;
+      }
+
+      span {
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-grey2;
+        display: block;
+
+        i {
+          padding: 0;
+          color: $color-red;
+          margin: 0;
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+.careers-guide-rails {
+  background: $color-dark;
+  padding-bottom: 200px;
+  position: relative;
+
+  .ornament-top-right {
+    background-image: url('../../images/homepage-ornament-top-right.png');
+    background-repeat: no-repeat;
+    width: 149px;
+    height: 149px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  .ornament-bottom-left {
+    background-image: url('../../images/homepage-ornament-bottom-left.png');
+    background-repeat: no-repeat;
+    width: 149px;
+    height: 149px;
+    margin-left: 30px;
+    margin-top: 15px;
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $breakpoint) {
+    padding-bottom: 100px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-weight: normal;
+    font-size: 32px;
+    color: $color-white;
+    margin-top: 215px;
+    margin-bottom: 100px;
+    position: relative;
+    @media (max-width: $breakpoint) {
+      font-size: 28px;
+      line-height: 34px;
+      margin-top: 105px;
+      @include padding-mobile;
+    }
+
+  }
+
+  .guidetails-item {
+    @media (max-width: $breakpoint) {
+      margin-bottom: 65px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .guiderails-content {
+      &:nth-child(1) {
+        margin-right: calc(25px + 15px / 2);
+        @media (max-width: $breakpoint) {
+          margin-left: 30px;
+        }
+
+      }
+
+      &:nth-child(2) {
+        margin-left: calc(15px / 2);
+        margin-right: calc(15px / 2);
+      }
+
+      &:nth-child(3) {
+        margin-left: calc(15px / 2);
+        margin-right: 0;
+      }
+    }
+
+    i {
+      font-size: 27px;
+      color: $color-green;
+      margin-bottom: 55px;
+
+      &:before {
+        margin: 0;
+      }
+    }
+
+    h4 {
+      color: $color-white;
+      font-size: 24px;
+      line-height: 167.4%;
+      font-weight: normal;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 36px;
+      color: $color-grey1;
+    }
+  }
+}
+
+.careers-message {
+  text-align: center;
+  background: $color-dark;
+  position: relative;
+  padding: 196px 35px 100px;
+  @media (max-width: $breakpoint) {
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+
+  .quoteOrnament1 {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-image: url("../../images/homepage/home-ornament.png");
+    width: 272px;
+    height: 119px;
+    content: '';
+    @include showOnDesktop;
+  }
+
+  .quoteOrnament2 {
+    position: absolute;
+    right: 200px;
+    bottom: 0;
+    background-image: url("../../images/homepage/home-ornament.png");
+    width: 272px;
+    transform: rotate(180deg);
+    height: 119px;
+    content: '';
+    @include showOnDesktop;
+  }
+
+
+  h4 {
+    color: $color-red;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 78px;
+    color: $color-white;
+    display: block;
+    margin: 0 auto 100px;
+    text-align: center;
+
+
+    @media (max-width: $breakpoint) {
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 140.7%;
+      margin: 27px 15px 72px;
+    }
+  }
+}

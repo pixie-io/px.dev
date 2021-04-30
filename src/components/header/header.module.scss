@@ -1,0 +1,356 @@
+/*
+ * Copyright 2018- The Pixie Authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import "../../scss/partials/variables";
+
+.news-bar {
+  background: #212324;
+  font-size: 14px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  color: white;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  z-index: 2;
+  font-weight: 500;
+
+  .newsBarClose {
+    position: absolute;
+    right: 8px;
+    top: 3px;
+    font-size: 18px;
+  }
+
+
+  img {
+    margin-right: 8px;
+    @media (max-width: 1000px) {
+      height: 30px;
+      float: left;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    color: #12D6D6;
+  }
+}
+
+header {
+  background: $color-dark;
+  top: 0;
+  margin: 0;
+  padding: 0 30px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  width: calc(100% - 45px);
+  transition: top 0.5s ease;
+
+
+  .logos {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+
+    .logo {
+      img {
+        margin-right: 8px;
+        margin-top: 4px;
+        height: 25px;
+        @media (max-width: 1000px) {
+          height: 20px;
+          margin-top: 10px;
+        }
+
+        &.betanaut {
+          margin-top: 0;
+          height: 29px;
+          @media (max-width: 1000px) {
+            height: 26px;
+          }
+        }
+      }
+    }
+
+    .socialIcons {
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      a {
+        display: inline-block;
+        padding: 5px 0 0;
+        margin: 0 0 0 33px;
+
+        img {
+          width: 20px;
+          @media (max-width: 1000px) {
+            width: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    height: 45px;
+  }
+
+  &.show-shadow {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  &.whiteHeader {
+    background: $color-white;
+  }
+
+  &.showNewsBar {
+    top: 30px
+  }
+
+  &.transparentMenu {
+    background: transparent;
+
+    &.show-shadow {
+      background: $color-dark;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  input + div {
+    display: none;
+  }
+
+  .menu-responsive {
+    display: none;
+    background: $color-dark;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    text-align: center;
+
+    &.menu-open {
+      display: block;
+    }
+
+    .header-responsive {
+      line-height: 45px;
+      display: block;
+      width: 100%;
+      height: 20px;
+      padding-right: 55px;
+
+      .icon {
+        float: left;
+        margin-left: 30px;
+
+        img {
+          margin-top: 15px;
+          height: 20px;
+          margin-right: 8px;
+
+          &.betanaut {
+            margin-top: 7px;
+            height: 26px;
+          }
+        }
+      }
+
+      .close {
+        float: right;
+        padding-right: 30px;
+      }
+    }
+
+    .logo {
+      color: $color-blue;
+      display: block;
+      width: 120px;
+      margin: 100px auto 0;
+      text-align: left;
+
+      i {
+        font-size: 31px;
+      }
+    }
+
+    .mobileNavMenu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      max-height: calc(100vh - 180px);
+      position: absolute;
+      width: 100%;
+
+      em {
+        color: $color-white;
+        font-size: 20px;
+        font-style: normal;
+        display: block;
+        text-align: left;
+        padding-left: 30px;
+        line-height: 137.4%;
+        padding-bottom: 8px;
+
+        &:first-of-type {
+          padding-top: 40px;
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: left;
+
+        li {
+          font-size: 16px;
+          line-height: 28px;
+          padding-left: 40px;
+
+          a {
+            color: $color-grey1;
+            font-size: 16px;
+            line-height: 32px;
+
+            &:hover {
+              color: #3DE8E7;
+              transition: color 0.3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  i {
+    color: $color-blue;
+    font-size: 25px;
+    cursor: pointer;
+
+    @media (max-width: 1000px) {
+      font-size: 17px;
+    }
+  }
+
+  .menu {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: inline-flex;
+      align-items: center;
+
+      li {
+        padding: 10px 22px;
+        @media (max-width: 1300px) {
+          padding: 10px 10px;
+        }
+
+        a {
+          color: $color-grey1;
+          font-size: 16px;
+          line-height: 20px;
+
+          &:hover {
+            color: #3DE8E7;
+            transition: color 0.3s ease;
+          }
+        }
+
+        &.colored {
+          margin-left: 20px;
+          background: $color-blue;
+          border-radius: 3px;
+          -webkit-filter: brightness(100%);
+          transition: filter 0.3s ease;
+
+          &:hover {
+            -webkit-filter: brightness(80%);
+          }
+
+          a {
+            color: #000000;
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .links {
+    position: fixed;
+    bottom: 16px;
+    width: 100%;
+
+    ul.socialIcons {
+      margin: 0;
+      padding: 20px;
+      display: block;
+      list-style: none;
+      text-align: center;
+
+      li {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: calc(100% / 6);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 52px;
+
+        .socialIcon {
+          width: 80%;
+        }
+      }
+    }
+
+    i {
+      color: $color-grey1;
+    }
+
+    a {
+      color: $color-grey1;
+      cursor: pointer;
+      font-size: 12px;
+      text-decoration: underline;
+
+      &:hover {
+        color: #3DE8E7;
+      }
+    }
+  }
+}

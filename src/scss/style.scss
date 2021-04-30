@@ -1,0 +1,303 @@
+/*
+ * Copyright 2018- The Pixie Authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+//Import CSS
+@import "./partials/variables";
+
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Manrope, sans-serif;
+  background-color: $color-dark;
+
+  &.menu-open {
+    @media (max-width: 768px) {
+      overflow: hidden;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+a.underline{
+  text-decoration: underline;
+}
+
+i {
+  &:before {
+    margin: 0;
+  }
+}
+
+.hide-desktop {
+  @media (min-width: 1000px) {
+    display: none !important;
+  }
+}
+
+.hide-not-desktop {
+  @media (max-width: 1000px) {
+    display: none !important;
+  }
+}
+
+.hide-mobile {
+  @media (max-width: 768px) {
+    display: none !important;
+  }
+}
+
+.hide-tablet {
+  @media (min-width: 768px) and (max-width: 1000px) {
+    display: none !important;
+  }
+}
+
+.clearfix {
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+//BUTTONS
+.button, button {
+  padding: 22px 46px;
+  background: $color-blue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.4em;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  text-transform: uppercase;
+  color: $color-dark;
+  cursor: pointer;
+  -webkit-filter: brightness(100%);
+  transition: filter .3s ease;
+  border-radius: 3px;
+  @media (max-width: 1000px) {
+    letter-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.active {
+    background: $color-blue !important;
+  }
+
+  &.small {
+    padding: 12px 22px;
+  }
+
+  &:hover {
+    -webkit-filter: brightness(80%);
+  }
+}
+
+//GRID SYSTEM
+
+.container {
+  margin: 0 auto;
+  @media (max-width: 1000px) {
+    padding: 0 15px;
+  }
+
+}
+
+
+@media (min-width: 1000px) {
+  .container {
+    max-width: 1290px;
+    width: 80%;
+    padding: 0 15px;
+  }
+  .row {
+    width: 100%;
+  }
+}
+
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: percentage($i / 12);
+    box-sizing: border-box;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+
+    &::after {
+      content: "\200B";
+      height: 1px;
+      float: left;
+    }
+
+    @media (min-width: 1200px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    @media (max-width: 1000px) {
+      display: block;
+      width: 100%;
+      &:empty {
+        display: none;
+      }
+    }
+
+    &.large {
+      @media (max-width: 1200px) {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.row {
+
+  @media (max-width: 1000px) {
+    display: block;
+  }
+
+
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+    clear: both;
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-desktop {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.hero-col {
+  overflow: hidden;
+  padding: 0;
+
+  .hero-image {
+
+
+    .gatsby-image-wrapper {
+      @media (max-width: 1000px) {
+        height: 30vh;
+        margin-left: 0;
+      }
+    }
+
+    &.left-heavy {
+      .gatsby-image-wrapper {
+        @media (max-width: 1000px) {
+          height: 30vh;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* Typgraphy */
+
+.subtitle1 {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 53px;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+h4 {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 33px;
+}
+
+.m36 {
+  @media (max-width: 1000px) {
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+
+}
+
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.horizontal-center-desktop {
+  @media (min-width: 1000px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.clear-both {
+  clear: both;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
