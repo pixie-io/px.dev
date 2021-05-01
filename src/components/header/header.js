@@ -133,18 +133,11 @@ const Header = ({ whiteHeader, transparentMenu }) => {
         </div>
         <div className={`hide-mobile hide-tablet ${styles.menu}`}>
           <ul>
+
             <li>
-              <Link to='/beta'>What&apos;s Live?</Link>
-            </li>
-            <li>
-              <HeaderDropdown title='Team'>
-                <Link to='/about'>
-                  About
-                </Link>
-                <Link to='/careers'>
-                  Careers
-                </Link>
-              </HeaderDropdown>
+              <a href='#' onClick={(e) => docsRedirect(e)}>
+                Docs
+              </a>
             </li>
             <li>
               <a href='https://blog.pixielabs.ai/' target='_blank' rel='noreferrer'>
@@ -157,18 +150,13 @@ const Header = ({ whiteHeader, transparentMenu }) => {
               </Link>
             </li>
             <li>
-              <a href='#' onClick={(e) => docsRedirect(e)}>
-                Docs
-              </a>
-            </li>
-            <li>
-              <a href='#' onClick={(e) => loginRedirect(e)}>
-                Sign In
-              </a>
+              <Link to='/enterprise'>
+                Enterprise
+              </Link>
             </li>
             <li className={styles.colored}>
               <a href='https://work.withpixie.ai/auth/signup' target='_blank' rel='noreferrer'>
-                JOIN US ON SLACK
+               GET STARTED
               </a>
             </li>
           </ul>
@@ -193,25 +181,6 @@ const Header = ({ whiteHeader, transparentMenu }) => {
               <ul>
                 <li>
                   <a
-                    href='https://withpixie.ai/login'
-                    onClick={(e) => loginRedirect(e)}
-                  >
-                    Log-in
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='https://withpixie.ai/signup'
-                    onClick={(e) => signupRedirect(e)}
-                  >
-                    Sign-up
-                  </a>
-                </li>
-                <li>
-                  <Link to='/beta'>What&apos;s Live?</Link>
-                </li>
-                <li>
-                  <a
                     href='https://work.withpixie.ai/docs'
                     onClick={(e) => docsRedirect(e)}
                   >
@@ -229,32 +198,14 @@ const Header = ({ whiteHeader, transparentMenu }) => {
               <em>Team</em>
               <ul>
                 <li>
-                  <Link to='/about'>About</Link>
-                </li>
-                <li>
                   <Link to='/community'>Community</Link>
                 </li>
                 <li>
-                  <Link to='/careers'>Careers</Link>
+                  <Link to='/enterprise'>Enterprise</Link>
                 </li>
               </ul>
             </div>
-            <div>
-              <em>Help & support</em>
-              <ul>
-                <li>
-                  <a href='https://slackin.withpixie.ai'>
-                    Join Slack Community
-                  </a>
-                </li>
-                <li>
-                  <Link to='/contact/#sales'>Contact Sales</Link>
-                </li>
-                <li>
-                  <Link to='/contact/#support'>Email us</Link>
-                </li>
-              </ul>
-            </div>
+
           </div>
           <div className={styles.links}>
 
