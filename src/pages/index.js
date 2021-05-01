@@ -25,7 +25,6 @@ import styles from '../scss/pages/index.module.scss';
 import CodeRenderer from '../components/codeRenderer.tsx';
 import PoiTooltip from '../components/poi-tooltip/poi-tooltip';
 import spaceGuys from '../images/homepage/space-illustration.svg';
-import bottomSpaceStars from '../images/homepage/bottom-stars.png';
 
 import kubernetes from '../images/homepage/side-icons/kubernet.png';
 import linux from '../images/homepage/side-icons/linux.png';
@@ -36,11 +35,8 @@ import db from '../images/homepage/side-icons/db-profiling.svg';
 import k8 from '../images/homepage/side-icons/k8s-health.svg';
 import canary from '../images/homepage/side-icons/canary-analysis.svg';
 
-
-
 import videoCli from '../videos/pixie-cli.webm';
 import videoLive from '../videos/pixie-live.webm';
-
 import videoCli4 from '../videos/pixie-cli.mp4';
 import videoLive4 from '../videos/pixie-live.mp4';
 
@@ -48,7 +44,6 @@ import pxIconCli from '../images/homepage/pixie-cli-icon.svg';
 import pxIconLive from '../images/homepage/pixie-live-icon.svg';
 import pxIconMeta from '../images/homepage/pixie-meta-icon.svg';
 import pixieGraph from '../images/homepage/kube-environment.svg';
-import rocketMen from '../images/homepage/rocket-men.svg';
 
 import 'react-multi-carousel/lib/styles.css';
 import Illustration from '../components/illustration';
@@ -61,7 +56,6 @@ import {
 } from '../components/shared/tracking-utils';
 */
 const bashCode = 'bash -c "$(curl -fsSL https://withpixie.ai/install.sh)"';
-
 
 const Homepage = () => {
   const video1 = useRef(null);
@@ -159,12 +153,8 @@ const Homepage = () => {
             </div>
           </div>
         </section>
-
-
         <section className={styles.featuresSection}>
-
           <div className='container'>
-
             <h2>
               Pixie’s three simple ideas
             </h2>
@@ -407,8 +397,6 @@ const Homepage = () => {
         </section>
 
         <section className={styles.environmentsSection}>
-
-
           <h3>Pixie works with...</h3>
           <div className={styles.environmentsButtons}>
             <CategoryButton
@@ -443,8 +431,6 @@ const Homepage = () => {
             />
           </div>
         </section>
-
-
         <div
           className={styles.bottomStars}
         >

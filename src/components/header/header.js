@@ -32,9 +32,7 @@ import slack from '../../images/footer/slack-icon.svg';
 import youtube from '../../images/footer/youtube-icon.svg';
 import twitter from '../../images/footer/twitter-icon.svg';
 import pixieLogo from '../../images/pixie-oss.svg';
-
-import { docsRedirect, loginRedirect, signupRedirect } from '../shared/tracking-utils';
-import HeaderDropdown from './header-dropdown';
+import { docsRedirect } from '../shared/tracking-utils';
 
 const Header = ({ whiteHeader, transparentMenu }) => {
   const [open, setOpen] = useState(false);
@@ -156,7 +154,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
             </li>
             <li className={styles.colored}>
               <a href='https://work.withpixie.ai/auth/signup' target='_blank' rel='noreferrer'>
-               GET STARTED
+                GET STARTED
               </a>
             </li>
           </ul>
