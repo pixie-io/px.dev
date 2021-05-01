@@ -17,9 +17,6 @@
  */
 
 import React, { useEffect, useRef } from 'react';
-import IconButton from '@material-ui/core/IconButton';
-import { ChevronLeft, ChevronRight } from '@material-ui/icons';
-import Carousel from 'react-multi-carousel';
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 import Button from '../components/shared/button';
@@ -28,38 +25,30 @@ import styles from '../scss/pages/index.module.scss';
 import CodeRenderer from '../components/codeRenderer.tsx';
 import PoiTooltip from '../components/poi-tooltip/poi-tooltip';
 import spaceGuys from '../images/homepage/space-illustration.svg';
-import topSpaceStars from '../images/homepage/top-bg.png';
 import bottomSpaceStars from '../images/homepage/bottom-stars.png';
 
-import kubernetes from '../images/homepage/side-icons/kubernet.svg';
-import linux from '../images/homepage/side-icons/linux.svg';
+import kubernetes from '../images/homepage/side-icons/kubernet.png';
+import linux from '../images/homepage/side-icons/linux.png';
 import serviceHealth from '../images/homepage/side-icons/service-health.svg';
 import requestTracing from '../images/homepage/side-icons/request-tracing.svg';
 import dl from '../images/homepage/side-icons/dynamic-logging.svg';
 import db from '../images/homepage/side-icons/db-profiling.svg';
 import k8 from '../images/homepage/side-icons/k8s-health.svg';
 import canary from '../images/homepage/side-icons/canary-analysis.svg';
-import videoCli from '../videos/pixie-cli-white.webm';
-import videoLive from '../videos/pixie-live-white.webm';
-import videoCli4 from '../videos/pixie-cli-white.mp4';
-import videoLive4 from '../videos/pixie-live-white.mp4';
+
+
+
+import videoCli from '../videos/pixie-cli.webm';
+import videoLive from '../videos/pixie-live.webm';
+
+import videoCli4 from '../videos/pixie-cli.mp4';
+import videoLive4 from '../videos/pixie-live.mp4';
 
 import pxIconCli from '../images/homepage/pixie-cli-icon.svg';
 import pxIconLive from '../images/homepage/pixie-live-icon.svg';
 import pxIconMeta from '../images/homepage/pixie-meta-icon.svg';
 import pixieGraph from '../images/homepage/kube-environment.svg';
-import cover1 from '../images/homepage/cover1.png';
-import cover2 from '../images/homepage/cover2.png';
-import cover3 from '../images/homepage/cover3.png';
-import ss4 from '../images/homepage/ss4.png';
-import ss5 from '../images/homepage/ss5.png';
-import blognew from '../images/homepage/new-blog-image.png';
-import blog00 from '../images/homepage/k8-blog-thumb.png';
-import blog0 from '../images/homepage/blog0.png';
-import blog1 from '../images/homepage/blog1.png';
 import rocketMen from '../images/homepage/rocket-men.svg';
-
-import docIcon from '../images/homepage/doc-icon.svg';
 
 import 'react-multi-carousel/lib/styles.css';
 import Illustration from '../components/illustration';
@@ -73,68 +62,8 @@ import {
 */
 const bashCode = 'bash -c "$(curl -fsSL https://withpixie.ai/install.sh)"';
 
-const ButtonGroup = ({ next, previous, ...rest }) => (
-  <div className={styles.carouselButtonGroup}>
-    {rest.carouselState.currentSlide + rest.carouselState.slidesToShow
-    < rest.carouselState.totalItems && (
-      <IconButton aria-label='next' onClick={() => next()} className={styles.carouselRightButton}>
-        <ChevronRight />
-      </IconButton>
-    )}
-    {rest.carouselState.currentSlide > 0 && (
-      <IconButton
-        aria-label='prev'
-        onClick={() => previous()}
-        className={styles.carouselLeftButton}
-      >
-        <ChevronLeft />
-      </IconButton>
-    )}
-  </div>
-);
-
-const Article = ({
-  title, author, link, category, image,
-}) => (
-  <div className={styles.articleContainer}>
-    <a href={link} target='_blank' rel='noopener noreferrer'>
-      <img src={image} alt={title} />
-      <div className={styles.articleContainerBody}>
-        <h5>{title}</h5>
-
-      </div>
-      <div className={styles.articleContainerFooter}>
-        <div className={styles.author}>{author}</div>
-        <div className={styles.category}>{category}</div>
-      </div>
-    </a>
-  </div>
-);
 
 const Homepage = () => {
-  const responsive = {
-    desktop: {
-      breakpoint: {
-        max: 9000,
-        min: 1000,
-      },
-      items: 3,
-    },
-    med: {
-      breakpoint: {
-        max: 1300,
-        min: 800,
-      },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: {
-        max: 800,
-        min: 0,
-      },
-      items: 1,
-    },
-  };
   const video1 = useRef(null);
   const video2 = useRef(null);
 
@@ -162,24 +91,16 @@ const Homepage = () => {
            for distributed environments, designed for developers.'
       />
       <div className={styles.home}>
-        <div className={styles.starField}>
-          <img
-            src={topSpaceStars}
-            alt='star field'
-            className={styles.starsBackground}
-          />
-        </div>
         <section className={styles.heroSection}>
           <div className='container'>
-            <div className={styles.overtext}>OPEN SOURCE PIXIE COMING SOON!</div>
             <h1>
-              Instantly troubleshoot your
+              Open source Kubernetes
               {' '}
               <br />
-              applications on Kubernetes
+              observability for developers
             </h1>
             <p className={styles.subtitle}>
-              No instrumentation. Debug with scripts. All inside Kubernetes
+              Auto-instrumented. Scriptable. Kubernetes native.
             </p>
             <div className={styles.codeRenderer}>
               <CodeRenderer
@@ -208,7 +129,7 @@ const Homepage = () => {
           <div className='container'>
             <div className='row '>
               <div className='col-12 large'>
-                <PoiTooltip top={55} left={80}>
+                <PoiTooltip top={45} left={30}>
                   <strong>Debug with Live</strong>
                   {' '}
                   to navigate your data space using auto-generated
@@ -239,88 +160,6 @@ const Homepage = () => {
           </div>
         </section>
 
-        <section className={styles.carousel}>
-          <div className='container'>
-            <img src={docIcon} alt='' className={styles.sectionIcon} />
-            <h5 className={styles.carouselTitle}>
-              Checkout our content to learn more about Pixie
-            </h5>
-            <Carousel
-              responsive={responsive}
-              className='row'
-              renderButtonGroupOutside
-              arrows={false}
-              customButtonGroup={<ButtonGroup />}
-              containerClass={styles.carouselContainer}
-              itemClass='col-4'
-              ssr
-            >
-              <Article
-                title='Accelerating the Pixie community with New Relic'
-                author='Zain Asgar, Ishan Mukherjee'
-                link='https://blog.pixielabs.ai/pixie-new-relic/'
-                category='BLOG'
-                image={blognew}
-              />
-              <Article
-                title='Building Kubernetes Native SaaS applications...'
-                author='Michelle Nguyen'
-                link='https://blog.pixielabs.ai/blog/hybrid-architecture/hybrid-architecture/'
-                category='BLOG'
-                image={blog00}
-              />
-              <Article
-                title='Announcing Pixie’s Public Beta Launch and Series A'
-                author='Zain Asgar, Ishan Mukherjee'
-                link='https://blog.pixielabs.ai/blog/public-beta-launch/beta-launch/'
-                category='BLOG'
-                image={blog0}
-              />
-              <Article
-                title='Part 1: Debugging Go in prod using eBPF'
-                author='Zain Asgar'
-                link='https://blog.pixielabs.ai/blog/ebpf-function-tracing/post/'
-                category='BLOG'
-                image={blog1}
-              />
-              <Article
-                title='How to Install Pixie in 60 seconds'
-                author='Zain Asgar'
-                link='https://www.youtube.com/watch?v=5oY_ova5GrA'
-                category='YOUTUBE VIDEO'
-                image={cover1}
-              />
-              <Article
-                title='Get Started with Dynamic Structured Logging in Go'
-                author='Zain Asgar'
-                link='https://docs.pixielabs.ai/tutorials/simple-go-tracing/'
-                category='TUTORIAL'
-                image={cover2}
-              />
-              <Article
-                title='What is Pixie?'
-                author='Ishan Mukherjee'
-                link='https://docs.pixielabs.ai/about-pixie/how-pixie-works/'
-                category='DOCS'
-                image={cover3}
-              />
-              <Article
-                title='Using the CLI to run Pxl scripts'
-                author='Zain Asgar'
-                link='https://docs.pixielabs.ai/pxl/using-cli/'
-                category='DOCS'
-                image={ss4}
-              />
-              <Article
-                title='How to contribute community scripts'
-                author='Zain Asgar'
-                link='https://github.com/pixie-labs/pixie/tree/main/pxl_scripts'
-                category='GITHUB'
-                image={ss5}
-              />
-            </Carousel>
-          </div>
-        </section>
 
         <section className={styles.featuresSection}>
 
@@ -450,25 +289,6 @@ const Homepage = () => {
           />
         </section>
         <section className={styles.usePixieForSection}>
-          <div
-            className={styles.rotatedOrnament}
-            style={{
-              width: '297px',
-              height: '46px',
-              top: '-27px',
-              right: '10px',
-            }}
-          />
-
-          <div
-            className={styles.rotatedOrnament}
-            style={{
-              width: '427px',
-              height: '137px',
-              right: '-100px',
-              bottom: '120px',
-            }}
-          />
           <div className='container'>
             <div className='row'>
               <div className='col-1' />
@@ -482,7 +302,7 @@ const Homepage = () => {
                   Pixie Community.
                 </p>
                 <p>
-                  You’ll Need:
+                  Requirements:
                 </p>
                 <div className={styles.softwareVersions}>
                   <a
@@ -587,48 +407,9 @@ const Homepage = () => {
         </section>
 
         <section className={styles.environmentsSection}>
-          <div
-            className={styles.rotatedOrnament}
-            style={{
-              width: '427px',
-              height: '90px',
-              top: '-20px',
-            }}
-          />
-          <div className='container'>
-            <div className='row'>
-              <div className='col-5'>
-                <h2>
-                  Get Started in any
-                  Kubernetes Environment
-                </h2>
-              </div>
-              <div className='col-7'>
-                <div className={styles.codeRenderer}>
-                  <CodeRenderer
-                    white
-                    code={bashCode}
-                    title='Pixie Community is Free Forever. Run this to install.'
-                    language='bash'
-                    footerText={(
-                      <>
-                        Want more flexible install options?
-                        {' '}
-                        <a
-                          href='https://docs.pixielabs.ai/installing-pixie/quick-start/'
-                          className='underline'
-                        >
-                          see docs
-                        </a>
-                        .
-                      </>
-                    )}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <p className={styles.subtitle}>Check out these install guides</p>
+
+
+          <h3>Pixie works with...</h3>
           <div className={styles.environmentsButtons}>
             <CategoryButton
               href='https://docs.pixielabs.ai/installing-pixie/install-guides/minikube-setup'
@@ -661,49 +442,10 @@ const Homepage = () => {
               height='50px'
             />
           </div>
-          <a
-            href='https://docs.pixielabs.ai/installing-pixie/install-guides/'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Button className={styles.button} outline>
-              SEE MORE GUIDES
-            </Button>
-          </a>
         </section>
 
-        <section className={styles.openSourceSection}>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-1' />
-              <div className='col-5'>
-                <h3>
-                  <div className={styles.titleSegment} />
-                  Pixie will soon be Open Source
-                </h3>
-                <p>
-                  Offering a magical experience to all developers is fundamental to our mission. We
-                  plan to contributed Pixie Core (open source) to the CNCF soon to accelerate this
-                  mission.
-                </p>
-                <a
-                  href='https://blog.pixielabs.ai/pixie-new-relic'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <Button className={styles.blackButton}>
-                    LEARN MORE
-                  </Button>
-                </a>
-              </div>
-              <div className='col-6'>
-                <img src={rocketMen} alt='' />
-              </div>
-            </div>
-          </div>
-        </section>
+
         <div
-          style={{ backgroundImage: `url(${bottomSpaceStars})` }}
           className={styles.bottomStars}
         >
           <section className={styles.communitySection}>

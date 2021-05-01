@@ -21,10 +21,12 @@
   height: 139px;
   font-size: 16px;
   line-height: 19px;
-  color: #B2B5BB;
-  border: 1px solid transparent;
-  background: linear-gradient(132.03deg, rgba(18, 214, 214, 0.1) 4.19%, rgba(18, 214, 214, 0) 81.59%);
+  color: white;
+  background: transparent;
   position: relative;
+  border: 2px solid #C4C4C4;
+  border-radius: 6px;
+  margin: 8px;
   @media (max-width: 768px) {
     width: 150px;
   }
@@ -44,12 +46,11 @@
     width: 100%;
     bottom: 26px;
     left: 0;
-    color: black;
+    color: white;
   }
 
   &:hover {
-    border: 1px solid #12D6D6;
-    border-radius: 6px;
+    border: 2px solid #12D6D6;
     color: #12D6D6;
   }
 
