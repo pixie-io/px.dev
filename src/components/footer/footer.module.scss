@@ -23,6 +23,16 @@
   padding-bottom: 33px;
   position: relative;
 
+  a {
+    color: #12D6D6
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 24px;
+    color: #596274;
+    padding-bottom: 36px;
+  }
 
   &.whitefooter {
     background: $color-white;
@@ -78,63 +88,60 @@
     }
   }
 
-  ul.linksRow {
-    margin: 28px auto;
+
+  .copyrightBar {
+    background: #000000;
+    color: #596274;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 18px;
     display: flex;
-    justify-content: center;
-    padding: 0;
-    @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: center;
+    justify-content: space-between;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: #12D6D6;
+      }
     }
 
-    li {
-      list-style: none;
-      display: inline-block;
-      margin-bottom: 12px;
-
-      a {
-
-        color: #596274;
-        font-size: 14px;
-        line-height: 24px;
-
-        &:hover {
-          color: #12D6D6
-        }
-      }
-
-      @media (min-width: 768px) {
-        &:after {
-          content: "|";
-          margin: 0 24px;
-          color: #596274;
-          @media (max-width: 1300px) {
-            margin: 0 14px;
-          }
-        }
-
-        &:last-child:after {
-          content: none;
-        }
-      }
+    @media (max-width: 1000px) {
+      font-size: 14px;
     }
   }
 
-  .copyrightLink {
-    padding-top: 45px;
+  .editOnGithub {
+    display: block;
+    position: absolute;
+    right: 60px;
+    bottom: 98px;
     text-align: center;
-    font-weight: normal;
-    font-family: Source Code Pro, sans-serif;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 24px;
-
-    color: #596274;
     @media (max-width: 1000px) {
-      padding-top: 0;
-      font-size: 14px;
+      display: none;
     }
+
+    div {
+      background-color: #12D6D6;
+      border-radius: 50%;
+      height: 66px;
+      width: 66px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 36px;
+        height: 26px;
+      }
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 24px;
+      color: #12D6D6;
+    }
+
   }
 }
 
