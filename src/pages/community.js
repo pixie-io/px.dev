@@ -20,18 +20,18 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import styles from '../scss/pages/community.module.scss';
-import onlineForums from '../images/community/online-forums.png';
-import becomePixienaut from '../images/community/Become a Pixienaut Icon.png';
-import githubIcon from '../images/community/github-icon.svg';
-import slackIcon from '../images/community/slack-icon.svg';
-import youtubeIcon from '../images/community/youtube-icon.svg';
-import twitterIcon from '../images/community/twitter-icon.svg';
 import pin from '../images/community/pin.svg';
 import attachment from '../images/community/attachment.svg';
 import hostEvent from '../images/community/host-an-event.svg';
 import Button from '../components/shared/button';
 import Illustration from '../components/illustration';
 import SpaceStation from '../images/community/community-hero.inline.svg';
+
+import github from '../images/community/icons/github.svg';
+import slack from '../images/community/icons/slack.svg';
+import meetup from '../images/community/icons/meetup.svg';
+import twitter from '../images/community/icons/twitter.svg';
+import governance from '../images/community/icons/governance.svg';
 
 const CommunityPage = () => {
   const events = [
@@ -102,14 +102,17 @@ const CommunityPage = () => {
                 <div className='row'>
                   <div className='col-12'>
                     <ul className={styles.inlineNav}>
-                      <li onClick={() => scrollToSectionId('become-section')}>
-                        Join
-                      </li>
-                      <li onClick={() => scrollToSectionId('become-section')}>
-                        Forum
+                      <li onClick={() => scrollToSectionId('get-involved')}>
+                        Get Involved
                       </li>
                       <li onClick={() => scrollToSectionId('events-section')}>
                         Events
+                      </li>
+                      <li onClick={() => scrollToSectionId('contributors')}>
+                        Contributors
+                      </li>
+                      <li onClick={() => scrollToSectionId('governance')}>
+                        Governance
                       </li>
                       <li onClick={() => scrollToSectionId('gear-section')}>
                         Gear
@@ -122,89 +125,83 @@ const CommunityPage = () => {
           </div>
           <SpaceStation className={styles.spaceStation} />
         </section>
-        <section className={styles.become} id='become-section'>
+        <section className={styles.getInvolved} id='get-involved'>
           <div className='container'>
             <div className='row'>
-              <div className='col-5 m36'>
-                <div className={styles.catTitle}>
-                  <img src={becomePixienaut} alt='cloud' />
-                  <h2>
-                    Join the
-                    <br />
-                    Group
-                  </h2>
-                </div>
-                <p className={styles.regular}>
-                  Our early adopters, partners, and collaborators! Want to help
-                  us shape the product & community?
+              <div className='col-2' />
+              <div className='col-8'>
+                <div className={styles.marker} style={{ margin: '20px auto' }} />
+                <h2>Get Involved</h2>
+                <p className={styles.heroSubtitle}>
+                  Pixie isn’t just a platform, it’s the community and the shared
+                  expertise around observability and debugging.
                 </p>
-                <ul className={styles.verticalLinks}>
-                  <li>
-                    Join a
-                    {' '}
-                    <span onClick={() => scrollToSectionId('events-section')}>
-                      call
-                    </span>
-                  </li>
-                  <li>
-                    More about the group
-                    {' '}
-                    <a
-                      href='https://github.com/pixie-labs/pixie/tree/main/pixienauts'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      here
-                    </a>
-                  </li>
-                  {' '}
-                  <li>
-                    Want to contribute?
-                    {' '}
-                    <a
-                      href='https://slackin.withpixie.ai/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      slack us on #pixienaut
-                    </a>
-                  </li>
-                </ul>
               </div>
               <div className='col-2' />
-              <div className='col-5 m36'>
-                <div className={styles.catTitle}>
-                  <img src={onlineForums} alt='cloud' />
-                  <h2>
-                    Check out
-                    <br />
-                    or Forums
-                  </h2>
-                </div>
-                <p className={styles.regular}>
-                  Trade ideas, share scripts and learn on these community hosted
-                  forums:
-                </p>
-                <ul className={styles.platformLinks}>
+            </div>
+
+            <div className='row'>
+              <div className='col-12 '>
+                <ul>
                   <li>
-                    <a href='https://github.com/pixie-labs/pixie'>
-                      <img src={githubIcon} alt='github logo' />
-                    </a>
+                    <div>
+                      <img src={slack} alt='' />
+                    </div>
+                    <p>
+                      Join
+                      <a href='https://slackin.withpixie.ai'>
+                        Pixie’s Slack
+                      </a>
+                      workspace for live conversations and quick questions.
+                    </p>
                   </li>
                   <li>
-                    <a href='https://slackin.withpixie.ai'>
-                      <img src={slackIcon} alt='slack logo' />
-                    </a>
+                    <div>
+                      <img src={meetup} alt='' />
+                    </div>
+                    <p>
+                      Attend a monthly
+                      <a href='#'>
+                        Pixienaut meetup??
+                      </a>
+                      to hear updates on the Pixie project and ask questions of the maintainers.
+                    </p>
                   </li>
                   <li>
-                    <a href='https://www.youtube.com/channel/UCOMCDRvBVNIS0lCyOmst7eg/featured'>
-                      <img src={youtubeIcon} alt='youtube logo' />
-                    </a>
+                    <div>
+                      <img src={twitter} alt='' />
+                    </div>
+                    <p>
+                      Follow Pixie on
+                      <a href='https://twitter.com/pixie_run'>
+                        Twitter
+                      </a>
+                      for the latest news and announcements.
+                    </p>
                   </li>
                   <li>
-                    <a href='https://twitter.com/pixie_run'>
-                      <img src={twitterIcon} alt='twitter logo' />
-                    </a>
+                    <div>
+                      <img src={github} alt='' />
+                    </div>
+                    <p>
+                      Check out the
+                      <a href='https://github.com/pixie-labs/pixie'>
+                        GitHub
+                      </a>
+                      repo to see the source code.
+                    </p>
+                  </li>
+                  <li>
+                    <div>
+                      <img src={governance} alt='' />
+                    </div>
+                    <p>
+                      Read our
+                      <a href='#'>
+                        Governance??
+                      </a>
+                      doc to learn more about how the Pixie project is managed.
+                    </p>
                   </li>
                 </ul>
               </div>
@@ -216,6 +213,8 @@ const CommunityPage = () => {
             <div className='row' id='events-section'>
               <div className='col-2' />
               <div className='col-8'>
+                <div className={styles.marker} style={{ margin: '20px auto' }} />
+
                 <h2>Attend Pixienaut Meetups</h2>
                 <p className={styles.heroSubtitle}>
                   Every month, Pixienauts around the world organize meetups,

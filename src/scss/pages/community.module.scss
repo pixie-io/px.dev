@@ -63,9 +63,8 @@
     position: relative;
     padding-bottom: 0;
     width: 100%;
-
+    margin-bottom: 0;
     @media (max-width: 1000px) {
-      padding-bottom: 0;
       text-align: left;
       display: flex;
       flex-direction: column-reverse;
@@ -196,115 +195,60 @@
 
   }
 
-  .become {
+  .getInvolved {
     position: relative;
 
-    ul.verticalLinks {
-      padding: 0;
+    ul {
+      list-style: none;
+
 
       li {
-        list-style: none;
-        color: $white;
-        font-weight: 500;
-        margin-top: 10px;
-        @media (max-width: 1000px) {
-          margin-top: 0;
-        }
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 24px;
 
-        a, span {
-          font-weight: inherit;
-          color: #12D6D6;
-          text-decoration: underline;
-          cursor: pointer;
-        }
-      }
-    }
+        p {
+          color: white;
+          font-weight: normal;
+          font-size: 18px;
 
-    ul.platformLinks {
-      padding: 40px 0 0;
-      display: flex;
-      justify-content: space-between;
-      @media (max-width: 1000px) {
-        justify-content: flex-start;
-      }
-
-      li {
-        list-style: none;
-        width: 52px;
-        height: 52px;
-        background-color: #DBDDE0;
-        border-radius: 50%;
-        @media (max-width: 1000px) {
-          width: 52px;
-          height: 52px;
-          margin-right: 10px;
-        }
-
-
-        a {
-          width: 100%;
-          height: 100%;
-          position: absolute;
-
-        }
-
-        &:hover {
-          background-color: #12D6D6;
-
-          img {
-            filter: invert(1);
+          a {
+            text-decoration: underline;
+            font-weight: bold;
+            padding: 0 4px;
           }
         }
 
-        position: relative;
+        div {
+          background: #DBDDE0;
+          border-radius: 50%;
+          margin-right: 16px;
+          height: 66px;
+          width: 66px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-        img {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translateX(-50%) translateY(-50%);
+          svg {
+            height: 26px;
+          }
         }
-      }
 
-    }
-
-    .catTitle {
-      position: relative;
-      padding-left: 180px;
-      @media (max-width: 1000px) {
-        padding-left: 130px;
-      }
-
-      img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        max-height: 100%;
-        height: 125px;
-        @media (max-width: 1000px) {
-          max-height: 80px
-        }
       }
     }
 
 
+    h2 {
+      text-align: center;
+    }
   }
 
   .events {
 
     h2 {
       text-align: center;
-
     }
 
-    .heroSubtitle {
-      color: $grey1;
-      max-width: 688px;
-      display: block;
-      text-align: center;
-      margin: 0 auto 70px;
-
-    }
 
     .eventItem {
       border: 1px solid #596274;
@@ -526,7 +470,7 @@
     }
   }
 
-  .community-hero, .people, .driveTogether, .goodies, .hostEvents, .events, .become {
+  .people, .driveTogether, .goodies, .hostEvents, .events, .become {
     color: $grey1;
     margin-bottom: 125px;
     margin-top: 125px;
@@ -547,4 +491,24 @@
       margin-top: 0;
     }
   }
+}
+
+.marker {
+  display: block;
+  height: 11px;
+  width: 60px;
+  background: #12D6D6;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.heroSubtitle {
+  color: $grey1;
+  max-width: 688px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 70px;
 }
