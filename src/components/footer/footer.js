@@ -68,7 +68,7 @@ const Footer = ({ whiteFooter }) => (
       <Link to='/terms'>Terms and Privacy</Link>
     </div>
 
-    <a className={styles.editOnGithub} href='https://github.com/pixie-labs/px.dev'>
+    <a className={styles.editOnGithub} href='https://github.com/pixie-labs/px.dev' target='_blank' rel='noreferrer'>
       <div>
         <img src={githubShare} alt='github' />
       </div>

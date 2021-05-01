@@ -439,11 +439,14 @@ const Homepage = () => {
             <div className='container'>
               <div className={styles.communitySectionTitle}>
                 <h2>
-                  Interested in helping shape
+                  Interested in
+                  {' '}
+                  <br className='hide-mobile hide-tablet' />
+                  contributing to
                   {' '}
                   <br className='hide-mobile hide-tablet' />
                   {' '}
-                  our product & community?
+                  Pixie?
                 </h2>
                 <div>
                   <Button className={styles.button} to='/community'>

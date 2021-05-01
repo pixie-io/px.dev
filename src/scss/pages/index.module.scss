@@ -356,7 +356,6 @@
     display: block;
     background-image: url('../../images/homepage/stars-field-use-pixie-for.png');
     background-size: cover;
-    padding: 150px 0;
     position: relative;
     overflow: hidden;
     @media (max-width: 1000px) {
@@ -547,7 +546,7 @@
       padding-bottom: 150px;
 
       h2 {
-        text-align: center;
+        text-align: left;
       }
 
       @media (max-width: 1000px) {
