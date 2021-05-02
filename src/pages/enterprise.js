@@ -75,17 +75,17 @@ const Enterprise = () => (
               </a>
             </div>
             <div className='col-5 '>
-              <a href='https://pixielabs.ai/' target='_blank' rel='noopener noreferrer'>
-                <div className={styles.heroButtonCenter}>
-                  <img src={support} alt='pixie logo' />
-                  <div>
-                    <h5>Offering Pixie Support?</h5>
-                    <p>
-                      Add your company
-                    </p>
-                  </div>
+
+              <div className={styles.heroButtonCenter}>
+                <img src={support} alt='pixie logo' />
+                <div>
+                  <h5>Offering Pixie Support?</h5>
+                  <p>
+                    Add your company
+                  </p>
                 </div>
-              </a>
+              </div>
+
             </div>
             <div className='col-1 ' />
           </div>
