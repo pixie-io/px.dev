@@ -188,7 +188,7 @@ const CommunityPage = () => {
                     </div>
                     <p>
                       Attend a monthly
-                      <span className={styles.link} onClick={() => scrollToSectionId('events-section')}>
+                      <span className={styles.whiteLink} onClick={() => scrollToSectionId('events-section')}>
                         Pixienaut meetup
                       </span>
                       to hear updates on the Pixie project and ask questions of the maintainers.
@@ -224,7 +224,7 @@ const CommunityPage = () => {
                     </div>
                     <p>
                       Read our
-                      <span className={styles.link} onClick={() => scrollToSectionId('governance')}>
+                      <span className={styles.whiteLink} onClick={() => scrollToSectionId('governance')}>
                         Governance
                       </span>
                       doc to learn more about how the Pixie project is managed.
