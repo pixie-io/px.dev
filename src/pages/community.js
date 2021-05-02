@@ -283,7 +283,7 @@ const CommunityPage = () => {
           </div>
         </section>
 
-        <section className={styles.foundingTeam}>
+        <section className={styles.foundingTeam} id={'contributors'}>
           <div className='container'>
             <div className='row'>
               <div className='col-12'>
@@ -327,7 +327,7 @@ const CommunityPage = () => {
             </div>
           </div>
 
-          <div className='container'>
+          <div className='container' id='governance'>
             <div className='row'>
               <div className='col-12'>
                 <h2>
