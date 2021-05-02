@@ -401,31 +401,31 @@ const Homepage = () => {
           <div className={styles.environmentsButtons}>
             <CategoryButton
               href='https://docs.pixielabs.ai/installing-pixie/install-guides/minikube-setup'
-              image='kubernetes.png'
+              image='kube.png'
               label='Minikube'
               height='51px'
             />
             <CategoryButton
               href='https://docs.pixielabs.ai/installing-pixie/install-guides/eks-setup/'
-              image='amazon-aks.png'
+              image='eks.png'
               label='EKS'
               height='50px'
             />
             <CategoryButton
               href='https://docs.pixielabs.ai/installing-pixie/install-guides/gke-setup/'
-              image='google-gke.png'
+              image='gke.png'
               label='GKE'
               height='50px'
             />
             <CategoryButton
               href='https://docs.pixielabs.ai/installing-pixie/install-guides/aks-setup/'
-              image='microsoft.png'
+              image='aks.png'
               label='AKS'
               height='40px'
             />
             <CategoryButton
               href='https://docs.pixielabs.ai/installing-pixie/install-guides/self-managed-k8s-setup/'
-              image='self-managed.png'
+              image='self-kube.png'
               label='Self Managed'
               height='50px'
             />

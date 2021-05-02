@@ -317,7 +317,7 @@ const CommunityPage = () => {
                     <h5>
                       This is could be you, contribute the Pixie project!
                     </h5>
-                    <a href='https://github.com/pixie-labs/pixie'>
+                    <a href='https://github.com/pixie-labs/pixie/pulls'>
                       <button type='button'>CONTRIBUTE</button>
                     </a>
                   </div>
