@@ -20,7 +20,6 @@
 
 .community-page {
   position: relative;
-
   p {
     font-size: 16px;
     line-height: 1.5;
@@ -63,11 +62,12 @@
     position: relative;
     padding-bottom: 0;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: -75px;
     @media (max-width: 1000px) {
       text-align: left;
       display: flex;
       flex-direction: column-reverse;
+      margin-bottom: 0;
     }
 
     ul.inlineNav {
@@ -184,15 +184,10 @@
           line-height: 45px;
         }
       }
-
       h2 {
         padding-bottom: 20px;
       }
-
     }
-
-    margin-bottom: 75px;
-
   }
 
   .getInvolved {
@@ -228,6 +223,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          flex-shrink: 0;
 
           svg {
             height: 26px;
@@ -243,7 +239,7 @@
     }
   }
 
-  .events {
+  section.events {
 
     h2 {
       text-align: center;
@@ -318,38 +314,128 @@
     }
   }
 
-  .people {
-    padding: 30px;
-    background: $color-dark;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  section.founding-team {
+    background-color: #121212;
 
-    div {
-      display: block;
-      width: calc((100% - 192px) / 6);
-      margin: 16px;
+    padding-top: 80px;
+    @media (max-width: 1000px) {
+      padding-top: 40px;
+    }
+
+
+    h2 {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .founder {
+      font-size: 18px;
+      width: 25%;
+      margin-bottom: 112px;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       @media (max-width: 1000px) {
-        margin: 4px;
-        width: calc((100% - 48px) / 6);
-        //  max-width: calc(33% - 16px);
+        width: 50%;
+        margin-bottom: 60px;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      p {
+        color: #C4C4C4;
+        margin-bottom: 0;
+        font-size: 20px;
+      }
+
+      img {
+        width: 150px;
+        border-radius: 50%;
+      }
+
+      .founderPosition {
+        line-height: 30px;
+        color: #9696A5;
+        margin-top: 4px;
+        text-align: center;
+        padding: 0 12px;
+        font-size: 16px;
       }
     }
 
+    .team {
+      width: 50%;
+      display: inline-block;
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
+
+      h3 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 41px;
+        color: #9696A5;
+        margin-top: 20px;
+        padding: 0 10%;
+      }
+
+      .founder {
+        width: 50%;
+      }
+    }
+
+    .youLine {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      @media (max-width: 1000px) {
+        display: block;
+        text-align: center;
+      }
+
+      .vectorLine {
+        margin: 20px 40px 40px 0;
+        @media (max-width: 1000px) {
+          display: none;
+        }
+      }
+
+      h5 {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 0;
+        color: white;
+      }
+
+      button {
+        padding: 10px 18px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: normal;
+        text-transform: none;
+      }
+    }
   }
 
-  .goodies {
+  section.goodies {
+    h2 {
+      text-align: center;
+      margin-bottom: 0;
+    }
+
     .heroSubtitle {
-      color: $grey1;
+      color: white;
       max-width: 825px;
-      text-align: left;
+      text-align: center;
       margin-bottom: 70px;
       @media (max-width: 1000px) {
         margin-bottom: 20px;
-        text-align: left;
       }
-
     }
 
     .spaceshipDrive {
@@ -357,17 +443,14 @@
       margin: 70px auto;
     }
 
-
     color: #A9ADB1;
     position: relative;
-
 
     .file {
       display: table;
       width: 100%;
       position: relative;
       margin-bottom: 30px;
-
 
       a {
         display: block;
@@ -389,7 +472,6 @@
           display: block;
           width: 100%;
           margin: 0 0 5px;
-
         }
 
         span {
@@ -397,56 +479,8 @@
           display: block;
           color: #4F4F4F;
         }
-
       }
     }
-
-
-  }
-
-  .hostEvents {
-    margin-top: 250px;
-    position: relative;
-
-
-    @media (max-width: 1000px) {
-      margin-bottom: 150px !important;;
-
-    }
-    @media (max-width: 670px) {
-      margin-bottom: 50px !important;;
-    }
-
-    h4 {
-      color: $color-red;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 18px;
-      letter-spacing: 0.4em;
-      text-transform: uppercase;
-      margin-bottom: 40px;
-      text-align: left;
-    }
-
-    .hostEvent {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      z-index: -1;
-      transform: translateX(-50%);
-      max-width: 1900px;
-
-      @media (max-width: 1000px) {
-        position: absolute;
-        top: 110%;
-      }
-
-      a {
-        padding: 14px 46px;
-      }
-    }
-
   }
 
   .inlineStars {

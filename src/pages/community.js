@@ -17,6 +17,7 @@
  */
 
 import React from 'react';
+
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import styles from '../scss/pages/community.module.scss';
@@ -32,6 +33,34 @@ import slack from '../images/community/icons/slack.svg';
 import meetup from '../images/community/icons/meetup.svg';
 import twitter from '../images/community/icons/twitter.svg';
 import governance from '../images/community/icons/governance.svg';
+import zain from '../images/about/zain.png';
+import ishan from '../images/about/ishan.png';
+import a1 from '../images/about/avatars/a1.png';
+import a2 from '../images/about/avatars/a2.png';
+import a3 from '../images/about/avatars/a3.png';
+import a4 from '../images/about/avatars/a4.png';
+import a5 from '../images/about/avatars/a5.png';
+import a6 from '../images/about/avatars/a6.png';
+import a7 from '../images/about/avatars/a7.png';
+import a8 from '../images/about/avatars/a8.png';
+import a9 from '../images/about/avatars/a9.png';
+import a11 from '../images/about/avatars/Pete Stevenson@2x.png';
+import a12 from '../images/about/avatars/Vishal Jain@2x.png';
+import a13 from '../images/about/avatars/Ryan Cheng@2x.png';
+import jaana from '../images/about/avatars/jaana.png';
+import hightower from '../images/about/avatars/hightower.png';
+import dax from '../images/about/avatars/dax.png';
+import a10 from '../images/about/avatars/a10.png';
+import you from '../images/about/avatars/you-avatar.svg';
+import vectorLine from '../images/about/vector-line.svg';
+
+const Founder = ({ img, name, position }) => (
+  <div className={styles.founder}>
+    <img src={img} alt={name} />
+    <p>{name}</p>
+    <p className={styles.founderPosition}>{position}</p>
+  </div>
+);
 
 const CommunityPage = () => {
   const events = [
@@ -254,38 +283,96 @@ const CommunityPage = () => {
             ))}
           </div>
         </section>
-        <section className={`${styles.people} container`}>
-          <Illustration filename='Person1.png' alt='person 1' />
-          <Illustration filename='Person2.png' alt='person 1' />
-          <Illustration filename='Person3.png' alt='person 1' />
-          <Illustration filename='Person4.png' alt='person 1' />
-          <Illustration filename='Person5.png' alt='person 1' />
-          <Illustration filename='Person6.png' alt='person 1' />
-          <Illustration filename='Person7.png' alt='person 1' />
-          <Illustration filename='Person9.png' alt='person 1' />
-          <Illustration filename='Person16.png' alt='person 1' />
-          <Illustration filename='Person8.png' alt='person 1' />
-          <Illustration filename='Person11.png' alt='person 1' />
-          <Illustration filename='Person12.png' alt='person 1' />
-          <Illustration filename='Person13.png' alt='person 1' />
-          <Illustration filename='Person14.png' alt='person 1' />
-          <Illustration filename='Person10.png' alt='person 1' />
-          <Illustration filename='Person15.png' alt='person 1' />
-          <Illustration filename='Person17.png' alt='person 1' />
-          <Illustration filename='Person18.png' alt='person 1' />
+
+        <section className={styles.foundingTeam}>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-12'>
+                <h2>
+                  <div className={styles.marker} style={{ margin: '20px auto' }} />
+                  Meet the Contributors
+                </h2>
+                <p className={styles.heroSubtitle}>
+                  Pixie was originally built by members of the Pixie Labs team.
+                </p>
+                <Founder img={zain} name='Zain Asgar' position='Co-Founder/CEO' />
+                <Founder img={ishan} name='Ishan Mukherjee' position='Co-Founder/CPO' />
+                <Founder img={a1} name='Michelle Nguyen' position='Founding Engineer' />
+                <Founder img={a2} name='Phillip Kuznetsov' position='Founding Engineer' />
+                <Founder img={a3} name='Yaxiong Zhao' position='Founding Engineer' />
+                <Founder img={a4} name='Omid Azizi' position='Founding Engineer' />
+                <Founder img={a5} name='Natalie Serrino' position='Founding Engineer' />
+                <Founder img={a6} name='James Bartlett' position='Founding Engineer' />
+                <Founder img={a7} name='Hannah Troisi' position='Founding Engineer' />
+                <Founder img={a8} name='Nick Lanam' position='Founding Engineer' />
+                <Founder img={a9} name='Vihang Mehta' position='Founding Engineer' />
+                <Founder img={a11} name='Pete Stevenson' position='Founding Engineer' />
+                <Founder img={a12} name='Vishal Jain' position='Founding Engineer' />
+                <Founder img={a13} name='Ryan Cheng' position='Founding Engineer' />
+                <Founder img={a10} name='James Thomas' position='Research Intern' />
+
+                <div className={styles.youLine}>
+                  <Founder img={you} name='You!' position='' />
+                  <img src={vectorLine} alt='' className={styles.vectorLine} />
+                  <div>
+                    <h5>
+                      This is could be you, contribute the Pixie project!
+                    </h5>
+                    <a href='https://github.com/pixie-labs/pixie'>
+                      <button type='button'>CONTRIBUTE</button>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='container'>
+            <div className='row'>
+              <div className='col-12'>
+                <h2>
+                  <div className={styles.marker} style={{ margin: '20px auto' }} />
+                  Meet the Leadership
+                </h2>
+                <p className={styles.heroSubtitle}>
+                  The overall role of the Board is to ensure a long-term well-being of the project,
+                  both technically and as a community. Read about or governance structure here.
+                </p>
+                <div className={styles.team}>
+                  <h3>Project Team Members</h3>
+                  <Founder img={zain} name='Zain Asgar' position='GM/GVP - Pixie & Open Source - New Relic' />
+                  <Founder img={a1} name='Michelle Nguyen' position='Principal Engineer, New Relic' />
+                </div>
+
+                <div className={styles.team}>
+                  <h3>End-User Members</h3>
+                  <Founder img={dax} name='Dax McDonald' position='Software Engineer, Sourcegraph' />
+                  <Founder img={you} name='TBD' position='Engineer' />
+                </div>
+                <div className={styles.team}>
+                  <h3>Community Members</h3>
+                  <Founder img={hightower} name='Kelsey Hightower' position='Staff Developer Advocate, Google Cloud Platform' />
+                  <Founder img={jaana} name='Jaana Dogan' position='Principle Engineer, Amazon Web Services' />
+                </div>
+              </div>
+            </div>
+          </div>
+
         </section>
+
+
         <section className={styles.goodies} id='gear-section'>
           <div className='container'>
             <div className='row'>
               <div className='col-12'>
-                <h2>Learn who Pixienauts are and download gear</h2>
+                <div className={styles.marker} style={{ margin: '20px auto' }} />
+                <h2>
+                  Get Gear
+                </h2>
                 <p className={styles.heroSubtitle}>
-                  Wondering what’s the story behind all the space tech
-                  analogies?
-                  <br />
-                  You have come to the right place!
+                  Download stickers, wallpapers, illustrations.
                 </p>
-
                 <Illustration
                   critical
                   filename='inline-stars.png'
@@ -305,7 +392,7 @@ const CommunityPage = () => {
           <div className='container' style={{ zIndex: 1 }}>
             <div className='row'>
               <div className='col-4'>
-                <h3>Badges & Stickers</h3>
+                <h3>Stickers</h3>
                 <div className={styles.file}>
                   <a
                     target='_blank'
@@ -445,32 +532,6 @@ const CommunityPage = () => {
               </div>
             </div>
           </div>
-        </section>
-        <section className={styles.hostEvents}>
-          <div className='container'>
-            <div className={styles.slackCommunity}>
-              <div className='row'>
-                <div className='col-6' />
-                <div className='col-6'>
-                  <h4>Coming soon</h4>
-                  <h2>
-                    We’ll be adding community online meetups, events and blogs
-                    soon
-                  </h2>
-                  <a
-                    href='https://slackin.withpixie.ai/'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='button'
-                  >
-                    {' '}
-                    JOIN COMMUNITY SLACK
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <img src={hostEvent} alt='moon' className={styles.hostEvent} />
         </section>
       </div>
     </Layout>
