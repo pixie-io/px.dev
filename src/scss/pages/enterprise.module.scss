@@ -28,37 +28,95 @@
     padding-top: 150px;
     text-align: center;
     margin-bottom: 0;
+    position: relative;
     @media (max-width: 1000px) {
       padding-top: 140px;
     }
 
-    h1 {
-      font-size: 52px;
-      line-height: 70px;
-      margin-bottom: 16px;
-      color: #FFFFFF;
-      font-weight: normal;
+    .planet {
+      position: absolute;
+      left: 0;
+    }
 
-      @media (max-width: 1000px) {
-        font-size: 36px;
-        line-height: 45px;
-        padding-top: 40px;
+    .title {
+      padding-bottom: 72px;
+      z-index: 1;
+      position: relative;
+
+      h1 {
+        font-size: 52px;
+        line-height: 70px;
+        margin-bottom: 16px;
+        color: #FFFFFF;
+        font-weight: normal;
+
+        @media (max-width: 1000px) {
+          font-size: 36px;
+          line-height: 45px;
+          padding-top: 40px;
+        }
+        @media (max-width: 768px) {
+          font-size: 24px;
+          line-height: 35px;
+        }
       }
-      @media (max-width: 768px) {
-        font-size: 24px;
-        line-height: 35px;
+
+      .subtitle {
+        font-size: 20px;
+        line-height: 32px;
+        @media (max-width: 1000px) {
+          font-size: 14px;
+          line-height: normal;
+        }
+      }
+
+    }
+
+    .heroButton, .heroButtonCenter {
+      border: 1px solid #12D6D6;
+      padding: 24px;
+      margin-bottom: 24px;
+
+      &:hover {
+        background: linear-gradient(132.03deg, rgba(18, 214, 214, 0.1) 4.19%, rgba(18, 214, 214, 0) 81.59%);
+        border: 1px dashed #12D6D6;
       }
     }
 
-    .subtitle {
-      font-size: 20px;
-      line-height: 32px;
-      @media (max-width: 1000px) {
-        font-size: 14px;
-        line-height: normal;
+    .heroButton {
+      display: flex;
+
+
+      img {
+        margin-right: 24px;
+      }
+
+      h5 {
+        text-align: left;
+        font-size: 22px;
+        line-height: 30px;
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        text-align: left;
+        font-size: 16px;
+        line-height: 28px;
       }
     }
 
+    .heroButtonCenter {
+      h5 {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: normal;
+        margin: 0;
+        padding: 18px 0 0;
+        color: white;
+      }
+    }
   }
 }
 

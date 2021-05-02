@@ -23,7 +23,6 @@ import SEO from '../components/seo';
 import styles from '../scss/pages/community.module.scss';
 import pin from '../images/community/pin.svg';
 import attachment from '../images/community/attachment.svg';
-import hostEvent from '../images/community/host-an-event.svg';
 import Button from '../components/shared/button';
 import Illustration from '../components/illustration';
 import SpaceStation from '../images/community/community-hero.inline.svg';
@@ -360,8 +359,6 @@ const CommunityPage = () => {
           </div>
 
         </section>
-
-
         <section className={styles.goodies} id='gear-section'>
           <div className='container'>
             <div className='row'>
