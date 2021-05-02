@@ -98,8 +98,16 @@
     display: flex;
     justify-content: space-between;
 
+    img {
+      height: 13px;
+      margin-right: 8px;
+      position: relative;
+      top: 1px
+    }
+
     a {
       color: inherit;
+      padding-left: 12px;
 
       &:hover {
         color: #12D6D6;
@@ -111,38 +119,7 @@
     }
   }
 
-  .editOnGithub {
-    display: block;
-    position: absolute;
-    right: 60px;
-    bottom: 98px;
-    text-align: center;
-    @media (max-width: 1000px) {
-      display: none;
-    }
 
-    div {
-      background-color: #12D6D6;
-      border-radius: 50%;
-      height: 66px;
-      width: 66px;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-
-      img {
-        width: 36px;
-        height: 26px;
-      }
-    }
-
-    p {
-      font-size: 13px;
-      line-height: 24px;
-      color: #12D6D6;
-    }
-
-  }
 }
 
 

@@ -23,8 +23,6 @@ import styles from './footer.module.scss';
 import { docsRedirect } from '../shared/tracking-utils';
 import pixieLogo from '../../images/pixie-oss.svg';
 
-import githubShare from '../../images/footer/github-share-button.svg';
-
 import docs from '../../images/footer/docs-icon.svg';
 import github from '../../images/footer/github-icon.svg';
 import slack from '../../images/footer/slack-icon.svg';
@@ -64,18 +62,17 @@ const Footer = ({ whiteFooter }) => (
       <div className={styles.divider} />
     </div>
     <div className={styles.copyrightBar}>
-      <span> Copyright 2021 Pixie Authors. All rights reserved.</span>
+      <div>
+        <span> Copyright 2021 Pixie Authors. All rights reserved.</span>
+        <a href='https://github.com/pixie-labs/px.dev' target='_blank' rel='noreferrer'>
+          <img src={github} alt='github' />
+          Edit on github
+        </a>
+      </div>
       <Link to='/terms'>Terms and Privacy</Link>
     </div>
 
-    <a className={styles.editOnGithub} href='https://github.com/pixie-labs/px.dev' target='_blank' rel='noreferrer'>
-      <div>
-        <img src={githubShare} alt='github' />
-      </div>
-      <p>
-        Edit on github
-      </p>
-    </a>
+
   </footer>
 );
 Footer.propTypes = {

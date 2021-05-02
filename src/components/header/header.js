@@ -82,16 +82,16 @@ const Header = ({ whiteHeader, transparentMenu }) => {
         <div className={styles.newsBar}>
 
           <span className='hide-not-desktop'>
-             Join us for our next Pixienaut Monthly call on May 27th.
+             We’re in the process of contributing Pixie to the CNCF.
             {' '}
-            <a href='/community/'>
+            <a href='https://github.com/cncf/toc/issues/651' target='_blank' rel='noreferrer'>
                    Learn more
             </a>
             {' '}
              🚀
           </span>
           <span className='hide-desktop'>
-                <a href='/community/'>Join us for our Pixienaut Monthly on May 27th.</a>
+                <a href='https://github.com/cncf/toc/issues/651' target='_blank' rel='noreferrer'>We’re in the process of contributing Pixie to the CNCF.</a>
           </span>
 
           <div
@@ -153,7 +153,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
               </Link>
             </li>
             <li className={styles.colored}>
-              <a href='https://work.withpixie.ai/auth/signup' target='_blank' rel='noreferrer'>
+              <a href='https://docs.pixielabs.ai/installing-pixie/quick-start/' target='_blank' rel='noreferrer'>
                 GET STARTED
               </a>
             </li>

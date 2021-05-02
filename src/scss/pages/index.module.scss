@@ -379,6 +379,13 @@
       }
     }
 
+    .requirements {
+      padding-top: 65px;
+      @media (max-width: 1000px) {
+        padding-top: 15px;
+      }
+    }
+
     p {
       color: white;
 

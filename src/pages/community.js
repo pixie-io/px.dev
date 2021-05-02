@@ -64,16 +64,12 @@ const Founder = ({ img, name, position }) => (
 const CommunityPage = () => {
   const events = [
     {
-      title: 'Pixienaut Monthly - April',
-      date: 'April  22, 2021',
-      location: 'Online (Zoom)',
-      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA0MjJUMTczMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com',
-    }, {
       title: 'Pixienaut Monthly - May',
       date: 'May  27, 2021',
       location: 'Online (Zoom)',
       link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA1MjdUMTczMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com&scp=ALL',
-    }, {
+    },
+    {
       title: 'Pixienaut Monthly - June',
       date: 'June 24, 2021',
       location: 'Online (Zoom)',
@@ -146,12 +142,12 @@ const CommunityPage = () => {
                         Gear
                       </li>
                     </ul>
+                    <SpaceStation className={styles.spaceStation} />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <SpaceStation className={styles.spaceStation} />
         </section>
         <section className={styles.getInvolved} id='get-involved'>
           <div className='container'>
@@ -160,10 +156,7 @@ const CommunityPage = () => {
               <div className='col-8'>
                 <div className={styles.marker} style={{ margin: '20px auto' }} />
                 <h2>Get Involved</h2>
-                <p className={styles.heroSubtitle}>
-                  Pixie isn’t just a platform, it’s the community and the shared
-                  expertise around observability and debugging.
-                </p>
+
               </div>
               <div className='col-2' />
             </div>
@@ -189,9 +182,9 @@ const CommunityPage = () => {
                     </div>
                     <p>
                       Attend a monthly
-                      <a href='#'>
-                        Pixienaut meetup??
-                      </a>
+                      <span className={styles.link} onClick={() => scrollToSectionId('events-section')}>
+                        Pixienaut meetup
+                      </span>
                       to hear updates on the Pixie project and ask questions of the maintainers.
                     </p>
                   </li>
@@ -225,9 +218,9 @@ const CommunityPage = () => {
                     </div>
                     <p>
                       Read our
-                      <a href='#'>
-                        Governance??
-                      </a>
+                      <span className={styles.link} onClick={() => scrollToSectionId('governance')}>
+                        Governance
+                      </span>
                       doc to learn more about how the Pixie project is managed.
                     </p>
                   </li>
@@ -283,7 +276,7 @@ const CommunityPage = () => {
           </div>
         </section>
 
-        <section className={styles.foundingTeam} id={'contributors'}>
+        <section className={styles.foundingTeam} id='contributors'>
           <div className='container'>
             <div className='row'>
               <div className='col-12'>
@@ -340,19 +333,72 @@ const CommunityPage = () => {
                 </p>
                 <div className={styles.team}>
                   <h3>Project Team Members</h3>
-                  <Founder img={zain} name='Zain Asgar' position='GM/GVP - Pixie & Open Source - New Relic' />
-                  <Founder img={a1} name='Michelle Nguyen' position='Principal Engineer, New Relic' />
+                  <Founder
+                    img={zain}
+                    name='Zain Asgar'
+                    position={(
+                      <>
+                        GM/GVP - Pixie & Open Source,
+                        <br />
+                        {' '}
+                        New Relic
+                      </>
+)}
+                  />
+                  <Founder
+                    img={a1}
+                    name='Michelle Nguyen'
+                    position={(
+                      <>
+                        Principal Engineer,
+                        <br />
+                        {' '}
+                        New Relic
+                      </>
+)}
+                  />
                 </div>
 
                 <div className={styles.team}>
                   <h3>End-User Members</h3>
-                  <Founder img={dax} name='Dax McDonald' position='Software Engineer, Sourcegraph' />
+                  <Founder
+                    img={dax}
+                    name='Dax McDonald'
+                    position={(
+                      <>
+                        Software Engineer,
+                        <br />
+                        Sourcegraph
+                      </>
+)}
+                  />
                   <Founder img={you} name='TBD' position='Engineer' />
                 </div>
                 <div className={styles.team}>
                   <h3>Community Members</h3>
-                  <Founder img={hightower} name='Kelsey Hightower' position='Staff Developer Advocate, Google Cloud Platform' />
-                  <Founder img={jaana} name='Jaana Dogan' position='Principle Engineer, Amazon Web Services' />
+                  <Founder
+                    img={hightower}
+                    name='Kelsey Hightower'
+                    position={(
+                      <>
+                        Staff Developer Advocate,
+                        <br />
+                        {' '}
+                        Google Cloud Platform
+                      </>
+)}
+                  />
+                  <Founder
+                    img={jaana}
+                    name='Jaana Dogan'
+                    position={(
+                      <>
+                        Principle Engineer,
+                        <br />
+                        Amazon Web Services
+                      </>
+                  )}
+                  />
                 </div>
               </div>
             </div>

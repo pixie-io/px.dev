@@ -156,7 +156,7 @@ const Homepage = () => {
         <section className={styles.featuresSection}>
           <div className='container'>
             <h2>
-              Pixie’s three simple ideas
+              Why use Pixie?
             </h2>
 
             <div className={`row ${styles.noInstrumentation} flex-row`}>
@@ -287,11 +287,8 @@ const Homepage = () => {
                   <div className={styles.titleSegment} />
                   Use Pixie For
                 </h3>
-                <p>
-                  Offering a rich and accessible experience to developers is fundamental to us. With
-                  Pixie Community.
-                </p>
-                <p>
+
+                <p className={styles.requirements}>
                   Requirements:
                 </p>
                 <div className={styles.softwareVersions}>

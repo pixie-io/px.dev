@@ -20,6 +20,7 @@
 
 .community-page {
   position: relative;
+
   p {
     font-size: 16px;
     line-height: 1.5;
@@ -139,14 +140,15 @@
 
 
     .spaceStation {
-      width: 70%;
+      width: 100%;
       position: relative;
       display: block;
       margin-left: auto;
       height: auto;
+      margin-bottom: 155px;
       @media (max-width: 1000px) {
-        width: 85%;
-        margin-top: 145px;
+        margin-top: 15px;
+        margin-bottom: 75px;
       }
     }
 
@@ -184,6 +186,7 @@
           line-height: 45px;
         }
       }
+
       h2 {
         padding-bottom: 20px;
       }
@@ -207,10 +210,11 @@
           font-weight: normal;
           font-size: 18px;
 
-          a {
+          a,.link {
             text-decoration: underline;
             font-weight: bold;
             padding: 0 4px;
+            cursor: pointer;
           }
         }
 
