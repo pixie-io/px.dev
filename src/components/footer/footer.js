@@ -66,7 +66,7 @@ const Footer = ({ whiteFooter }) => (
         <span> Copyright 2021 Pixie Authors. All rights reserved.</span>
         <a href='https://github.com/pixie-labs/px.dev' target='_blank' rel='noreferrer'>
           <img src={github} alt='github' />
-          Edit on github
+          Edit on GitHub
         </a>
       </div>
       <Link to='/terms'>Terms and Privacy</Link>

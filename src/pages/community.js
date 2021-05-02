@@ -116,35 +116,41 @@ const CommunityPage = () => {
                 <div className='col-8'>
                   <h1>Be a Pixienaut</h1>
                   <p className={styles.heroSubtitle}>
-                    We are lucky to have a diverse and enthusiastic community of
-                    early adopters who are helping shape our product and
-                    community. If you are interested in becoming a Pixienaut
+                    Pixie isn’t just a platform, it’s the community and the
+                    shared expertise around observability and debugging.
+                    If you are interested in becoming a Pixienaut,
                     you’ve come to the right place!
                   </p>
                 </div>
                 <div className='col-2' />
-                <div className='row'>
-                  <div className='col-12'>
-                    <ul className={styles.inlineNav}>
-                      <li onClick={() => scrollToSectionId('get-involved')}>
-                        Get Involved
-                      </li>
-                      <li onClick={() => scrollToSectionId('events-section')}>
-                        Events
-                      </li>
-                      <li onClick={() => scrollToSectionId('contributors')}>
-                        Contributors
-                      </li>
-                      <li onClick={() => scrollToSectionId('governance')}>
-                        Governance
-                      </li>
-                      <li onClick={() => scrollToSectionId('gear-section')}>
-                        Gear
-                      </li>
-                    </ul>
-                    <SpaceStation className={styles.spaceStation} />
-                  </div>
+              </div>
+              <div className='row'>
+                <div className='col-12'>
+                  <ul className={styles.inlineNav}>
+                    <li onClick={() => scrollToSectionId('get-involved')}>
+                      Get Involved
+                    </li>
+                    <li onClick={() => scrollToSectionId('events-section')}>
+                      Events
+                    </li>
+                    <li onClick={() => scrollToSectionId('contributors')}>
+                      Contributors
+                    </li>
+                    <li onClick={() => scrollToSectionId('governance')}>
+                      Governance
+                    </li>
+                    <li onClick={() => scrollToSectionId('gear-section')}>
+                      Gear
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div className='row'>
+                <div className='col-2' />
+                <div className='col-8'>
+                  <SpaceStation className={styles.spaceStation} />
+                </div>
+                <div className='col-2' />
               </div>
             </div>
           </div>
@@ -329,7 +335,9 @@ const CommunityPage = () => {
                 </h2>
                 <p className={styles.heroSubtitle}>
                   The overall role of the Board is to ensure a long-term well-being of the project,
-                  both technically and as a community. Read about or governance structure here.
+                  both technically and as a community. Read about or governance structure
+                  <a className={styles.link} href='https://github.com/pixie-labs/pixie/blob/main/GOVERNANCE.md' target='_blank' rel='noreferrer'>here</a>
+                  .
                 </p>
                 <div className={styles.team}>
                   <h3>Project Team Members</h3>
@@ -343,7 +351,7 @@ const CommunityPage = () => {
                         {' '}
                         New Relic
                       </>
-)}
+                    )}
                   />
                   <Founder
                     img={a1}
@@ -355,7 +363,7 @@ const CommunityPage = () => {
                         {' '}
                         New Relic
                       </>
-)}
+                    )}
                   />
                 </div>
 
@@ -370,7 +378,7 @@ const CommunityPage = () => {
                         <br />
                         Sourcegraph
                       </>
-)}
+                    )}
                   />
                   <Founder img={you} name='TBD' position='Engineer' />
                 </div>
@@ -386,7 +394,7 @@ const CommunityPage = () => {
                         {' '}
                         Google Cloud Platform
                       </>
-)}
+                    )}
                   />
                   <Founder
                     img={jaana}
@@ -397,7 +405,7 @@ const CommunityPage = () => {
                         <br />
                         Amazon Web Services
                       </>
-                  )}
+                    )}
                   />
                 </div>
               </div>

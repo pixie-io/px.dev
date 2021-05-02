@@ -68,8 +68,7 @@ const Enterprise = () => (
                     <p>
                       100% free hosted version of the open source project.
                       A community offering by New Relic.
-                      {'<'}
-                      3
+                      ❤️
                     </p>
                   </div>
                 </div>

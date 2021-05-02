@@ -91,7 +91,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
              🚀
           </span>
           <span className='hide-desktop'>
-                <a href='https://github.com/cncf/toc/issues/651' target='_blank' rel='noreferrer'>We’re in the process of contributing Pixie to the CNCF.</a>
+                <a href='https://github.com/cncf/toc/issues/651' target='_blank' rel='noreferrer'>We’re contributing Pixie to the CNCF.</a>
           </span>
 
           <div

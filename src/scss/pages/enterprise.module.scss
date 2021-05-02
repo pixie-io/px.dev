@@ -72,10 +72,21 @@
 
     }
 
+
     .heroButton, .heroButtonCenter {
-      border: 1px solid #12D6D6;
+      border: 1px solid white;
       padding: 24px;
       margin-bottom: 24px;
+      border-radius: 8px;
+
+      &:hover {
+        background: linear-gradient(132.03deg, rgba(18, 214, 214, 0.1) 4.19%, rgba(18, 214, 214, 0) 81.59%);
+        border: 1px solid #12D6D6;
+      }
+    }
+
+    .heroButtonCenter {
+      border-style: dashed;
 
       &:hover {
         background: linear-gradient(132.03deg, rgba(18, 214, 214, 0.1) 4.19%, rgba(18, 214, 214, 0) 81.59%);

@@ -106,12 +106,8 @@
     }
 
     a {
-      color: inherit;
+      color: #12D6D6;
       padding-left: 12px;
-
-      &:hover {
-        color: #12D6D6;
-      }
     }
 
     @media (max-width: 1000px) {
