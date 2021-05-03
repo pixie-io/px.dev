@@ -31,10 +31,8 @@ import github from '../../images/footer/github-icon.svg';
 import slack from '../../images/footer/slack-icon.svg';
 import youtube from '../../images/footer/youtube-icon.svg';
 import twitter from '../../images/footer/twitter-icon.svg';
-import pixieLogo from '../../images/pixie-new-logo.svg';
-
-import { docsRedirect, loginRedirect, signupRedirect } from '../shared/tracking-utils';
-import HeaderDropdown from './header-dropdown';
+import pixieLogo from '../../images/pixie-oss.svg';
+import { docsRedirect } from '../shared/tracking-utils';
 
 const Header = ({ whiteHeader, transparentMenu }) => {
   const [open, setOpen] = useState(false);
@@ -84,16 +82,16 @@ const Header = ({ whiteHeader, transparentMenu }) => {
         <div className={styles.newsBar}>
 
           <span className='hide-not-desktop'>
-             Join us for our next Pixienaut Monthly call on May 27th.
+             We’re in the process of contributing Pixie to the CNCF.
             {' '}
-            <a href='/community/'>
+            <a href='https://github.com/cncf/toc/issues/651' target='_blank' rel='noreferrer'>
                    Learn more
             </a>
             {' '}
              🚀
           </span>
           <span className='hide-desktop'>
-                <a href='/community/'>Join us for our Pixienaut Monthly on May 27th.</a>
+                <a href='https://github.com/cncf/toc/issues/651' target='_blank' rel='noreferrer'>We’re contributing Pixie to the CNCF.</a>
           </span>
 
           <div
@@ -133,18 +131,11 @@ const Header = ({ whiteHeader, transparentMenu }) => {
         </div>
         <div className={`hide-mobile hide-tablet ${styles.menu}`}>
           <ul>
+
             <li>
-              <Link to='/beta'>What&apos;s Live?</Link>
-            </li>
-            <li>
-              <HeaderDropdown title='Team'>
-                <Link to='/about'>
-                  About
-                </Link>
-                <Link to='/careers'>
-                  Careers
-                </Link>
-              </HeaderDropdown>
+              <a href='#' onClick={(e) => docsRedirect(e)}>
+                Docs
+              </a>
             </li>
             <li>
               <a href='https://blog.pixielabs.ai/' target='_blank' rel='noreferrer'>
@@ -157,18 +148,13 @@ const Header = ({ whiteHeader, transparentMenu }) => {
               </Link>
             </li>
             <li>
-              <a href='#' onClick={(e) => docsRedirect(e)}>
-                Docs
-              </a>
-            </li>
-            <li>
-              <a href='#' onClick={(e) => loginRedirect(e)}>
-                Sign In
-              </a>
+              <Link to='/enterprise'>
+                Enterprise
+              </Link>
             </li>
             <li className={styles.colored}>
-              <a href='https://work.withpixie.ai/auth/signup' target='_blank' rel='noreferrer'>
-                JOIN US ON SLACK
+              <a href='https://docs.pixielabs.ai/installing-pixie/quick-start/' target='_blank' rel='noreferrer'>
+                GET STARTED
               </a>
             </li>
           </ul>
@@ -193,25 +179,6 @@ const Header = ({ whiteHeader, transparentMenu }) => {
               <ul>
                 <li>
                   <a
-                    href='https://withpixie.ai/login'
-                    onClick={(e) => loginRedirect(e)}
-                  >
-                    Log-in
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='https://withpixie.ai/signup'
-                    onClick={(e) => signupRedirect(e)}
-                  >
-                    Sign-up
-                  </a>
-                </li>
-                <li>
-                  <Link to='/beta'>What&apos;s Live?</Link>
-                </li>
-                <li>
-                  <a
                     href='https://work.withpixie.ai/docs'
                     onClick={(e) => docsRedirect(e)}
                   >
@@ -229,32 +196,14 @@ const Header = ({ whiteHeader, transparentMenu }) => {
               <em>Team</em>
               <ul>
                 <li>
-                  <Link to='/about'>About</Link>
-                </li>
-                <li>
                   <Link to='/community'>Community</Link>
                 </li>
                 <li>
-                  <Link to='/careers'>Careers</Link>
+                  <Link to='/enterprise'>Enterprise</Link>
                 </li>
               </ul>
             </div>
-            <div>
-              <em>Help & support</em>
-              <ul>
-                <li>
-                  <a href='https://slackin.withpixie.ai'>
-                    Join Slack Community
-                  </a>
-                </li>
-                <li>
-                  <Link to='/contact/#sales'>Contact Sales</Link>
-                </li>
-                <li>
-                  <Link to='/contact/#support'>Email us</Link>
-                </li>
-              </ul>
-            </div>
+
           </div>
           <div className={styles.links}>
 

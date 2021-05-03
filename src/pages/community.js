@@ -17,35 +17,59 @@
  */
 
 import React from 'react';
+
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import styles from '../scss/pages/community.module.scss';
-import onlineForums from '../images/community/online-forums.png';
-import becomePixienaut from '../images/community/Become a Pixienaut Icon.png';
-import githubIcon from '../images/community/github-icon.svg';
-import slackIcon from '../images/community/slack-icon.svg';
-import youtubeIcon from '../images/community/youtube-icon.svg';
-import twitterIcon from '../images/community/twitter-icon.svg';
 import pin from '../images/community/pin.svg';
 import attachment from '../images/community/attachment.svg';
-import hostEvent from '../images/community/host-an-event.svg';
 import Button from '../components/shared/button';
 import Illustration from '../components/illustration';
 import SpaceStation from '../images/community/community-hero.inline.svg';
 
+import github from '../images/community/icons/github.svg';
+import slack from '../images/community/icons/slack.svg';
+import meetup from '../images/community/icons/meetup.svg';
+import twitter from '../images/community/icons/twitter.svg';
+import governance from '../images/community/icons/governance.svg';
+import zain from '../images/about/zain.png';
+import ishan from '../images/about/ishan.png';
+import a1 from '../images/about/avatars/a1.png';
+import a2 from '../images/about/avatars/a2.png';
+import a3 from '../images/about/avatars/a3.png';
+import a4 from '../images/about/avatars/a4.png';
+import a5 from '../images/about/avatars/a5.png';
+import a6 from '../images/about/avatars/a6.png';
+import a7 from '../images/about/avatars/a7.png';
+import a8 from '../images/about/avatars/a8.png';
+import a9 from '../images/about/avatars/a9.png';
+import a11 from '../images/about/avatars/Pete Stevenson@2x.png';
+import a12 from '../images/about/avatars/Vishal Jain@2x.png';
+import a13 from '../images/about/avatars/Ryan Cheng@2x.png';
+import jaana from '../images/about/avatars/jaana.png';
+import hightower from '../images/about/avatars/hightower.png';
+import dax from '../images/about/avatars/dax.png';
+import a10 from '../images/about/avatars/a10.png';
+import you from '../images/about/avatars/you-avatar.svg';
+import vectorLine from '../images/about/vector-line.svg';
+
+const Founder = ({ img, name, position }) => (
+  <div className={styles.founder}>
+    <img src={img} alt={name} />
+    <p>{name}</p>
+    <p className={styles.founderPosition}>{position}</p>
+  </div>
+);
+
 const CommunityPage = () => {
   const events = [
     {
-      title: 'Pixienaut Monthly - April',
-      date: 'April  22, 2021',
-      location: 'Online (Zoom)',
-      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA0MjJUMTczMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com',
-    }, {
       title: 'Pixienaut Monthly - May',
       date: 'May  27, 2021',
       location: 'Online (Zoom)',
       link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA1MjdUMTczMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com&scp=ALL',
-    }, {
+    },
+    {
       title: 'Pixienaut Monthly - June',
       date: 'June 24, 2021',
       location: 'Online (Zoom)',
@@ -92,119 +116,119 @@ const CommunityPage = () => {
                 <div className='col-8'>
                   <h1>Be a Pixienaut</h1>
                   <p className={styles.heroSubtitle}>
-                    We are lucky to have a diverse and enthusiastic community of
-                    early adopters who are helping shape our product and
-                    community. If you are interested in becoming a Pixienaut
+                    Pixie isn’t just a platform, it’s the community and the
+                    shared expertise around observability and debugging.
+                    If you are interested in becoming a Pixienaut,
                     you’ve come to the right place!
                   </p>
                 </div>
                 <div className='col-2' />
-                <div className='row'>
-                  <div className='col-12'>
-                    <ul className={styles.inlineNav}>
-                      <li onClick={() => scrollToSectionId('become-section')}>
-                        Join
-                      </li>
-                      <li onClick={() => scrollToSectionId('become-section')}>
-                        Forum
-                      </li>
-                      <li onClick={() => scrollToSectionId('events-section')}>
-                        Events
-                      </li>
-                      <li onClick={() => scrollToSectionId('gear-section')}>
-                        Gear
-                      </li>
-                    </ul>
-                  </div>
+              </div>
+              <div className='row'>
+                <div className='col-12'>
+                  <ul className={styles.inlineNav}>
+                    <li onClick={() => scrollToSectionId('get-involved')}>
+                      Get Involved
+                    </li>
+                    <li onClick={() => scrollToSectionId('events-section')}>
+                      Events
+                    </li>
+                    <li onClick={() => scrollToSectionId('contributors')}>
+                      Contributors
+                    </li>
+                    <li onClick={() => scrollToSectionId('governance')}>
+                      Governance
+                    </li>
+                    <li onClick={() => scrollToSectionId('gear-section')}>
+                      Gear
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div className='row'>
+                <div className='col-2' />
+                <div className='col-8'>
+                  <SpaceStation className={styles.spaceStation} />
+                </div>
+                <div className='col-2' />
               </div>
             </div>
           </div>
-          <SpaceStation className={styles.spaceStation} />
         </section>
-        <section className={styles.become} id='become-section'>
+        <section className={styles.getInvolved} id='get-involved'>
           <div className='container'>
             <div className='row'>
-              <div className='col-5 m36'>
-                <div className={styles.catTitle}>
-                  <img src={becomePixienaut} alt='cloud' />
-                  <h2>
-                    Join the
-                    <br />
-                    Group
-                  </h2>
-                </div>
-                <p className={styles.regular}>
-                  Our early adopters, partners, and collaborators! Want to help
-                  us shape the product & community?
-                </p>
-                <ul className={styles.verticalLinks}>
-                  <li>
-                    Join a
-                    {' '}
-                    <span onClick={() => scrollToSectionId('events-section')}>
-                      call
-                    </span>
-                  </li>
-                  <li>
-                    More about the group
-                    {' '}
-                    <a
-                      href='https://github.com/pixie-labs/pixie/tree/main/pixienauts'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      here
-                    </a>
-                  </li>
-                  {' '}
-                  <li>
-                    Want to contribute?
-                    {' '}
-                    <a
-                      href='https://slackin.withpixie.ai/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      slack us on #pixienaut
-                    </a>
-                  </li>
-                </ul>
+              <div className='col-2' />
+              <div className='col-8'>
+                <div className={styles.marker} style={{ margin: '20px auto' }} />
+                <h2>Get Involved</h2>
+
               </div>
               <div className='col-2' />
-              <div className='col-5 m36'>
-                <div className={styles.catTitle}>
-                  <img src={onlineForums} alt='cloud' />
-                  <h2>
-                    Check out
-                    <br />
-                    or Forums
-                  </h2>
-                </div>
-                <p className={styles.regular}>
-                  Trade ideas, share scripts and learn on these community hosted
-                  forums:
-                </p>
-                <ul className={styles.platformLinks}>
+            </div>
+
+            <div className='row'>
+              <div className='col-12 '>
+                <ul>
                   <li>
-                    <a href='https://github.com/pixie-labs/pixie'>
-                      <img src={githubIcon} alt='github logo' />
-                    </a>
+                    <div>
+                      <img src={slack} alt='' />
+                    </div>
+                    <p>
+                      Join
+                      <a href='https://slackin.withpixie.ai'>
+                        Pixie’s Slack
+                      </a>
+                      workspace for live conversations and quick questions.
+                    </p>
                   </li>
                   <li>
-                    <a href='https://slackin.withpixie.ai'>
-                      <img src={slackIcon} alt='slack logo' />
-                    </a>
+                    <div>
+                      <img src={meetup} alt='' />
+                    </div>
+                    <p>
+                      Attend a monthly
+                      <span className={styles.whiteLink} onClick={() => scrollToSectionId('events-section')}>
+                        Pixienaut meetup
+                      </span>
+                      to hear updates on the Pixie project and ask questions of the maintainers.
+                    </p>
                   </li>
                   <li>
-                    <a href='https://www.youtube.com/channel/UCOMCDRvBVNIS0lCyOmst7eg/featured'>
-                      <img src={youtubeIcon} alt='youtube logo' />
-                    </a>
+                    <div>
+                      <img src={twitter} alt='' />
+                    </div>
+                    <p>
+                      Follow Pixie on
+                      <a href='https://twitter.com/pixie_run'>
+                        Twitter
+                      </a>
+                      for the latest news and announcements.
+                    </p>
                   </li>
                   <li>
-                    <a href='https://twitter.com/pixie_run'>
-                      <img src={twitterIcon} alt='twitter logo' />
-                    </a>
+                    <div>
+                      <img src={github} alt='' />
+                    </div>
+                    <p>
+                      Check out the
+                      <a href='https://github.com/pixie-labs/pixie'>
+                        GitHub
+                      </a>
+                      repo to see the source code.
+                    </p>
+                  </li>
+                  <li>
+                    <div>
+                      <img src={governance} alt='' />
+                    </div>
+                    <p>
+                      Read our
+                      <span className={styles.whiteLink} onClick={() => scrollToSectionId('governance')}>
+                        Governance
+                      </span>
+                      doc to learn more about how the Pixie project is managed.
+                    </p>
                   </li>
                 </ul>
               </div>
@@ -216,6 +240,8 @@ const CommunityPage = () => {
             <div className='row' id='events-section'>
               <div className='col-2' />
               <div className='col-8'>
+                <div className={styles.marker} style={{ margin: '20px auto' }} />
+
                 <h2>Attend Pixienaut Meetups</h2>
                 <p className={styles.heroSubtitle}>
                   Every month, Pixienauts around the world organize meetups,
@@ -255,38 +281,149 @@ const CommunityPage = () => {
             ))}
           </div>
         </section>
-        <section className={`${styles.people} container`}>
-          <Illustration filename='Person1.png' alt='person 1' />
-          <Illustration filename='Person2.png' alt='person 1' />
-          <Illustration filename='Person3.png' alt='person 1' />
-          <Illustration filename='Person4.png' alt='person 1' />
-          <Illustration filename='Person5.png' alt='person 1' />
-          <Illustration filename='Person6.png' alt='person 1' />
-          <Illustration filename='Person7.png' alt='person 1' />
-          <Illustration filename='Person9.png' alt='person 1' />
-          <Illustration filename='Person16.png' alt='person 1' />
-          <Illustration filename='Person8.png' alt='person 1' />
-          <Illustration filename='Person11.png' alt='person 1' />
-          <Illustration filename='Person12.png' alt='person 1' />
-          <Illustration filename='Person13.png' alt='person 1' />
-          <Illustration filename='Person14.png' alt='person 1' />
-          <Illustration filename='Person10.png' alt='person 1' />
-          <Illustration filename='Person15.png' alt='person 1' />
-          <Illustration filename='Person17.png' alt='person 1' />
-          <Illustration filename='Person18.png' alt='person 1' />
+
+        <section className={styles.foundingTeam} id='contributors'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-12'>
+                <h2>
+                  <div className={styles.marker} style={{ margin: '20px auto' }} />
+                  Meet the Contributors
+                </h2>
+                <p className={styles.heroSubtitle}>
+                  Pixie was originally built by members of the Pixie Labs team.
+                </p>
+                <Founder img={zain} name='Zain Asgar' position='Co-Founder/CEO' />
+                <Founder img={ishan} name='Ishan Mukherjee' position='Co-Founder/CPO' />
+                <Founder img={a1} name='Michelle Nguyen' position='Founding Engineer' />
+                <Founder img={a2} name='Phillip Kuznetsov' position='Founding Engineer' />
+                <Founder img={a3} name='Yaxiong Zhao' position='Founding Engineer' />
+                <Founder img={a4} name='Omid Azizi' position='Founding Engineer' />
+                <Founder img={a5} name='Natalie Serrino' position='Founding Engineer' />
+                <Founder img={a6} name='James Bartlett' position='Founding Engineer' />
+                <Founder img={a7} name='Hannah Troisi' position='Founding Engineer' />
+                <Founder img={a8} name='Nick Lanam' position='Founding Engineer' />
+                <Founder img={a9} name='Vihang Mehta' position='Founding Engineer' />
+                <Founder img={a11} name='Pete Stevenson' position='Founding Engineer' />
+                <Founder img={a12} name='Vishal Jain' position='Founding Engineer' />
+                <Founder img={a13} name='Ryan Cheng' position='Founding Engineer' />
+                <Founder img={a10} name='James Thomas' position='Research Intern' />
+
+                <div className={styles.youLine}>
+                  <Founder img={you} name='You!' position='' />
+                  <img src={vectorLine} alt='' className={styles.vectorLine} />
+                  <div>
+                    <h5>
+                      This is could be you, contribute the Pixie project!
+                    </h5>
+                    <a href='https://github.com/pixie-labs/pixie/pulls'>
+                      <button type='button'>CONTRIBUTE</button>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='container' id='governance'>
+            <div className='row'>
+              <div className='col-12'>
+                <h2>
+                  <div className={styles.marker} style={{ margin: '20px auto' }} />
+                  Meet the Leadership
+                </h2>
+                <p className={styles.heroSubtitle}>
+                  The overall role of the Board is to ensure a long-term well-being of the project,
+                  both technically and as a community. Read about or governance structure
+                  <a className={styles.link} href='https://github.com/pixie-labs/pixie/blob/main/GOVERNANCE.md' target='_blank' rel='noreferrer'>here</a>
+                  .
+                </p>
+                <div className={styles.team}>
+                  <h3>Project Team Members</h3>
+                  <Founder
+                    img={zain}
+                    name='Zain Asgar'
+                    position={(
+                      <>
+                        GM/GVP - Pixie & Open Source,
+                        <br />
+                        {' '}
+                        New Relic
+                      </>
+                    )}
+                  />
+                  <Founder
+                    img={a1}
+                    name='Michelle Nguyen'
+                    position={(
+                      <>
+                        Principal Engineer,
+                        <br />
+                        {' '}
+                        New Relic
+                      </>
+                    )}
+                  />
+                </div>
+
+                <div className={styles.team}>
+                  <h3>End-User Members</h3>
+                  <Founder
+                    img={dax}
+                    name='Dax McDonald'
+                    position={(
+                      <>
+                        Software Engineer,
+                        <br />
+                        Sourcegraph
+                      </>
+                    )}
+                  />
+                  <Founder img={you} name='TBD' position='Engineer' />
+                </div>
+                <div className={styles.team}>
+                  <h3>Community Members</h3>
+                  <Founder
+                    img={hightower}
+                    name='Kelsey Hightower'
+                    position={(
+                      <>
+                        Staff Developer Advocate,
+                        <br />
+                        {' '}
+                        Google Cloud Platform
+                      </>
+                    )}
+                  />
+                  <Founder
+                    img={jaana}
+                    name='Jaana Dogan'
+                    position={(
+                      <>
+                        Principle Engineer,
+                        <br />
+                        Amazon Web Services
+                      </>
+                    )}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
         </section>
         <section className={styles.goodies} id='gear-section'>
           <div className='container'>
             <div className='row'>
               <div className='col-12'>
-                <h2>Learn who Pixienauts are and download gear</h2>
+                <div className={styles.marker} style={{ margin: '20px auto' }} />
+                <h2>
+                  Get Gear
+                </h2>
                 <p className={styles.heroSubtitle}>
-                  Wondering what’s the story behind all the space tech
-                  analogies?
-                  <br />
-                  You have come to the right place!
+                  Download stickers, wallpapers, illustrations.
                 </p>
-
                 <Illustration
                   critical
                   filename='inline-stars.png'
@@ -306,7 +443,7 @@ const CommunityPage = () => {
           <div className='container' style={{ zIndex: 1 }}>
             <div className='row'>
               <div className='col-4'>
-                <h3>Badges & Stickers</h3>
+                <h3>Stickers</h3>
                 <div className={styles.file}>
                   <a
                     target='_blank'
@@ -446,32 +583,6 @@ const CommunityPage = () => {
               </div>
             </div>
           </div>
-        </section>
-        <section className={styles.hostEvents}>
-          <div className='container'>
-            <div className={styles.slackCommunity}>
-              <div className='row'>
-                <div className='col-6' />
-                <div className='col-6'>
-                  <h4>Coming soon</h4>
-                  <h2>
-                    We’ll be adding community online meetups, events and blogs
-                    soon
-                  </h2>
-                  <a
-                    href='https://slackin.withpixie.ai/'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='button'
-                  >
-                    {' '}
-                    JOIN COMMUNITY SLACK
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <img src={hostEvent} alt='moon' className={styles.hostEvent} />
         </section>
       </div>
     </Layout>

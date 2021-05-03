@@ -21,35 +21,17 @@
 .home {
   color: #B2B5BB;
   position: relative;
+  background-color: #121212;
 
   .section-icon {
     margin: 0 auto;
     display: block;
   }
 
-  .starField {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-    overflow: hidden;
-
-    .starsBackground {
-      border: 0;
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      overflow-x: hidden;
-      @media (max-width: 1000px) {
-        width: 140%;
-        transform: translateX(-10%)
-      }
-    }
-  }
 
   .hero-section {
+    background-image: url('../../images/homepage/stars-field-use-pixie-for.png');
+
     padding-top: 150px;
     text-align: center;
     margin-bottom: 0;
@@ -92,38 +74,6 @@
       }
     }
 
-    .overtext {
-      font-size: 18px;
-      line-height: 47px;
-      text-align: center;
-      color: #12D6D6;
-      border-radius: 5px;
-      width: max-content;
-      padding-right: 16px;
-      left: 16px;
-      margin: 0 auto;
-      font-weight: bold;
-      position: relative;
-      letter-spacing: 3px;
-      @media (max-width: 1000px) {
-        font-size: 14px;
-        line-height: 37px;
-      }
-
-      &:before {
-        position: absolute;
-        content: '';
-        background: linear-gradient(92.14deg, #12D6D6 -0.49%, rgba(18, 214, 214, 0.03) 97.93%);
-        display: block;
-        height: 100%;
-        width: 100%;
-        opacity: 0.3;
-        border-radius: 6px;
-        left: -16px;
-
-
-      }
-    }
 
   }
 
@@ -134,8 +84,6 @@
       padding-top: 25px;
       padding-bottom: 75px;
     }
-    background: linear-gradient(180deg, rgba(82, 255, 224, 0) 10.4%, rgba(82, 255, 224, 0.00103321) 10.41%, rgba(81, 220, 228, 0.02) 58.72%, rgba(81, 207, 229, 0.0301814) 73.83%, rgba(81, 169, 233, 0.06) 100%);
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
 
     strong {
       color: #12D6D6;
@@ -210,80 +158,16 @@
     background-color: white;
   }
 
-  section.carousel {
-    position: relative;
-    padding-bottom: 150px;
-    padding-top: 50px;
-    background-color: #161616;
-    background-image: linear-gradient(0deg, rgba(82, 255, 224, 0) 10.4%, rgba(82, 255, 224, 0.00103321) 10.41%, rgba(81, 220, 228, 0.02) 58.72%, rgba(81, 207, 229, 0.0301814) 73.83%, rgba(81, 169, 233, 0.06) 100%);
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-
-
-    overflow: hidden;
-
-    h5.carouselTitle {
-      font-weight: normal;
-      line-height: 30px;
-      margin-bottom: 70px;
-      color: white;
-      font-size: 22px;
-      text-align: center;
-    }
-
-    .carouselLeftButton {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
-      background: rgba(18, 214, 214, 0.1);
-      color: #12D6D6
-
-    }
-
-    .carouselRightButton {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 0;
-      background: rgba(18, 214, 214, 0.1);
-      color: #12D6D6
-    }
-
-    .carouselButtonGroup {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 100;
-      width: 95%;
-      max-width: 1400px;
-      height: 50px;
-    }
-
-    .carouselContainer {
-      @media (max-width: 1000px) {
-        max-width: 90%;
-        margin: 0 auto;
-
-      }
-      @media (max-width: 768px) {
-        max-width: 80%;
-        margin: 0 auto;
-      }
-    }
-
-  }
 
   .featuresSection {
     padding-top: 50px;
     margin-bottom: 0;
     overflow: hidden;
-    background-color: white;
     position: relative;
 
 
     * {
-      color: black
+      color: white
     }
 
 
@@ -293,7 +177,7 @@
       text-align: center;
       margin: 0;
       padding: 15px 0 32px;
-      color: black;
+      color: white;
       padding-left: 15px;
       padding-bottom: 85px;
       @media (max-width: 768px) {
@@ -310,7 +194,7 @@
       line-height: 38px;
       font-weight: normal;
       text-align: left;
-      color: black;
+      color: white;
       @media (max-width: 768px) {
         font-size: 20px;
         line-height: 36px;
@@ -325,7 +209,7 @@
       line-height: 30px;
       font-weight: normal;
       margin-top: 0;
-      color: black;
+      color: white;
       @media (max-width: 1000px) {
         margin-bottom: 16px;
       }
@@ -347,7 +231,7 @@
     p {
       font-size: 16px;
       line-height: 28px;
-      color: #121212;
+      color: white;
 
     }
 
@@ -472,7 +356,6 @@
     display: block;
     background-image: url('../../images/homepage/stars-field-use-pixie-for.png');
     background-size: cover;
-    padding: 150px 0;
     position: relative;
     overflow: hidden;
     @media (max-width: 1000px) {
@@ -496,6 +379,13 @@
       }
     }
 
+    .requirements {
+      padding-top: 65px;
+      @media (max-width: 1000px) {
+        padding-top: 15px;
+      }
+    }
+
     p {
       color: white;
 
@@ -509,6 +399,7 @@
       @media (max-width: 1000px) {
         padding-bottom: 75px;
       }
+      display: flex;
 
       a {
         img {
@@ -535,22 +426,28 @@
 
       li {
         list-style: none;
-        width: calc(33% - 12 * 3px);
+        width: calc(33% - 12 * 3px - 4px);
         @media (max-width: 1000px) {
-          width: calc(50% - 12 * 4px);
+          width: calc(50% - 12 * 4px - 4px);
         }
-
-        background: linear-gradient(132.03deg, rgba(18, 214, 214, 0.1) 4.19%, rgba(18, 214, 214, 0) 81.59%);
+        border-radius: 6px;
+        background: transparent;
         padding: 12px;
         margin-right: 12px;
         margin-bottom: 50px;
         padding-bottom: 16px;
+        border: 2px solid #C4C4C4;
+
+        &:hover {
+          border-color: #12D6D6;
+        }
 
         a {
           display: flex;
           flex-direction: column;
           text-align: center;
           font-size: 16px;
+
 
           img {
             height: 55px;
@@ -566,7 +463,6 @@
   .environmentsSection {
     padding-top: 150px;
     padding-bottom: 125px;
-    background-color: white;
     position: relative;
     text-align: center;
     @media (max-width: 1000px) {
@@ -574,12 +470,12 @@
       padding-bottom: 75px;
     }
 
-    h2 {
+    h3 {
       font-size: 36px;
       line-height: 45px;
-      text-align: left;
+      text-align: center;
       font-weight: normal;
-      color: black;
+      color: white;
       padding-top: 32px;
       @media (max-width: 768px) {
         font-size: 24px;
@@ -587,26 +483,6 @@
         padding-bottom: 40px;
         text-align: center;
         padding-top: 8px;
-      }
-    }
-
-    .subtitle {
-      font-size: 16px;
-      line-height: 28px;
-      text-align: center;
-      margin-bottom: 50px;
-      margin-top: 100px;
-      @media (max-width: 768px) {
-        margin-top: 50px;
-      }
-      color: black;
-    }
-
-    .codeRenderer {
-      max-width: 588px;
-      margin: 40px auto 20px;
-      @media (max-width: 768px) {
-        margin-top: 10px
       }
     }
 
@@ -634,7 +510,8 @@
   .communitySection {
     padding-top: 125px;
     position: relative;
-    background-color: #161616;
+    background-color: #121212;
+
 
     padding-bottom: 50px;
     @media (max-width: 1000px) {
@@ -676,7 +553,7 @@
       padding-bottom: 150px;
 
       h2 {
-        text-align: center;
+        text-align: left;
       }
 
       @media (max-width: 1000px) {
@@ -690,47 +567,11 @@
 
   }
 
-  section.openSourceSection {
-    background-color: white;
-    padding-bottom: 220px;
-    overflow: hidden;
-    @media (max-width: 1000px) {
-      padding-bottom: 120px;
-    }
-
-    img {
-      max-width: 100%
-    }
-
-    p {
-      color: black;
-    }
-
-
-    h3 {
-      position: relative;
-      font-size: 52px;
-      line-height: 70px;
-      font-weight: normal;
-      text-align: left;
-      color: black;
-      padding-top: 24px;
-      @media (max-width: 768px) {
-        font-size: 20px;
-        line-height: 36px;
-        text-align: left;
-        padding-bottom: 0;
-      }
-    }
-  }
 
   .bottomStars {
-    background-position: top;
-    background-size: contain;
     background-repeat: no-repeat;
-    background-color: #161616;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
+    background-color: #121212;
+    background-image: url('../../images/homepage/stars-field-use-pixie-for.png');
   }
 
   .blueButton {
@@ -910,14 +751,3 @@
   background-color: #12D6D6;
 }
 
-
-.rotatedOrnament {
-  position: absolute;
-  background: #12D6D6;
-  opacity: 0.1;
-  border-radius: 2px;
-  transform: rotate(-45deg);
-  @media (max-width: 1000px) {
-    display: none;
-  }
-}
