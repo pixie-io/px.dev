@@ -156,6 +156,7 @@ const Homepage = () => {
         <section className={styles.featuresSection}>
           <div className='container'>
             <h2>
+              <div className={styles.marker} style={{ margin: '20px auto' }} />
               Why use Pixie?
             </h2>
 
@@ -281,7 +282,7 @@ const Homepage = () => {
         <section className={styles.usePixieForSection}>
           <div className='container'>
             <div className='row'>
-              <div className='col-4'>
+              <div className='col-5'>
                 <h3>
                   <div className={styles.titleSegment} />
                   Use Pixie For
@@ -310,14 +311,14 @@ const Homepage = () => {
                   </a>
                 </div>
               </div>
-              <div className='col-8'>
+              <div className='col-7'>
                 <div className={styles.environmentsButtons}>
-                <CategoryButton
-                  href='https://docs.pixielabs.ai/using-pixie/use-cases/service-health'
-                  svg={serviceHealth}
-                  label='Service Health'
-                  height='51px'
-                />
+                  <CategoryButton
+                    href='https://docs.pixielabs.ai/using-pixie/use-cases/service-health'
+                    svg={serviceHealth}
+                    label='Service Health'
+                    height='51px'
+                  />
                   <CategoryButton
                     href='https://docs.pixielabs.ai/using-pixie/use-cases/code-tracing/'
                     svg={dl}
@@ -367,7 +368,10 @@ const Homepage = () => {
         </section>
 
         <section className={styles.environmentsSection}>
-          <h3>Pixie works with...</h3>
+          <h2>
+            <div className={styles.marker} style={{ margin: '20px auto' }} />
+            Pixie works with...
+          </h2>
           <div className={styles.environmentsButtons}>
             <CategoryButton
               href='https://docs.pixielabs.ai/installing-pixie/install-guides/minikube-setup'
@@ -409,6 +413,7 @@ const Homepage = () => {
             <div className='container'>
               <div className={styles.communitySectionTitle}>
                 <h2>
+                  <div className={styles.titleSegment} />
                   Interested in
                   {' '}
                   <br className='hide-mobile hide-tablet' />

@@ -20,14 +20,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import styles from './footer.module.scss';
-import { docsRedirect } from '../shared/tracking-utils';
 import pixieLogo from '../../images/pixie-oss.svg';
-
-import docs from '../../images/footer/docs-icon.svg';
 import github from '../../images/footer/github-icon.svg';
-import slack from '../../images/footer/slack-icon.svg';
-import youtube from '../../images/footer/youtube-icon.svg';
-import twitter from '../../images/footer/twitter-icon.svg';
 
 const Footer = ({ whiteFooter }) => (
   <footer className={`${whiteFooter ? styles.whitefooter : ''} ${styles.footer}`} style={{ position: 'relative' }}>
@@ -38,7 +32,7 @@ const Footer = ({ whiteFooter }) => (
         {' '}
         <a href='https://newrelic.com/' target='_blank' rel='noreferrer'>New Relic, Inc.</a>
       </p>
-        </div>
+    </div>
     <div className={styles.copyrightBar}>
       <Link to='/terms' className={styles.mutedLink}>Terms and Privacy</Link>
       <span> Copyright 2021 Pixie Authors. All rights reserved.</span>
@@ -46,11 +40,7 @@ const Footer = ({ whiteFooter }) => (
         <img src={github} alt='github' />
         Edit on GitHub
       </a>
-
-
     </div>
-
-
   </footer>
 );
 Footer.propTypes = {

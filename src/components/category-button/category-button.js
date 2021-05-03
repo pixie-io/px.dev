@@ -21,8 +21,8 @@ import styles from './category-button.module.scss';
 import LargeIcon from '../homepage/large-icons';
 
 const CategoryButton = ({
-                          label, image, href, height, svg,
-                        }) => (
+  label, image, href, height, svg,
+}) => (
   <a href={href} className={styles.button} target='_blank' rel='noopener noreferrer'>
     {image && <LargeIcon filename={image} alt={label} style={{ height }} />}
     {svg && <img src={svg} style={{ height }} className={styles.image} />}

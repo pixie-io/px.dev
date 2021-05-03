@@ -37,6 +37,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
+    filter:  brightness(0) invert(1);
+
   }
 
   > div {
@@ -60,6 +62,9 @@
   &:hover {
     border: 2px solid #12D6D6;
     color: #12D6D6;
+    .image{
+      filter:  none;
+    }
   }
 
 }

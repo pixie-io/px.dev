@@ -470,9 +470,8 @@
       padding-bottom: 75px;
     }
 
-    h3 {
-      font-size: 36px;
-      line-height: 45px;
+    h2 {
+      position: relative;
       text-align: center;
       font-weight: normal;
       color: white;
@@ -541,6 +540,8 @@
 
       h2 {
         text-align: left;
+        position: relative;
+        padding-top: 24px;
       }
 
       @media (max-width: 1000px) {
@@ -750,5 +751,17 @@
   div {
     min-width: 100px;
 
+  }
+}
+
+.marker {
+  display: block;
+  height: 11px;
+  width: 60px;
+  background: #12D6D6;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  @media (max-width: 1000px) {
+    display: none;
   }
 }
