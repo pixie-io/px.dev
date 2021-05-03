@@ -20,7 +20,6 @@
 
 .footer {
   padding-top: 128px;
-  padding-bottom: 33px;
   position: relative;
 
   a {
@@ -112,6 +111,10 @@
 
     @media (max-width: 1000px) {
       font-size: 14px;
+    }
+
+    .mutedLink {
+      color: inherit;
     }
   }
 

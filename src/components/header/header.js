@@ -127,6 +127,9 @@ const Header = ({ whiteHeader, transparentMenu }) => {
             <a href='https://twitter.com/pixie_run'>
               <img src={twitter} alt='twitter' />
             </a>
+            <a href='https://www.youtube.com/channel/UCOMCDRvBVNIS0lCyOmst7eg/featured'>
+              <img src={youtube} alt='youtube' />
+            </a>
           </div>
         </div>
         <div className={`hide-mobile hide-tablet ${styles.menu}`}>
