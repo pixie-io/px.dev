@@ -283,10 +283,10 @@ const Homepage = () => {
           <div className='container'>
             <div className='row'>
               <div className='col-5'>
-                <h3>
+                <h2>
                   <div className={styles.titleSegment} />
                   Use Pixie For
-                </h3>
+                </h2>
 
                 <p className={styles.requirements}>
                   Requirements:
