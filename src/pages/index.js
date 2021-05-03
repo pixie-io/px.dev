@@ -281,8 +281,7 @@ const Homepage = () => {
         <section className={styles.usePixieForSection}>
           <div className='container'>
             <div className='row'>
-              <div className='col-1' />
-              <div className='col-5'>
+              <div className='col-4'>
                 <h3>
                   <div className={styles.titleSegment} />
                   Use Pixie For
@@ -311,71 +310,45 @@ const Homepage = () => {
                   </a>
                 </div>
               </div>
-              <div className='col-6'>
-                <ul>
-                  <li>
-                    <a
-                      href='https://docs.pixielabs.ai/using-pixie/use-cases/service-health'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <img src={serviceHealth} alt='Service Health' />
-                      Service Health
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='https://docs.pixielabs.ai/using-pixie/use-cases/code-tracing/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <img src={dl} alt='Dynamic Logging' />
-                      Golang Logging
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='https://docs.pixielabs.ai/using-pixie/use-cases/request-tracing'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <img src={requestTracing} alt='Request Tracing' />
-                      Request Tracing
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='https://docs.pixielabs.ai/using-pixie/use-cases/db-health'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <img src={db} alt='DB Query Profiling' />
-                      DB Query Profiling
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='https://docs.pixielabs.ai/using-pixie/use-cases/infra-health'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <img src={k8} alt='K8s Infra Health' />
-                      K8s Infra Health
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='https://docs.pixielabs.ai/using-pixie/use-cases/canary-analysis'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <img src={canary} alt='Canary Analysis' />
-                      Canary Analysis
-                    </a>
-                  </li>
-
-                </ul>
+              <div className='col-8'>
+                <div className={styles.environmentsButtons}>
+                <CategoryButton
+                  href='https://docs.pixielabs.ai/using-pixie/use-cases/service-health'
+                  svg={serviceHealth}
+                  label='Service Health'
+                  height='51px'
+                />
+                  <CategoryButton
+                    href='https://docs.pixielabs.ai/using-pixie/use-cases/code-tracing/'
+                    svg={dl}
+                    label='Golang Logging'
+                    height='51px'
+                  />
+                  <CategoryButton
+                    href='https://docs.pixielabs.ai/using-pixie/use-cases/request-tracing'
+                    svg={requestTracing}
+                    label='Request Tracing'
+                    height='51px'
+                  />
+                  <CategoryButton
+                    href='https://docs.pixielabs.ai/using-pixie/use-cases/db-health'
+                    svg={db}
+                    label='DB Query Profiling'
+                    height='51px'
+                  />
+                  <CategoryButton
+                    href='https://docs.pixielabs.ai/using-pixie/use-cases/infra-health'
+                    svg={k8}
+                    label='K8s Infra Health'
+                    height='51px'
+                  />
+                  <CategoryButton
+                    href='https://docs.pixielabs.ai/using-pixie/use-cases/canary-analysis'
+                    svg={canary}
+                    label='Canary Analysis'
+                    height='51px'
+                  />
+                </div>
 
                 <a
                   href='https://docs.pixielabs.ai/using-pixie'

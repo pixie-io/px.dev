@@ -486,20 +486,7 @@
       }
     }
 
-    .environmentsButtons {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding-bottom: 55px;
-      object-fit: cover;
 
-      div {
-        min-width: 100px;
-
-      }
-    }
 
     button {
       float: none;
@@ -751,3 +738,17 @@
   background-color: #12D6D6;
 }
 
+.environmentsButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 55px;
+  object-fit: cover;
+
+  div {
+    min-width: 100px;
+
+  }
+}
