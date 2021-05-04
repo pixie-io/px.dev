@@ -41,7 +41,9 @@ const Enterprise = () => (
             <h1>
               Hosted Pixie Offerings
             </h1>
-
+            <div className={styles.subtitle}>
+              Companies offering commercial support for Pixie.
+            </div>
           </div>
           <div className='row flex-row-desktop'>
             <div className='col-1 ' />
@@ -75,20 +77,22 @@ const Enterprise = () => (
             </div>
             <div className='col-1 ' />
           </div>
-          <div className='row'>
-            <div className='col-12'>
-              <p className={styles.subtitle}>
-                Companies offering commercial support for Pixie.
-              </p>
-              <a
-                href='https://github.com/pixie-labs/pixie/pulls'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <Button>
-                  CREATE PULL REQUEST
-                </Button>
-              </a>
+          <div className={styles.callout}>
+            <div className='row'>
+              <div className='col-12'>
+                <p className={styles.subtitle}>
+                  Offering Pixie support?
+                </p>
+                <a
+                  href='https://github.com/pixie-labs/pixie/pulls'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <Button>
+                    CREATE PULL REQUEST
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
