@@ -17,8 +17,8 @@ module.exports = {
     address: '333 Bryant St #110, San Francisco, CA 94107',
     phone: '(415) 429-8361',
     twitterUsername: '@pixie_run',
-    url: 'https://pixielabs.ai',
-    siteUrl: 'https://pixielabs.ai',
+    url: 'https://px.dev',
+    siteUrl: 'https://px.dev',
   },
   plugins: [
     {
@@ -71,13 +71,6 @@ module.exports = {
           },
           'gatsby-remark-copy-linked-files',
         ],
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/content/pages`,
-        name: 'pages',
       },
     },
     'gatsby-transformer-sharp',
@@ -138,7 +131,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-react-helmet-canonical-urls',
       options: {
-        siteUrl: 'https://pixielabs.ai',
+        siteUrl: 'https://px.dev',
       },
     },
     'gatsby-plugin-emotion',

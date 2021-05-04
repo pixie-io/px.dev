@@ -52,45 +52,6 @@ exports.onCreateNode = ({
     });
   }
 };
-exports.createPages = async ({ graphql, actions }) => {
-  const result = await graphql(`
-    query {
-    terms: allMarkdownRemark( filter: { fileAbsolutePath: { regex: "/policies/" } }) {
-      edges {
-        node {
-          fileAbsolutePath
-            fields {
-              slug
-            }
-          parent {
-          ... on File {
-            relativePath
-            base
-            name
-            relativeDirectory
-          }
-        }
-      }
-      
-    }
-  }
-     }
-  `);
-  if (result.errors) {
-    throw result.errors;
-  }
-
-  result.data.terms.edges.forEach(({ node }) => {
-    actions.createPage({
-      path: node.fields.slug,
-      component: path.resolve('./src/templates/policies-template.js'),
-      context: {
-        slug: node.fields.slug,
-      },
-    });
-  });
-  return null;
-};
 
 exports.sourceNodes = async ({
   actions: { createNode },

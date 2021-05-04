@@ -141,7 +141,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
               </a>
             </li>
             <li>
-              <a href='https://blog.pixielabs.ai/' target='_blank' rel='noreferrer'>
+              <a href='https://blog.px.dev/' target='_blank' rel='noreferrer'>
                 Blog
               </a>
             </li>
@@ -156,7 +156,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
               </Link>
             </li>
             <li className={styles.colored}>
-              <a href='https://docs.pixielabs.ai/installing-pixie/quick-start/' target='_blank' rel='noreferrer'>
+              <a href='https://docs.px.dev/installing-pixie/quick-start/' target='_blank' rel='noreferrer'>
                 GET STARTED
               </a>
             </li>
@@ -188,7 +188,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
                   </a>
                 </li>
                 <li>
-                  <a href='https://blog.pixielabs.ai/' target='_blank' rel='noreferrer'>
+                  <a href='https://blog.px.dev/' target='_blank' rel='noreferrer'>
                     Blog
                   </a>
                 </li>
