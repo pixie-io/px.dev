@@ -473,9 +473,9 @@ const CommunityPage = () => {
                   <img src={vectorLine} alt='' className={styles.vectorLine} />
                   <div>
                     <h5>
-                      This is could be you, contribute the Pixie project!
+                      This is could be you, contribute to the Pixie project!
                     </h5>
-                    <a href='https://github.com/pixie-labs/pixie/pulls'>
+                    <a href='https://github.com/pixie-labs/pixie/blob/main/CONTRIBUTING.md'>
                       <button type='button'>CONTRIBUTE</button>
                     </a>
                   </div>
