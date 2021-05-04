@@ -302,16 +302,10 @@ const CommunityPage = () => {
                   name='Zain Asgar'
                   position={(
                     <>
-                      GM/GVP - Pixie & Open Source,
+                      GM/GVP, New Relic
                       <br />
                       {' '}
-                      New Relic
-                      <br />
-                      {' '}
-                      Founder/CEO,
-                      <br />
-                      {' '}
-                      Pixie
+                      Founder/CEO, Pixie
                     </>
                   )}
                 />
@@ -320,16 +314,10 @@ const CommunityPage = () => {
                   name='Ishan Mukherjee'
                   position={(
                     <>
-                      VP Marketing,
+                      VP Marketing, New Relic
                       <br />
                       {' '}
-                      New Relic
-                      <br />
-                      {' '}
-                      Founder/CPO,
-                      <br />
-                      {' '}
-                      Pixie
+                      Founder/CPO, Pixie
                     </>
                   )}
                 />
@@ -338,16 +326,10 @@ const CommunityPage = () => {
                   name='Michelle Nguyen'
                   position={(
                     <>
-                      Principal SWE,
+                      Principal SWE, New Relic
                       <br />
                       {' '}
-                      New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer,
-                      <br />
-                      {' '}
-                      Pixie
+                      Founding Engineer, Pixie
                     </>
                   )}
                 />
@@ -356,16 +338,10 @@ const CommunityPage = () => {
                   name='Phillip Kuznetsov'
                   position={(
                     <>
-                      Lead SWE,
+                      Lead SWE, New Relic
                       <br />
                       {' '}
-                      New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer,
-                      <br />
-                      {' '}
-                      Pixie
+                      Founding Engineer, Pixie
                     </>
                   )}
                 />
@@ -374,16 +350,10 @@ const CommunityPage = () => {
                   name='Yaxiong Zhao'
                   position={(
                     <>
-                      Principal SWE,
+                      Principal SWE, New Relic
                       <br />
                       {' '}
-                      New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer,
-                      <br />
-                      {' '}
-                      Pixie
+                      Founding Engineer, Pixie
                     </>
                   )}
                 />
@@ -392,16 +362,10 @@ const CommunityPage = () => {
                   name='Omid Azizi'
                   position={(
                     <>
-                      Principal SWE,
+                      Principal SWE, New Relic
                       <br />
                       {' '}
-                      New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer,
-                      <br />
-                      {' '}
-                      Pixie
+                      Founding Engineer, Pixie
                     </>
                   )}
                 />
@@ -410,16 +374,10 @@ const CommunityPage = () => {
                   name='Natalie Serrino'
                   position={(
                     <>
-                      Principal SWE,
+                      Principal SWE, New Relic
                       <br />
                       {' '}
-                      New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer,
-                      <br />
-                      {' '}
-                      Pixie
+                      Founding Engineer, Pixie
                     </>
                   )}
                 />
@@ -428,16 +386,10 @@ const CommunityPage = () => {
                   name='James Bartlett'
                   position={(
                     <>
-                      Senior SWE,
+                      Senior SWE, New Relic
                       <br />
                       {' '}
-                      New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer,
-                      <br />
-                      {' '}
-                      Pixie
+                      Founding Engineer, Pixie
                     </>
                   )}
                 />
@@ -446,16 +398,10 @@ const CommunityPage = () => {
                   name='Hannah Troisi'
                   position={(
                     <>
-                      Senior DevRel,
+                      Senior DevRel, New Relic
                       <br />
                       {' '}
-                      New Relic
-                      <br />
-                      {' '}
-                      Founding DevRel,
-                      <br />
-                      {' '}
-                      Pixie
+                      Founding DevRel, Pixie
                     </>
                   )}
                 />
@@ -464,16 +410,10 @@ const CommunityPage = () => {
                   name='Nick Lanam'
                   position={(
                     <>
-                      Lead SWE,
+                      Lead SWE, New Relic
                       <br />
                       {' '}
-                      New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer,
-                      <br />
-                      {' '}
-                      Pixie
+                      Founding Engineer, Pixie
                     </>
                   )}
                 />
@@ -482,16 +422,10 @@ const CommunityPage = () => {
                   name='Vihang Mehta'
                   position={(
                     <>
-                      Lead SWE,
+                      Lead SWE, New Relic
                       <br />
                       {' '}
-                      New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer,
-                      <br />
-                      {' '}
-                      Pixie
+                      Founding Engineer, Pixie
                     </>
                   )}
                 />
@@ -500,16 +434,10 @@ const CommunityPage = () => {
                   name='Pete Stevenson'
                   position={(
                     <>
-                      Principal SWE,
+                      Principal SWE, New Relic
                       <br />
                       {' '}
-                      New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer,
-                      <br />
-                      {' '}
-                      Pixie
+                      Founding Engineer, Pixie
                     </>
                   )}
                 />
@@ -518,10 +446,7 @@ const CommunityPage = () => {
                   name='Vishal Jain'
                   position={(
                     <>
-                      Senior SWE,
-                      <br />
-                      {' '}
-                      New Relic
+                      Senior SWE, New Relic
                     </>
                   )}
                 />
@@ -530,10 +455,7 @@ const CommunityPage = () => {
                   name='Ryan Cheng'
                   position={(
                     <>
-                      SWE,
-                      <br />
-                      {' '}
-                      New Relic
+                      SWE, New Relic
                     </>
                   )}
                 />
@@ -542,10 +464,7 @@ const CommunityPage = () => {
                   name='James Thomas'
                   position={(
                     <>
-                      Research Intern,
-                      <br />
-                      {' '}
-                      New Relic
+                      Research Intern, New Relic
                     </>
                   )}
                 />
