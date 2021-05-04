@@ -306,7 +306,7 @@ const CommunityPage = () => {
                 <Founder img={a9} name='Vihang Mehta' position='Lead SWE @ New Relic, Founding Engineer @ Pixie' />
                 <Founder img={a11} name='Pete Stevenson' position='Principal SWE @ New Relic, Founding Engineer @ Pixie' />
                 <Founder img={a12} name='Vishal Jain' position='Senior SWE @ New Relic' />
-                <Founder img={a13} name='Ryan Cheng' position='Senior SWE @ New Relic' />
+                <Founder img={a13} name='Ryan Cheng' position='SWE @ New Relic' />
                 <Founder img={a10} name='James Thomas' position='Research Intern' />
 
                 <div className={styles.youLine}>
