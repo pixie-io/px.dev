@@ -106,7 +106,7 @@ const Homepage = () => {
                     Want more flexible install options?
                     {' '}
                     <a
-                      href='https://docs.pixielabs.ai/installing-pixie/quick-start/'
+                      href='https://docs.px.dev/installing-pixie/quick-start/'
                       className='underline'
                     >
                       see docs
@@ -172,7 +172,7 @@ const Homepage = () => {
                   Add logging only for custom data.
                 </p>
                 <a
-                  href='https://docs.pixielabs.ai/about-pixie/how-pixie-works/'
+                  href='https://docs.px.dev/about-pixie/how-pixie-works/'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
@@ -229,7 +229,7 @@ const Homepage = () => {
                   and global Pixienaut community.
                 </p>
                 <a
-                  href='https://docs.pixielabs.ai/about-pixie/how-pixie-works/'
+                  href='https://docs.px.dev/about-pixie/how-pixie-works/'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
@@ -250,7 +250,7 @@ const Homepage = () => {
                     telemetry off-cluster.
                   </p>
                   <a
-                    href='https://docs.pixielabs.ai/about-pixie/how-pixie-works/'
+                    href='https://docs.px.dev/about-pixie/how-pixie-works/'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -293,7 +293,7 @@ const Homepage = () => {
                 </p>
                 <div className={styles.softwareVersions}>
                   <a
-                    href='https://docs.pixielabs.ai/installing-pixie/requirements/'
+                    href='https://docs.px.dev/installing-pixie/requirements/'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -302,7 +302,7 @@ const Homepage = () => {
                   </a>
 
                   <a
-                    href='https://docs.pixielabs.ai/installing-pixie/requirements/'
+                    href='https://docs.px.dev/installing-pixie/requirements/'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -314,37 +314,37 @@ const Homepage = () => {
               <div className='col-7'>
                 <div className={styles.environmentsButtons}>
                   <CategoryButton
-                    href='https://docs.pixielabs.ai/using-pixie/use-cases/service-health'
+                    href='https://docs.px.dev/using-pixie/use-cases/service-health'
                     svg={serviceHealth}
                     label='Service Health'
                     height='51px'
                   />
                   <CategoryButton
-                    href='https://docs.pixielabs.ai/using-pixie/use-cases/code-tracing/'
+                    href='https://docs.px.dev/using-pixie/use-cases/code-tracing/'
                     svg={dl}
                     label='Golang Logging'
                     height='51px'
                   />
                   <CategoryButton
-                    href='https://docs.pixielabs.ai/using-pixie/use-cases/request-tracing'
+                    href='https://docs.px.dev/using-pixie/use-cases/request-tracing'
                     svg={requestTracing}
                     label='Request Tracing'
                     height='51px'
                   />
                   <CategoryButton
-                    href='https://docs.pixielabs.ai/using-pixie/use-cases/db-health'
+                    href='https://docs.px.dev/using-pixie/use-cases/db-health'
                     svg={db}
                     label='DB Query Profiling'
                     height='51px'
                   />
                   <CategoryButton
-                    href='https://docs.pixielabs.ai/using-pixie/use-cases/infra-health'
+                    href='https://docs.px.dev/using-pixie/use-cases/infra-health'
                     svg={k8}
                     label='K8s Infra Health'
                     height='51px'
                   />
                   <CategoryButton
-                    href='https://docs.pixielabs.ai/using-pixie/use-cases/canary-analysis'
+                    href='https://docs.px.dev/using-pixie/use-cases/canary-analysis'
                     svg={canary}
                     label='Canary Analysis'
                     height='51px'
@@ -352,7 +352,7 @@ const Homepage = () => {
                 </div>
 
                 <a
-                  href='https://docs.pixielabs.ai/using-pixie'
+                  href='https://docs.px.dev/using-pixie'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
@@ -374,31 +374,31 @@ const Homepage = () => {
           </h2>
           <div className={styles.environmentsButtons}>
             <CategoryButton
-              href='https://docs.pixielabs.ai/installing-pixie/install-guides/minikube-setup'
+              href='https://docs.px.dev/installing-pixie/install-guides/minikube-setup'
               image='kube.png'
               label='Minikube'
               height='51px'
             />
             <CategoryButton
-              href='https://docs.pixielabs.ai/installing-pixie/install-guides/eks-setup/'
+              href='https://docs.px.dev/installing-pixie/install-guides/eks-setup/'
               image='eks.png'
               label='EKS'
               height='50px'
             />
             <CategoryButton
-              href='https://docs.pixielabs.ai/installing-pixie/install-guides/gke-setup/'
+              href='https://docs.px.dev/installing-pixie/install-guides/gke-setup/'
               image='gke.png'
               label='GKE'
               height='50px'
             />
             <CategoryButton
-              href='https://docs.pixielabs.ai/installing-pixie/install-guides/aks-setup/'
+              href='https://docs.px.dev/installing-pixie/install-guides/aks-setup/'
               image='aks.png'
               label='AKS'
               height='40px'
             />
             <CategoryButton
-              href='https://docs.pixielabs.ai/installing-pixie/install-guides/self-managed-k8s-setup/'
+              href='https://docs.px.dev/installing-pixie/install-guides/self-managed-k8s-setup/'
               image='self-kube.png'
               label='Self Managed'
               height='50px'
