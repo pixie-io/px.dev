@@ -293,20 +293,20 @@ const CommunityPage = () => {
                 <p className={styles.heroSubtitle}>
                   Pixie was originally built by members of the Pixie Labs team.
                 </p>
-                <Founder img={zain} name='Zain Asgar' position='Co-Founder/CEO' />
-                <Founder img={ishan} name='Ishan Mukherjee' position='Co-Founder/CPO' />
-                <Founder img={a1} name='Michelle Nguyen' position='Founding Engineer' />
-                <Founder img={a2} name='Phillip Kuznetsov' position='Founding Engineer' />
-                <Founder img={a3} name='Yaxiong Zhao' position='Founding Engineer' />
-                <Founder img={a4} name='Omid Azizi' position='Founding Engineer' />
-                <Founder img={a5} name='Natalie Serrino' position='Founding Engineer' />
-                <Founder img={a6} name='James Bartlett' position='Founding Engineer' />
-                <Founder img={a7} name='Hannah Troisi' position='Founding Engineer' />
-                <Founder img={a8} name='Nick Lanam' position='Founding Engineer' />
-                <Founder img={a9} name='Vihang Mehta' position='Founding Engineer' />
-                <Founder img={a11} name='Pete Stevenson' position='Founding Engineer' />
-                <Founder img={a12} name='Vishal Jain' position='Founding Engineer' />
-                <Founder img={a13} name='Ryan Cheng' position='Founding Engineer' />
+                <Founder img={zain} name='Zain Asgar' position='GVP/GM @ New Relic, Co&#8209;Founder/CEO @ Pixie' />
+                <Founder img={ishan} name='Ishan Mukherjee' position='VP Marketing @ New Relic, Co&#8209;Founder/CPO @ Pixie' />
+                <Founder img={a1} name='Michelle Nguyen' position='Principal SWE @ New Relic, Founding Engineer @ Pixie' />
+                <Founder img={a2} name='Phillip Kuznetsov' position='Lead SWE @ New Relic, Founding Engineer @ Pixie' />
+                <Founder img={a3} name='Yaxiong Zhao' position='Principal SWE @ New Relic, Founding Engineer @ Pixie' />
+                <Founder img={a4} name='Omid Azizi' position='Principal SWE @ New Relic, Founding Engineer @ Pixie' />
+                <Founder img={a5} name='Natalie Serrino' position='Principal SWE @ New Relic, Founding Engineer @ Pixie' />
+                <Founder img={a6} name='James Bartlett' position='Senior SWE @ New Relic, Founding Engineer @ Pixie' />
+                <Founder img={a7} name='Hannah Troisi' position='Senior DevRel @ New Relic, Founding DevRel @ Pixie' />
+                <Founder img={a8} name='Nick Lanam' position='Lead SWE @ New Relic, Founding Engineer @ Pixie' />
+                <Founder img={a9} name='Vihang Mehta' position='Lead SWE @ New Relic, Founding Engineer @ Pixie' />
+                <Founder img={a11} name='Pete Stevenson' position='Principal SWE @ New Relic, Founding Engineer @ Pixie' />
+                <Founder img={a12} name='Vishal Jain' position='Senior SWE @ New Relic' />
+                <Founder img={a13} name='Ryan Cheng' position='Senior SWE @ New Relic' />
                 <Founder img={a10} name='James Thomas' position='Research Intern' />
 
                 <div className={styles.youLine}>
@@ -380,7 +380,7 @@ const CommunityPage = () => {
                       </>
                     )}
                   />
-                  <Founder img={you} name='TBD' position='Engineer' />
+                  <Founder img={you} name='TBD' position='' />
                 </div>
                 <div className={styles.team}>
                   <h3>Community Members</h3>
