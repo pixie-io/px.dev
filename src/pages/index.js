@@ -99,11 +99,19 @@ const Homepage = () => {
             <div className={styles.codeRenderer}>
               <CodeRenderer
                 code={bashCode}
-                title='Pixie Community is Free Forever. Run this to install.'
+                title='Run this to download the PX CLI and install the hosted version of Pixie.'
                 language='bash'
                 footerText={(
                   <>
-                    Want more flexible install options?
+                    Self-hosted install script
+                    {' '}
+                    <a
+                      href='https://github.com/pixie-labs/pixie/issues/238'
+                      className='underline'
+                    >
+                      coming soon
+                    </a>
+                    . Want more flexible install options?
                     {' '}
                     <a
                       href='https://docs.px.dev/installing-pixie/quick-start/'
