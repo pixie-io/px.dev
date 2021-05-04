@@ -2,11 +2,6 @@
   publish ="public/"
   command = "sed -i s/HEADER_PLACEHOLDER/pixie:${BASIC_AUTH}/g netlify.toml && yarn install && yarn lint && gatsby build"
 
-[build.environment]
-  # Staging environment.
-  TRACKING_ID = "UA-141615052-1"
-  MAILCHIMP_ENDPOINT = "https://pixielabs.us20.list-manage.com/subscribe/post?u=b962bcefc9d3e650c45145a13&id=2d84999f8d"
-
 [context.production]
   # No password on prod.
   command = "sed -i 's|HEADER_PLACEHOLDER||g' netlify.toml && yarn install && yarn lint && gatsby build"
@@ -17,7 +12,7 @@
 
 [[redirects]]
   from = "/blog"
-  to = "https://blog.pixielabs.ai"
+  to = "https://blog.px.dev"
 
 [[redirects]]
   from = "/docs"
