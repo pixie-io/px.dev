@@ -34,7 +34,8 @@ const Footer = ({ whiteFooter }) => (
       </p>
     </div>
     <div className={styles.copyrightBar}>
-      <Link to='/terms' className={styles.mutedLink}>Terms and Privacy</Link>
+      <Link to='https://newrelic.com/termsandconditions/terms' className={styles.mutedLink}>Terms of Service</Link>
+      <Link to='https://newrelic.com/termsandconditions/privacy' className={styles.mutedLink}>Privacy Policy</Link>
       <span> Copyright 2021 Pixie Authors. All rights reserved.</span>
       <a href='https://github.com/pixie-labs/px.dev' target='_blank' rel='noreferrer'>
         <img src={github} alt='github' />
