@@ -78,7 +78,7 @@ const CommunityPage = () => {
       date: 'July  22, 2021',
       location: 'Online (Zoom)',
       link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA3MjJUMTczMDAwWiB6YXNnYXJAcGl4aWVsYWJzLmFp&tmsrc=zasgar%40pixielabs.ai&scp=ALL',
-    }
+    },
   ];
   const scrollToSectionId = (section) => {
     const topOfElement = document.getElementById(section).offsetTop - 75;
@@ -297,22 +297,177 @@ const CommunityPage = () => {
                 <p className={styles.heroSubtitle}>
                   Pixie was originally built by members of the Pixie Labs team.
                 </p>
-                <Founder img={zain} name='Zain Asgar' position='GVP/GM @ New Relic, Co&#8209;Founder/CEO @ Pixie' />
-                <Founder img={ishan} name='Ishan Mukherjee' position='VP Marketing @ New Relic, Co&#8209;Founder/CPO @ Pixie' />
-                <Founder img={a1} name='Michelle Nguyen' position='Principal SWE @ New Relic, Founding Engineer @ Pixie' />
-                <Founder img={a2} name='Phillip Kuznetsov' position='Lead SWE @ New Relic, Founding Engineer @ Pixie' />
-                <Founder img={a3} name='Yaxiong Zhao' position='Principal SWE @ New Relic, Founding Engineer @ Pixie' />
-                <Founder img={a4} name='Omid Azizi' position='Principal SWE @ New Relic, Founding Engineer @ Pixie' />
-                <Founder img={a5} name='Natalie Serrino' position='Principal SWE @ New Relic, Founding Engineer @ Pixie' />
-                <Founder img={a6} name='James Bartlett' position='Senior SWE @ New Relic, Founding Engineer @ Pixie' />
-                <Founder img={a7} name='Hannah Troisi' position='Senior DevRel @ New Relic, Founding DevRel @ Pixie' />
-                <Founder img={a8} name='Nick Lanam' position='Lead SWE @ New Relic, Founding Engineer @ Pixie' />
-                <Founder img={a9} name='Vihang Mehta' position='Lead SWE @ New Relic, Founding Engineer @ Pixie' />
-                <Founder img={a11} name='Pete Stevenson' position='Principal SWE @ New Relic, Founding Engineer @ Pixie' />
-                <Founder img={a12} name='Vishal Jain' position='Senior SWE @ New Relic' />
-                <Founder img={a13} name='Ryan Cheng' position='SWE @ New Relic' />
-                <Founder img={a10} name='James Thomas' position='Research Intern' />
-
+                <Founder
+                  img={zain}
+                  name='Zain Asgar'
+                  position={(
+                    <>
+                      GM/GVP, New Relic
+                      <br />
+                      {' '}
+                      Founder/CEO, Pixie
+                    </>
+                  )}
+                />
+                <Founder
+                  img={ishan}
+                  name='Ishan Mukherjee'
+                  position={(
+                    <>
+                      VP Marketing, New Relic
+                      <br />
+                      {' '}
+                      Founder/CPO, Pixie
+                    </>
+                  )}
+                />
+                <Founder
+                  img={a1}
+                  name='Michelle Nguyen'
+                  position={(
+                    <>
+                      Principal SWE, New Relic
+                      <br />
+                      {' '}
+                      Founding Engineer, Pixie
+                    </>
+                  )}
+                />
+                <Founder
+                  img={a2}
+                  name='Phillip Kuznetsov'
+                  position={(
+                    <>
+                      Lead SWE, New Relic
+                      <br />
+                      {' '}
+                      Founding Engineer, Pixie
+                    </>
+                  )}
+                />
+                <Founder
+                  img={a3}
+                  name='Yaxiong Zhao'
+                  position={(
+                    <>
+                      Principal SWE, New Relic
+                      <br />
+                      {' '}
+                      Founding Engineer, Pixie
+                    </>
+                  )}
+                />
+                <Founder
+                  img={a4}
+                  name='Omid Azizi'
+                  position={(
+                    <>
+                      Principal SWE, New Relic
+                      <br />
+                      {' '}
+                      Founding Engineer, Pixie
+                    </>
+                  )}
+                />
+                <Founder
+                  img={a5}
+                  name='Natalie Serrino'
+                  position={(
+                    <>
+                      Principal SWE, New Relic
+                      <br />
+                      {' '}
+                      Founding Engineer, Pixie
+                    </>
+                  )}
+                />
+                <Founder
+                  img={a6}
+                  name='James Bartlett'
+                  position={(
+                    <>
+                      Senior SWE, New Relic
+                      <br />
+                      {' '}
+                      Founding Engineer, Pixie
+                    </>
+                  )}
+                />
+                <Founder
+                  img={a7}
+                  name='Hannah Troisi'
+                  position={(
+                    <>
+                      Senior DevRel, New Relic
+                      <br />
+                      {' '}
+                      Founding DevRel, Pixie
+                    </>
+                  )}
+                />
+                <Founder
+                  img={a8}
+                  name='Nick Lanam'
+                  position={(
+                    <>
+                      Lead SWE, New Relic
+                      <br />
+                      {' '}
+                      Founding Engineer, Pixie
+                    </>
+                  )}
+                />
+                <Founder
+                  img={a9}
+                  name='Vihang Mehta'
+                  position={(
+                    <>
+                      Lead SWE, New Relic
+                      <br />
+                      {' '}
+                      Founding Engineer, Pixie
+                    </>
+                  )}
+                />
+                <Founder
+                  img={a11}
+                  name='Pete Stevenson'
+                  position={(
+                    <>
+                      Principal SWE, New Relic
+                      <br />
+                      {' '}
+                      Founding Engineer, Pixie
+                    </>
+                  )}
+                />
+                <Founder
+                  img={a12}
+                  name='Vishal Jain'
+                  position={(
+                    <>
+                      Senior SWE, New Relic
+                    </>
+                  )}
+                />
+                <Founder
+                  img={a13}
+                  name='Ryan Cheng'
+                  position={(
+                    <>
+                      SWE, New Relic
+                    </>
+                  )}
+                />
+                <Founder
+                  img={a10}
+                  name='James Thomas'
+                  position={(
+                    <>
+                      Research Intern, New Relic
+                    </>
+                  )}
+                />
                 <div className={styles.youLine}>
                   <Founder img={you} name='You!' position='' />
                   <img src={vectorLine} alt='' className={styles.vectorLine} />
