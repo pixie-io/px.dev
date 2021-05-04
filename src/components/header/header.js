@@ -136,7 +136,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
           <ul>
 
             <li>
-              <a href='#' onClick={(e) => docsRedirect(e)}>
+              <a href='https://docs.px.dev' onClick={(e) => docsRedirect(e)}>
                 Docs
               </a>
             </li>
