@@ -563,7 +563,11 @@
   }
 
   .blueButton {
-
+    @media (max-width: 1000px) {
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+    }
   }
 
   .button {
