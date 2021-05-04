@@ -484,7 +484,6 @@
     }
 
 
-
     button {
       float: none;
     }
@@ -540,6 +539,9 @@
         text-align: left;
         position: relative;
         padding-top: 24px;
+        @media (max-width: 1000px) {
+          text-align: center;
+        }
       }
 
       @media (max-width: 1000px) {
@@ -735,6 +737,11 @@
   height: 11px;
   width: 58px;
   background-color: #12D6D6;
+  @media (max-width: 1000px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 }
 
 .environmentsButtons {

@@ -178,7 +178,6 @@ const Header = ({ whiteHeader, transparentMenu }) => {
           </div>
           <div className={styles.mobileNavMenu}>
             <div>
-              <em>Product</em>
               <ul>
                 <li>
                   <a
@@ -193,12 +192,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
                     Blog
                   </a>
                 </li>
-              </ul>
-            </div>
-            <div>
-              <em>Team</em>
-              <ul>
-                <li>
+                  <li>
                   <Link to='/community'>Community</Link>
                 </li>
                 <li>

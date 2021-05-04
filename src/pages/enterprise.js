@@ -39,27 +39,13 @@ const Enterprise = () => (
         <div className='container'>
           <div className={styles.title}>
             <h1>
-              Companies offering commercial
-              {' '}
-              <br />
-              support for Pixie
+              Hosted Pixie Offerings
             </h1>
-            <p className={styles.subtitle}>
-              Offering Pixie support? Add your company!
-            </p>
-            <a
-              href='https://github.com/pixie-labs/pixie/pulls'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <Button>
-                CREATE PULL REQUEST
-              </Button>
-            </a>
+
           </div>
-          <div className='row'>
+          <div className='row flex-row-desktop'>
             <div className='col-1 ' />
-            <div className='col-5 '>
+            <div className='col-5'>
               <a href='https://pixielabs.ai/' target='_blank' rel='noopener noreferrer'>
                 <div className={styles.heroButton}>
                   <img src={pixieLabsLogo} alt='pixie logo' />
@@ -74,7 +60,7 @@ const Enterprise = () => (
                 </div>
               </a>
             </div>
-            <div className='col-5 '>
+            <div className='col-5'>
 
               <div className={styles.heroButtonCenter}>
                 <img src={support} alt='pixie logo' />
@@ -89,7 +75,22 @@ const Enterprise = () => (
             </div>
             <div className='col-1 ' />
           </div>
-
+          <div className='row'>
+            <div className='col-12'>
+              <p className={styles.subtitle}>
+                Companies offering commercial support for Pixie.
+              </p>
+              <a
+                href='https://github.com/pixie-labs/pixie/pulls'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Button>
+                  CREATE PULL REQUEST
+                </Button>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>

@@ -97,6 +97,13 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: $breakpoint) {
+     flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
     img {
       height: 13px;
       margin-right: 8px;

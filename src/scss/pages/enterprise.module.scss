@@ -30,7 +30,7 @@
     margin-bottom: 0;
     position: relative;
     @media (max-width: 1000px) {
-      padding-top: 140px;
+      padding-top: 40px;
     }
 
     .planet {
@@ -61,23 +61,29 @@
         }
       }
 
-      .subtitle {
-        font-size: 20px;
-        line-height: 32px;
-        @media (max-width: 1000px) {
-          font-size: 14px;
-          line-height: normal;
-        }
-      }
+
 
     }
-
+    .subtitle {
+      margin-top: 120px;
+      font-size: 20px;
+      line-height: 32px;
+      @media (max-width: 767px) {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: normal;
+      }
+    }
 
     .heroButton, .heroButtonCenter {
       border: 1px solid white;
       padding: 24px;
       margin-bottom: 24px;
       border-radius: 8px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:hover {
         background: linear-gradient(132.03deg, rgba(18, 214, 214, 0.1) 4.19%, rgba(18, 214, 214, 0) 81.59%);
@@ -87,6 +93,7 @@
 
     .heroButtonCenter {
       border-style: dashed;
+      flex-direction: column;
 
       &:hover {
         background: linear-gradient(132.03deg, rgba(18, 214, 214, 0.1) 4.19%, rgba(18, 214, 214, 0) 81.59%);
