@@ -20,7 +20,6 @@
 
 .footer {
   padding-top: 128px;
-  padding-bottom: 33px;
   position: relative;
 
   a {
@@ -98,6 +97,13 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: $breakpoint) {
+     flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
     img {
       height: 13px;
       margin-right: 8px;
@@ -112,6 +118,10 @@
 
     @media (max-width: 1000px) {
       font-size: 14px;
+    }
+
+    .mutedLink {
+      color: inherit;
     }
   }
 

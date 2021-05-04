@@ -362,9 +362,8 @@
       padding: 75px 0;
     }
 
-    h3 {
+    h2 {
       margin: 0;
-      font-size: 52px;
       line-height: 70px;
       font-weight: normal;
       text-align: left;
@@ -372,7 +371,6 @@
       padding-top: 24px;
       position: relative;
       @media (max-width: 768px) {
-        font-size: 24px;
         line-height: 36px;
         text-align: left;
         padding-bottom: 0;
@@ -470,9 +468,8 @@
       padding-bottom: 75px;
     }
 
-    h3 {
-      font-size: 36px;
-      line-height: 45px;
+    h2 {
+      position: relative;
       text-align: center;
       font-weight: normal;
       color: white;
@@ -486,20 +483,6 @@
       }
     }
 
-    .environmentsButtons {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding-bottom: 55px;
-      object-fit: cover;
-
-      div {
-        min-width: 100px;
-
-      }
-    }
 
     button {
       float: none;
@@ -554,6 +537,11 @@
 
       h2 {
         text-align: left;
+        position: relative;
+        padding-top: 24px;
+        @media (max-width: 1000px) {
+          text-align: center;
+        }
       }
 
       @media (max-width: 1000px) {
@@ -575,7 +563,11 @@
   }
 
   .blueButton {
-
+    @media (max-width: 1000px) {
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+    }
   }
 
   .button {
@@ -749,5 +741,36 @@
   height: 11px;
   width: 58px;
   background-color: #12D6D6;
+  @media (max-width: 1000px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 }
 
+.environmentsButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 55px;
+  object-fit: cover;
+
+  div {
+    min-width: 100px;
+
+  }
+}
+
+.marker {
+  display: block;
+  height: 11px;
+  width: 60px;
+  background: #12D6D6;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}

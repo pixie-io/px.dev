@@ -20,14 +20,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import styles from './footer.module.scss';
-import { docsRedirect } from '../shared/tracking-utils';
 import pixieLogo from '../../images/pixie-oss.svg';
-
-import docs from '../../images/footer/docs-icon.svg';
 import github from '../../images/footer/github-icon.svg';
-import slack from '../../images/footer/slack-icon.svg';
-import youtube from '../../images/footer/youtube-icon.svg';
-import twitter from '../../images/footer/twitter-icon.svg';
 
 const Footer = ({ whiteFooter }) => (
   <footer className={`${whiteFooter ? styles.whitefooter : ''} ${styles.footer}`} style={{ position: 'relative' }}>
@@ -36,43 +30,17 @@ const Footer = ({ whiteFooter }) => (
       <p align='center'>
         Pixie was originally created and contributed by
         {' '}
-        <a href='https://newrelic.com/' target='_blank' rel='noreferrer'>New Relic</a>
+        <a href='https://newrelic.com/' target='_blank' rel='noreferrer'>New Relic, Inc.</a>
       </p>
-      <div className={styles.divider} />
-      <div className={styles.socialIcons}>
-        <a
-          href='https://work.withpixie.ai/docs'
-          onClick={(e) => docsRedirect(e)}
-        >
-          <img src={docs} className={styles.socialIcon} alt='pixie docs' />
-        </a>
-        <a href='https://github.com/pixie-labs/pixie'>
-          <img src={github} className={styles.socialIcon} alt='github' />
-        </a>
-        <a href='https://slackin.withpixie.ai'>
-          <img src={slack} className={styles.socialIcon} alt='slack' />
-        </a>
-        <a href='https://www.youtube.com/channel/UCOMCDRvBVNIS0lCyOmst7eg/featured'>
-          <img src={youtube} className={styles.socialIcon} alt='youtube' />
-        </a>
-        <a href='https://twitter.com/pixie_run'>
-          <img src={twitter} className={styles.socialIcon} alt='twitter' />
-        </a>
-      </div>
-      <div className={styles.divider} />
     </div>
     <div className={styles.copyrightBar}>
-      <div>
-        <span> Copyright 2021 Pixie Authors. All rights reserved.</span>
-        <a href='https://github.com/pixie-labs/px.dev' target='_blank' rel='noreferrer'>
-          <img src={github} alt='github' />
-          Edit on GitHub
-        </a>
-      </div>
-      <Link to='/terms'>Terms and Privacy</Link>
+      <Link to='/terms' className={styles.mutedLink}>Terms and Privacy</Link>
+      <span> Copyright 2021 Pixie Authors. All rights reserved.</span>
+      <a href='https://github.com/pixie-labs/px.dev' target='_blank' rel='noreferrer'>
+        <img src={github} alt='github' />
+        Edit on GitHub
+      </a>
     </div>
-
-
   </footer>
 );
 Footer.propTypes = {

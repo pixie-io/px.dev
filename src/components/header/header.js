@@ -127,6 +127,9 @@ const Header = ({ whiteHeader, transparentMenu }) => {
             <a href='https://twitter.com/pixie_run'>
               <img src={twitter} alt='twitter' />
             </a>
+            <a href='https://www.youtube.com/channel/UCOMCDRvBVNIS0lCyOmst7eg/featured'>
+              <img src={youtube} alt='youtube' />
+            </a>
           </div>
         </div>
         <div className={`hide-mobile hide-tablet ${styles.menu}`}>
@@ -175,7 +178,6 @@ const Header = ({ whiteHeader, transparentMenu }) => {
           </div>
           <div className={styles.mobileNavMenu}>
             <div>
-              <em>Product</em>
               <ul>
                 <li>
                   <a
@@ -190,14 +192,9 @@ const Header = ({ whiteHeader, transparentMenu }) => {
                     Blog
                   </a>
                 </li>
-              </ul>
-            </div>
-            <div>
-              <em>Team</em>
-              <ul>
-                <li>
-                  <Link to='/community'>Community</Link>
-                </li>
+                  <li>
+                    <Link to='/community'>Community</Link>
+                  </li>
                 <li>
                   <Link to='/enterprise'>Enterprise</Link>
                 </li>
