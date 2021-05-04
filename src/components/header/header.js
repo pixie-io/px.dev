@@ -236,7 +236,9 @@ const Header = ({ whiteHeader, transparentMenu }) => {
               </li>
             </ul>
 
-            <Link to='/terms'>Terms & Privacy</Link>
+            <Link to='https://newrelic.com/termsandconditions/terms'>Terms of Service</Link>
+            <br/>
+            <Link to='https://newrelic.com/termsandconditions/privacy'>Privacy Policy</Link>
           </div>
         </div>
         <IconButton onClick={() => setOpen(true)} className='hide-desktop'>
