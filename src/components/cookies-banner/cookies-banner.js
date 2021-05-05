@@ -33,7 +33,7 @@ const CookiesBanner = () => {
       <div className={styles.innerText}>
         This site uses cookies to provide you with a better user experience.
         By using Pixie, you consent to our&nbsp;
-        <Link to='https://newrelic.com/termsandconditions/cookie-policy'>use of cookies</Link>
+        <Link to='/privacy/#Cookies'>use of cookies</Link>
         .
       </div>
       <button type='button' className={styles.closeButton} onClick={() => close()}>
