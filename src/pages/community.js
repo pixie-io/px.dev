@@ -67,17 +67,27 @@ const CommunityPage = () => {
       title: 'Pixienaut Monthly - May',
       date: 'May  27, 2021',
       location: 'Online (Zoom)',
-      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA1MjdUMTczMDAwWiB6YXNnYXJAcGl4aWVsYWJzLmFp&tmsrc=zasgar%40pixielabs.ai&scp=ALL',
+      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA1MjdUMTczMDAwWiB6YXNnYXJAcGl4aWVsYWJzLmFp&tmsrc=zasgar%40pixielabs.ai',
     }, {
       title: 'Pixienaut Monthly - June',
       date: 'June 24, 2021',
       location: 'Online (Zoom)',
-      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA2MjRUMTczMDAwWiB6YXNnYXJAcGl4aWVsYWJzLmFp&tmsrc=zasgar%40pixielabs.ai&scp=ALL',
+      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA2MjRUMTczMDAwWiB6YXNnYXJAcGl4aWVsYWJzLmFp&tmsrc=zasgar%40pixielabs.ai',
     }, {
       title: 'Pixienaut Monthly - July',
       date: 'July  22, 2021',
       location: 'Online (Zoom)',
-      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA3MjJUMTczMDAwWiB6YXNnYXJAcGl4aWVsYWJzLmFp&tmsrc=zasgar%40pixielabs.ai&scp=ALL',
+      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA3MjJUMTczMDAwWiB6YXNnYXJAcGl4aWVsYWJzLmFp&tmsrc=zasgar%40pixielabs.ai',
+    }, {
+      title: 'Pixienaut Monthly - August',
+      date: 'August  26, 2021',
+      location: 'Online (Zoom)',
+      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA4MjZUMTczMDAwWiB6YXNnYXJAcGl4aWVsYWJzLmFp&tmsrc=zasgar%40pixielabs.ai',
+    }, {
+      title: 'Pixienaut Monthly - September',
+      date: 'September  23, 2021',
+      location: 'Online (Zoom)',
+      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA5MjNUMTczMDAwWiB6YXNnYXJAcGl4aWVsYWJzLmFp&tmsrc=zasgar%40pixielabs.ai',
     },
   ];
   const scrollToSectionId = (section) => {
