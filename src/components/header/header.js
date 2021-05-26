@@ -237,7 +237,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
             </ul>
 
             <Link to='https://newrelic.com/termsandconditions/terms'>Terms of Service</Link>
-            <br/>
+            <br />
             <Link to='https://newrelic.com/termsandconditions/privacy'>Privacy Policy</Link>
           </div>
         </div>

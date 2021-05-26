@@ -39,7 +39,6 @@ PoiTooltip.propTypes = {
   left: PropTypes.number.isRequired,
 };
 
-PoiTooltip.defaultProps = {
-  pulse: false,
-};
+PoiTooltip.defaultProps = {};
+
 export default PoiTooltip;
