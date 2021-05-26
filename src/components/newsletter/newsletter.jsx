@@ -19,7 +19,6 @@
 import React, { useState } from 'react';
 import Cookies from 'js-cookie';
 import styles from './newsletter.module.scss';
-import Button from '../shared/button';
 
 const Newsletter = () => {
   const [loading, setLoading] = useState(false);
