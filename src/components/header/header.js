@@ -32,7 +32,6 @@ import slack from '../../images/footer/slack-icon.svg';
 import youtube from '../../images/footer/youtube-icon.svg';
 import twitter from '../../images/footer/twitter-icon.svg';
 import pixieLogo from '../../images/pixie-oss.svg';
-import { docsRedirect } from '../shared/tracking-utils';
 
 const Header = ({ whiteHeader, transparentMenu }) => {
   const [open, setOpen] = useState(false);
@@ -136,7 +135,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
           <ul>
 
             <li>
-              <a href='https://docs.px.dev' onClick={(e) => docsRedirect(e)}>
+            <a href='https://docs.px.dev/' target='_blank' rel='noreferrer'>
                 Docs
               </a>
             </li>
