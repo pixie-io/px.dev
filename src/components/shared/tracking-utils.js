@@ -34,5 +34,5 @@ export const signupRedirect = (e) => {
 
 export const docsRedirect = (e) => {
   e.preventDefault();
-  window.location.href = `https://work.withpixie.ai/docs?tid=${trackingID()}`;
+  window.location.href = `https://docs.px.dev?tid=${trackingID()}`;
 };
