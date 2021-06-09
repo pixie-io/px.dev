@@ -135,7 +135,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
           <ul>
 
             <li>
-            <a href='https://docs.px.dev/' target='_blank' rel='noreferrer'>
+              <a href='https://docs.px.dev/' target='_blank' rel='noreferrer'>
                 Docs
               </a>
             </li>
@@ -179,10 +179,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
             <div>
               <ul>
                 <li>
-                  <a
-                    href='https://work.withpixie.ai/docs'
-                    onClick={(e) => docsRedirect(e)}
-                  >
+                  <a href='https://docs.px.dev/' target='_blank' rel='noreferrer'>
                     Docs
                   </a>
                 </li>
@@ -206,10 +203,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
             <ul className={styles.socialIcons}>
 
               <li>
-                <a
-                  href='https://work.withpixie.ai/docs'
-                  onClick={(e) => docsRedirect(e)}
-                >
+                <a href='https://docs.px.dev/' target='_blank' rel='noreferrer'>
                   <img src={docs} className={styles.socialIcon} />
                 </a>
               </li>
