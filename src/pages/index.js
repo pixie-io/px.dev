@@ -103,15 +103,7 @@ const Homepage = () => {
                 language='bash'
                 footerText={(
                   <>
-                    Self-hosted install script
-                    {' '}
-                    <a
-                      href='https://github.com/pixie-labs/pixie/issues/238'
-                      className='underline'
-                    >
-                      coming soon
-                    </a>
-                    . Want more flexible install options?
+                    Want more flexible install options?
                     {' '}
                     <a
                       href='https://docs.px.dev/installing-pixie/quick-start/'
