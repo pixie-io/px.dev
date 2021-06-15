@@ -117,7 +117,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
             <img src={pixieLogo} alt='pixie logo' />
           </Link>
           <div className={styles.socialIcons}>
-            <a href='https://slackin.withpixie.ai'>
+            <a href='https://slackin.px.dev'>
               <img src={slack} alt='slack' />
             </a>
             <a href='https://github.com/pixie-labs/pixie'>
@@ -213,7 +213,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
                 </a>
               </li>
               <li>
-                <a href='https://slackin.withpixie.ai'>
+                <a href='https://slackin.px.dev'>
                   <img src={slack} className={styles.socialIcon} />
                 </a>
               </li>

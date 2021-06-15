@@ -190,7 +190,7 @@ const CommunityPage = () => {
                     </div>
                     <p>
                       Join
-                      <a href='https://slackin.withpixie.ai'>
+                      <a href='https://slackin.px.dev'>
                         Pixie’s Slack
                       </a>
                       workspace for live conversations and quick questions.
