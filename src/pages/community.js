@@ -64,16 +64,6 @@ const Founder = ({ img, name, position }) => (
 const CommunityPage = () => {
   const events = [
     {
-      title: 'Pixienaut Monthly - May',
-      date: 'May  27, 2021',
-      location: 'Online (Zoom)',
-      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA1MjdUMTczMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com&scp=ALL',
-    }, {
-      title: 'Pixienaut Monthly - June',
-      date: 'June 24, 2021',
-      location: 'Online (Zoom)',
-      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA2MjRUMTczMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com&scp=ALL',
-    }, {
       title: 'Pixienaut Monthly - July',
       date: 'July  22, 2021',
       location: 'Online (Zoom)',
