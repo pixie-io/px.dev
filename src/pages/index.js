@@ -22,7 +22,6 @@ import SEO from '../components/seo';
 import Button from '../components/shared/button';
 import CategoryButton from '../components/category-button/category-button';
 import styles from '../scss/pages/index.module.scss';
-import CodeRenderer from '../components/codeRenderer.tsx';
 import PoiTooltip from '../components/poi-tooltip/poi-tooltip';
 import spaceGuys from '../images/homepage/space-illustration.svg';
 
@@ -55,7 +54,6 @@ import {
   signupRedirect,
 } from '../components/shared/tracking-utils';
 */
-const bashCode = 'bash -c "$(curl -fsSL https://withpixie.ai/install.sh)"';
 
 const Homepage = () => {
   const video1 = useRef(null);
