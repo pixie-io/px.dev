@@ -96,26 +96,6 @@ const Homepage = () => {
             <p className={styles.subtitle}>
               Auto-instrumented. Scriptable. Kubernetes native.
             </p>
-            <div className={styles.codeRenderer}>
-              <CodeRenderer
-                code={bashCode}
-                title='Run this to download the PX CLI and install the hosted version of Pixie.'
-                language='bash'
-                footerText={(
-                  <>
-                    Want more flexible install options?
-                    {' '}
-                    <a
-                      href='https://docs.px.dev/installing-pixie/quick-start/'
-                      className='underline'
-                    >
-                      see docs
-                    </a>
-                    .
-                  </>
-                )}
-              />
-            </div>
           </div>
         </section>
         <section className={styles.screenshotsSection}>
