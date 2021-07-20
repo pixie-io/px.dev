@@ -35,11 +35,11 @@ const Footer = ({ whiteFooter }) => (
     </div>
     <div className={styles.copyrightBar}>
       <div>
-        <Link to='https://newrelic.com/termsandconditions/terms' className={styles.mutedLink}>Terms of Service</Link>
+        <Link to='https://pixielabs.ai/terms' className={styles.mutedLink}>Terms of Service</Link>
         <span>
           |
         </span>
-        <Link to='https://newrelic.com/termsandconditions/privacy' className={styles.mutedLink}>Privacy Policy</Link>
+        <Link to='https://pixielabs.ai/privacy' className={styles.mutedLink}>Privacy Policy</Link>
       </div>
       <div className={styles.centerContent}>
         Copyright © 2018- The Pixie Authors. All Rights Reserved.
