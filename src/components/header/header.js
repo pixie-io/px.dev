@@ -155,7 +155,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
               </Link>
             </li>
             <li className={styles.colored}>
-              <a href='https://docs.px.dev/installing-pixie/quick-start/' target='_blank' rel='noreferrer'>
+              <a href='https://docs.px.dev/installing-pixie/install-guides/' target='_blank' rel='noreferrer'>
                 GET STARTED
               </a>
             </li>
