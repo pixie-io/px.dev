@@ -64,20 +64,20 @@ const Founder = ({ img, name, position }) => (
 const CommunityPage = () => {
   const events = [
     {
-      title: 'Pixienaut Monthly - August',
-      date: 'August  26, 2021',
-      location: 'Online (Zoom)',
-      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA4MjZUMTczMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com',
-    }, {
       title: 'Pixienaut Monthly - September',
-      date: 'September  23, 2021',
+      date: 'September 23, 2021',
       location: 'Online (Zoom)',
       link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA5MjNUMTczMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com',
     }, {
       title: 'Pixienaut Monthly - October',
-      date: 'October  28, 2021',
+      date: 'October 28, 2021',
       location: 'Online (Zoom)',
       link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTEwMjhUMTczMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com',
+    }, {
+      title: 'Pixienaut Monthly - November',
+      date: 'November 25, 2021',
+      location: 'Online (Zoom)',
+      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTExMjVUMTgzMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com',
     },
   ];
   const scrollToSectionId = (section) => {
