@@ -60,7 +60,7 @@ exports.sourceNodes = async ({
   const slackReq = await fetch('https://slackin.withpixie.ai/data');
   const slack = await slackReq.json();
 
-  const gitReq = await fetch('https://api.github.com/repos/pixie-labs/pixie');
+  const gitReq = await fetch('https://api.github.com/repos/pixie-io/pixie');
   const github = await gitReq.json();
 
   createNode({

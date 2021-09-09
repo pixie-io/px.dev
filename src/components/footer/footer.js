@@ -45,7 +45,7 @@ const Footer = ({ whiteFooter }) => (
         Copyright © 2018- The Pixie Authors. All Rights Reserved.
       </div>
       <div className={styles.githubLink}>
-        <a href='https://github.com/pixie-labs/px.dev' target='_blank' rel='noreferrer'>
+        <a href='https://github.com/pixie-io/px.dev' target='_blank' rel='noreferrer'>
           <img src={github} alt='github' />
           Edit on GitHub
         </a>
