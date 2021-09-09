@@ -11,7 +11,7 @@ For the documentation code, see [`pixie-docs`](https://github.com/pixie-io/pixie
 
 We are excited to have you contribute to Pixie's product page!
 
-Before contributing blog content, please file an [issue](https://github.com/pixie-io/px.dev/issues/new) outlining your intended additions.
+Before contributing content, please file an [issue](https://github.com/pixie-io/px.dev/issues/new) outlining your intended additions.
 
 ## 🚀 Quickstart for contributors
 
