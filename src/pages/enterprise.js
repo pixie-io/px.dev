@@ -84,7 +84,7 @@ const Enterprise = () => (
                   Offering Pixie support?
                 </p>
                 <a
-                  href='https://github.com/pixie-labs/pixie/pulls'
+                  href='https://github.com/pixie-io/px.dev/pulls'
                   target='_blank'
                   rel='noopener noreferrer'
                 >

@@ -216,7 +216,7 @@ const CommunityPage = () => {
                     </div>
                     <p>
                       Check out the
-                      <a href='https://github.com/pixie-labs/pixie'>
+                      <a href='https://github.com/pixie-io/pixie'>
                         GitHub
                       </a>
                       repo to see the source code.
@@ -475,7 +475,7 @@ const CommunityPage = () => {
                     <h5>
                       This is could be you, contribute to the Pixie project!
                     </h5>
-                    <a href='https://github.com/pixie-labs/pixie/blob/main/CONTRIBUTING.md'>
+                    <a href='https://github.com/pixie-io/pixie/blob/main/CONTRIBUTING.md'>
                       <button type='button'>CONTRIBUTE</button>
                     </a>
                   </div>
@@ -495,7 +495,7 @@ const CommunityPage = () => {
                 <p className={styles.heroSubtitle}>
                   The overall role of the Board is to ensure a long-term well-being of the project,
                   both technically and as a community. Read about or governance structure
-                  <a className={styles.link} href='https://github.com/pixie-labs/pixie/blob/main/GOVERNANCE.md' target='_blank' rel='noreferrer'>here</a>
+                  <a className={styles.link} href='https://github.com/pixie-io/pixie/blob/main/GOVERNANCE.md' target='_blank' rel='noreferrer'>here</a>
                   .
                 </p>
                 <div className={styles.team}>
