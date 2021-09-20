@@ -44,7 +44,6 @@ import a7 from '../images/about/avatars/a7.png';
 import a8 from '../images/about/avatars/a8.png';
 import a9 from '../images/about/avatars/a9.png';
 import a11 from '../images/about/avatars/Pete Stevenson@2x.png';
-import a12 from '../images/about/avatars/Vishal Jain@2x.png';
 import a13 from '../images/about/avatars/Ryan Cheng@2x.png';
 import jaana from '../images/about/avatars/jaana.png';
 import hightower from '../images/about/avatars/hightower.png';
@@ -422,7 +421,7 @@ const CommunityPage = () => {
                   name='Vihang Mehta'
                   position={(
                     <>
-                      Lead SWE, New Relic
+                      Principal SWE, New Relic
                       <br />
                       {' '}
                       Founding Engineer, Pixie
@@ -438,15 +437,6 @@ const CommunityPage = () => {
                       <br />
                       {' '}
                       Founding Engineer, Pixie
-                    </>
-                  )}
-                />
-                <Founder
-                  img={a12}
-                  name='Vishal Jain'
-                  position={(
-                    <>
-                      Senior SWE, New Relic
                     </>
                   )}
                 />
