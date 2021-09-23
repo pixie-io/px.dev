@@ -63,10 +63,10 @@ const Founder = ({ img, name, position }) => (
 const CommunityPage = () => {
   const events = [
     {
-      title: 'Pixienaut Monthly - September',
-      date: 'September 23, 2021',
-      location: 'Online (Zoom)',
-      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTA5MjNUMTczMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com',
+      title: 'Pixie KubeCon Happy Hour',
+      date: 'Oct 12, 2021',
+      location: 'Downtown Los Angeles',
+      link: 'https://www.eventbrite.com/e/pixie-kubecon-happy-hour-hosted-by-new-relic-tickets-175890542347',
     }, {
       title: 'Pixienaut Monthly - October',
       date: 'October 28, 2021',
