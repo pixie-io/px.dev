@@ -81,16 +81,16 @@ const Header = ({ whiteHeader, transparentMenu }) => {
         <div className={styles.newsBar}>
 
           <span className='hide-not-desktop'>
-             We’re in the process of contributing Pixie to the CNCF.
+             Pixie is now a CNCF sandbox project!
             {' '}
-            <a href='https://github.com/cncf/toc/issues/651' target='_blank' rel='noreferrer'>
+            <a href='https://www.cncf.io/projects/pixie/' target='_blank' rel='noreferrer'>
                    Learn more
             </a>
             {' '}
              🚀
           </span>
           <span className='hide-desktop'>
-                <a href='https://github.com/cncf/toc/issues/651' target='_blank' rel='noreferrer'>We’re contributing Pixie to the CNCF.</a>
+                <a href='https://www.cncf.io/projects/pixie/' target='_blank' rel='noreferrer'>Pixie is now a CNCF sandbox project!</a>
           </span>
 
           <div
