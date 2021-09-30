@@ -17,7 +17,6 @@
  */
 
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
 import Cookies from 'js-cookie';
 import styles from './cookies-banner.module.scss';
 
@@ -32,9 +31,7 @@ const CookiesBanner = () => {
     <div className={styles.banner}>
       <div className={styles.innerText}>
         This site uses cookies to provide you with a better user experience.
-        By using Pixie, you consent to our&nbsp;
-        <Link to='https://pixielabs.ai/cookies'>use of cookies</Link>
-        .
+        By using this site you consent to our Privacy Policy.
       </div>
       <button type='button' className={styles.closeButton} onClick={() => close()}>
         Close

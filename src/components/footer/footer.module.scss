@@ -27,7 +27,7 @@
   }
 
   p {
-    font-size: 13px;
+    font-size: 18px;
     line-height: 24px;
     color: #596274;
     padding-bottom: 36px;
@@ -39,6 +39,8 @@
 
   .logo {
     display: block;
+    width: 80%;
+    max-width: 300px;
     margin: 0 auto 40px;
   }
 
@@ -113,7 +115,6 @@
 
     a {
       color: #12D6D6;
-      padding-left: 12px;
     }
 
     @media (max-width: 1000px) {
@@ -122,6 +123,7 @@
 
     .mutedLink {
       padding-right: 12px;
+      padding-left: 12px;
       color: inherit;
     }
 
@@ -130,18 +132,16 @@
     }
 
     .centerContent {
+      flex-grow: 3;
       text-align: center;
+    }
+
+    .verticalCenter {
+      align-self: center;
     }
 
     .githubLink {
       text-align: right;
     }
   }
-
-
 }
-
-
-
-
-

@@ -229,9 +229,9 @@ const Header = ({ whiteHeader, transparentMenu }) => {
               </li>
             </ul>
 
-            <Link to='https://pixielabs.ai/terms'>Terms of Service</Link>
+            <Link to='https://www.linuxfoundation.org/terms'>Terms of Service</Link>
             <br />
-            <Link to='https://pixielabs.ai/privacy'>Privacy Policy</Link>
+            <Link to='https://www.linuxfoundation.org/privacy'>Privacy Policy</Link>
           </div>
         </div>
         <IconButton onClick={() => setOpen(true)} className='hide-desktop'>
