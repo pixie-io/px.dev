@@ -1,14 +1,6 @@
 [build]
   publish ="public/"
-  command = "sed -i s/HEADER_PLACEHOLDER/pixie:${BASIC_AUTH}/g netlify.toml && yarn install && yarn lint && gatsby build"
-
-[context.production]
-  # No password on prod.
-  command = "sed -i 's|HEADER_PLACEHOLDER||g' netlify.toml && yarn install && yarn lint && gatsby build"
-
-[context.production.environment]
-  TRACKING_ID = "UA-141511669-1"
-  MAILCHIMP_ENDPOINT = "https://pixielabs.us20.list-manage.com/subscribe/post?u=b962bcefc9d3e650c45145a13&id=2d84999f8d"
+  command = "yarn install && yarn lint && gatsby build"
 
 [[redirects]]
   from = "/blog"
@@ -17,8 +9,3 @@
 [[redirects]]
   from = "/docs"
   to = "https://docs.px.dev"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Basic-Auth = "HEADER_PLACEHOLDER"
