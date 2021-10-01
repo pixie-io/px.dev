@@ -16,6 +16,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+@use "sass:math";
+
 //Import CSS
 @import "./partials/variables";
 
@@ -144,7 +146,7 @@ i {
 
 @for $i from 1 through 12 {
   .col-#{$i} {
-    width: percentage($i / 12);
+    width: percentage(math.div($i, 12));
     box-sizing: border-box;
     float: left;
     padding-left: 15px;

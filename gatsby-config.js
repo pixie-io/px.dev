@@ -107,6 +107,8 @@ module.exports = {
       resolve: 'gatsby-plugin-sass',
       options: {
         includePaths: ['node_modules', './src/scss'],
+        // eslint-disable-next-line global-require
+        implementation: require('sass'),
       },
     },
     {
