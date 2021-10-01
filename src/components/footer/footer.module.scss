@@ -44,52 +44,6 @@
     margin: 0 auto 40px;
   }
 
-  .divider {
-    display: block;
-    height: 1pt;
-    width: 100%;
-    margin: 0 auto 40px;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0) 10%, #4F4F4F 50%, rgba(0, 0, 0, 0) 90%);
-
-  }
-
-  .socialIcons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 90%;
-    margin: 0 auto;
-
-    a, div {
-      @media (max-width: $breakpoint) {
-        min-width: calc(30%);
-
-      }
-      display: block;
-      text-align: center;
-      margin-bottom: 40px;
-
-    }
-
-    .socialIcon {
-      &:hover {
-        filter: brightness(0) saturate(100%) invert(69%) sepia(85%) saturate(2173%) hue-rotate(130deg) brightness(102%) contrast(86%);
-      }
-    }
-
-    div {
-
-      font-style: italic;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 15px;
-      color: #DBDDE0;
-      text-align: center;
-    }
-  }
-
-
   .copyrightBar {
     background: #000000;
     color: #596274;
