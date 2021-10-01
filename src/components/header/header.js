@@ -81,16 +81,16 @@ const Header = ({ whiteHeader, transparentMenu }) => {
         <div className={styles.newsBar}>
 
           <span className='hide-not-desktop'>
-             Pixie is now a CNCF sandbox project!
+            Join us for our KubeCon Happy Hour on October 12th.
             {' '}
-            <a href='https://www.cncf.io/projects/pixie/' target='_blank' rel='noreferrer'>
+            <a href='https://px.dev/community/#events' target='_blank' rel='noreferrer'>
                    Learn more
             </a>
             {' '}
-             🚀
+             🎉
           </span>
           <span className='hide-desktop'>
-                <a href='https://www.cncf.io/projects/pixie/' target='_blank' rel='noreferrer'>Pixie is now a CNCF sandbox project!</a>
+                <a href='https://px.dev/community/#events' target='_blank' rel='noreferrer'>Join us for our KubeCon Happy Hour on October 12th.</a>
           </span>
 
           <div
