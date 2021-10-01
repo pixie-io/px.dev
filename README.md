@@ -1,11 +1,8 @@
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/27e33099-7489-49fd-b235-c1653e5f4224/deploy-status)](https://app.netlify.com/sites/px-dev/deploys)
-
-# Pixie Labs website ([px.dev](https://px.dev/))
+# [px.dev](https://px.dev/) &middot; [![Netlify Status](https://api.netlify.com/api/v1/badges/27e33099-7489-49fd-b235-c1653e5f4224/deploy-status)](https://app.netlify.com/sites/px-dev/deploys) [![CC BY 4.0 license](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 Built with [Gatsby](https://www.gatsbyjs.com/).
 
-For the documentation code, see [`pixie-docs`](https://github.com/pixie-io/pixie-docs).
+For the documentation code, see [`docs.px.dev`](https://github.com/pixie-io/docs.px.dev).
 
 ## Contributing
 
