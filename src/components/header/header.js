@@ -83,14 +83,14 @@ const Header = ({ whiteHeader, transparentMenu }) => {
           <span className='hide-not-desktop'>
             Join us for our KubeCon Happy Hour on October 12th.
             {' '}
-            <a href='https://px.dev/community/#events' target='_blank' rel='noreferrer'>
+            <a href='https://pixiehh.eventbrite.com' target='_blank' rel='noreferrer'>
                    Learn more
             </a>
             {' '}
              🎉
           </span>
           <span className='hide-desktop'>
-                <a href='https://px.dev/community/#events' target='_blank' rel='noreferrer'>Join us for our KubeCon Happy Hour on October 12th.</a>
+                <a href='https://pixiehh.eventbrite.com' target='_blank' rel='noreferrer'>Join us for our KubeCon Happy Hour on October 12th.</a>
           </span>
 
           <div
