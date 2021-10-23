@@ -276,7 +276,7 @@ const Homepage = () => {
                     rel='noopener noreferrer'
                   >
                     <img src={kubernetes} loading='lazy' alt='kubernetes' />
-                    v1.12+
+                    v1.16+
                   </a>
 
                   <a
