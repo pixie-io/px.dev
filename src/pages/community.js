@@ -63,20 +63,10 @@ const Founder = ({ img, name, position }) => (
 const CommunityPage = () => {
   const events = [
     {
-      title: 'Pixie KubeCon Happy Hour',
-      date: 'Oct 12, 2021',
-      location: 'Downtown Los Angeles',
-      link: 'https://www.eventbrite.com/e/pixie-kubecon-happy-hour-hosted-by-new-relic-tickets-175890542347',
-    }, {
-      title: 'Pixienaut Monthly - October',
-      date: 'October 28, 2021',
+      title: 'Pixienaut Monthly - January',
+      date: 'January 27, 2021',
       location: 'Online (Zoom)',
-      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTEwMjhUMTczMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com',
-    }, {
-      title: 'Pixienaut Monthly - November',
-      date: 'November 25, 2021',
-      location: 'Online (Zoom)',
-      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMTExMjVUMTgzMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com',
+      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMjAxMjdUMTgzMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com',
     },
   ];
   const scrollToSectionId = (section) => {
