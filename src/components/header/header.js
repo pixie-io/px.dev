@@ -81,18 +81,17 @@ const Header = ({ whiteHeader, transparentMenu }) => {
         <div className={styles.newsBar}>
 
           <span className='hide-not-desktop'>
-            Pixie is at Kubecon NA!
+            Pixie is now a CNCF Sandbox project!
             {' '}
-            <a href='https://blog.px.dev/kubecon-na-2021/'>
+            <a href='https://www.cncf.io/projects/pixie'>
               Learn more
             </a>
             {' '}
-             ☸️
+             🚀
           </span>
           <span className='hide-desktop'>
-            <a href='https://blog.px.dev/kubecon-na-2021/'>Pixie is at Kubecon NA!</a>
+            <a href='https://www.cncf.io/projects/pixie'>Pixie is now a CNCF Sandbox project!</a>
           </span>
-
           <div
             className={`${styles.newsBarClose} hide-desktop`}
             onClick={(e) => closeTopBanner(e)}
