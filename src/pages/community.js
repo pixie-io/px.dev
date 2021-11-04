@@ -64,7 +64,7 @@ const CommunityPage = () => {
   const events = [
     {
       title: 'Pixienaut Monthly - January',
-      date: 'January 27, 2021',
+      date: 'January 27, 2022',
       location: 'Online (Zoom)',
       link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMjAxMjdUMTgzMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com',
     },
