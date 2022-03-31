@@ -570,10 +570,16 @@
     }
   }
 
+  a.button {
+    text-decoration: none;
+    color: black
+  }
+
   .button {
     color: black;
     border-color: black;
     letter-spacing: 0.1em;
+
     @media (max-width: 1000px) {
       display: block;
       margin: 12px auto;
