@@ -82,7 +82,7 @@
     padding-bottom: 163px;
     @media (max-width: 1000px) {
       padding-top: 25px;
-      padding-bottom: 75px;
+      padding-bottom: 25px;
     }
 
     strong {
@@ -164,6 +164,9 @@
     margin-bottom: 0;
     overflow: hidden;
     position: relative;
+    @media (max-width: 768px) {
+      padding-top: 0;
+    }
 
 
     * {
@@ -569,7 +572,11 @@
       display: block;
     }
   }
-
+  a.button {
+    text-decoration: none;
+    color: black;
+    line-height: 16.5px;
+  }
   .button {
     color: black;
     border-color: black;
