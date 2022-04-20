@@ -134,10 +134,12 @@ const Homepage = () => {
         <section className={styles.featuresSection}>
           <div className='container'>
             <h2>
-              <div className={styles.marker} style={{ margin: '20px auto' }} />
+              <div className={`${styles.marker} hide-mobile hide-tablet`} style={{ margin: '20px auto' }} />
+              <Button className={`${styles.button} block hide-desktop`} to='https://docs.px.dev/installing-pixie/install-guides/' target='_blank' rel='noreferrer'>
+                GET STARTED
+              </Button>
               Why use Pixie?
             </h2>
-
             <div className={`row ${styles.noInstrumentation} flex-row`}>
               <div className='col-1' />
               <div className='col-4 vertical-center'>
