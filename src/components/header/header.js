@@ -81,9 +81,15 @@ const Header = ({ whiteHeader, transparentMenu }) => {
         <div className={styles.newsBar}>
 
           <span className='hide-not-desktop'>
-            Pixie is now a CNCF Sandbox project!
+            Pixie is at
             {' '}
-            <a href='https://www.cncf.io/projects/pixie'>
+            <a href='https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/'>
+              KubeCon EU
+            </a>
+            {' '}
+            (May 16-20, 2022).
+            {' '}
+            <a href='https://blog.px.dev/kubecon-eu-2022/'>
               Learn more
             </a>
             {' '}
