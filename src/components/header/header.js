@@ -96,7 +96,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
              🚀
           </span>
           <span className='hide-desktop'>
-            <a href='https://www.cncf.io/projects/pixie'>Pixie is now a CNCF Sandbox project!</a>
+            <a href='https://blog.px.dev/kubecon-eu-2022/'>Pixie is at KubeCon!</a>
           </span>
           <div
             className={`${styles.newsBarClose} hide-desktop`}
