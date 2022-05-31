@@ -81,13 +81,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
         <div className={styles.newsBar}>
 
           <span className='hide-not-desktop'>
-            Export
-            {' '}
-            <a href='https://docs.px.dev/about-pixie/data-sources/'>
-              Pixie data
-            </a>
-            {' '}
-            in the OpenTelemetry format.
+            Export Pixie data in the OpenTelemetry format.
             {' '}
             <a href='http://blog.px.dev/plugin-system/'>
               Learn more
