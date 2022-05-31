@@ -81,22 +81,16 @@ const Header = ({ whiteHeader, transparentMenu }) => {
         <div className={styles.newsBar}>
 
           <span className='hide-not-desktop'>
-            Pixie is at
+            Export Pixie data in the OpenTelemetry format.
             {' '}
-            <a href='https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/'>
-              KubeCon EU
-            </a>
-            {' '}
-            (May 16-20, 2022).
-            {' '}
-            <a href='https://blog.px.dev/kubecon-eu-2022/'>
+            <a href='http://blog.px.dev/plugin-system/'>
               Learn more
             </a>
             {' '}
              🚀
           </span>
           <span className='hide-desktop'>
-            <a href='https://blog.px.dev/kubecon-eu-2022/'>Pixie is at KubeCon!</a>
+            <a href='http://blog.px.dev/plugin-system/'>Pixie has an OpenTelemetry plugin!</a>
           </span>
           <div
             className={`${styles.newsBarClose} hide-desktop`}
