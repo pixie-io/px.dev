@@ -22,7 +22,7 @@ import { Link } from 'gatsby';
 import BodyClassName from 'react-body-classname';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import styles from '../scss/pages/not-found.module.scss';
+import * as styles from '../scss/pages/not-found.module.scss';
 import img404 from '../images/404.svg';
 
 const NotFoundPage = () => (

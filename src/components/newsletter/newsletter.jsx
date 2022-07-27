@@ -18,7 +18,7 @@
 
 import React, { useState } from 'react';
 import Cookies from 'js-cookie';
-import styles from './newsletter.module.scss';
+import * as styles from './newsletter.module.scss';
 
 const Newsletter = () => {
   const [loading, setLoading] = useState(false);

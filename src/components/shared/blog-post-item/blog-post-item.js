@@ -21,7 +21,7 @@ import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 import PropTypes from 'prop-types';
-import styles from './blog-post-item.module.scss';
+import * as styles from './blog-post-item.module.scss';
 
 const BlogPostItem = ({ post }) => {
   const {

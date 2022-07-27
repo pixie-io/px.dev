@@ -17,7 +17,7 @@
  */
 
 import React from 'react';
-import styles from './category-button.module.scss';
+import * as styles from './category-button.module.scss';
 import LargeIcon from '../homepage/large-icons';
 
 const CategoryButton = ({

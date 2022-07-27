@@ -17,7 +17,7 @@
  */
 
 import React, { useEffect, useRef, useState } from 'react';
-import styles from './inline-dropdown.module.scss';
+import * as styles from './inline-dropdown.module.scss';
 
 const InlineDropdown = ({ children, title, noBorder = false }) => {
   const [isDropOpen, setIsDropOpen] = useState(false);

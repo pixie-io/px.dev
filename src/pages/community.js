@@ -20,7 +20,7 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import styles from '../scss/pages/community.module.scss';
+import * as styles from '../scss/pages/community.module.scss';
 import pin from '../images/community/pin.svg';
 import attachment from '../images/community/attachment.svg';
 import Button from '../components/shared/button';

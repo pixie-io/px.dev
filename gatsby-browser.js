@@ -1,15 +1,13 @@
-import { createMuiTheme } from '@material-ui/core';
+import React from 'react';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-const React = require('react');
-const { MuiThemeProvider } = require('@material-ui/core/styles');
-
-const theme = createMuiTheme({});
+const theme = createTheme({});
 
 // eslint-disable-next-line import/prefer-default-export
 export const wrapRootElement = ({ element }) => (
-  <MuiThemeProvider theme={theme}>
+  <ThemeProvider theme={theme}>
     {element}
-  </MuiThemeProvider>
+  </ThemeProvider>
 );
 
 export const shouldUpdateScroll = () => {
