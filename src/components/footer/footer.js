@@ -35,11 +35,11 @@ const Footer = ({ whiteFooter }) => (
     <img src={cncfLogo} alt='CNCF logo' className={styles.logo} />
     <div className={styles.copyrightBar}>
       <div className={styles.verticalCenter}>
-        <Link to='https://www.linuxfoundation.org/terms' className={styles.mutedLink}>Terms of Service</Link>
+        <Link to='https://www.linuxfoundation.org/terms' target='_blank' rel='noreferrer' className={styles.mutedLink}>Terms of Service</Link>
         <span>
           |
         </span>
-        <Link to='https://www.linuxfoundation.org/privacy' className={styles.mutedLink}>Privacy Policy</Link>
+        <Link to='https://www.linuxfoundation.org/privacy' target='_blank' rel='noreferrer' className={styles.mutedLink}>Privacy Policy</Link>
       </div>
       <div className={styles.centerContent}>
         Copyright © 2018- The Pixie Authors. All Rights Reserved.
