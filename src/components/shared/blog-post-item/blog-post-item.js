@@ -54,8 +54,8 @@ const BlogPostItem = ({ post }) => {
 };
 BlogPostItem.propTypes = {
   post: PropTypes.shape({
-    frontmatter: PropTypes.object,
-    fields: PropTypes.object,
+    frontmatter: PropTypes.oneOfType([PropTypes.object]),
+    fields: PropTypes.oneOfType([PropTypes.object]),
   }).isRequired,
 };
 

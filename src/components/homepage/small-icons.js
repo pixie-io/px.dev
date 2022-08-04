@@ -40,7 +40,15 @@ const SmallIcon = (props) => (
             }
         `}
     render={(data) => {
-      const image = data.images.edges.find((n) => n.node.relativePath.endsWith(props.filename));
+      const {
+        filename,
+        alt,
+        loading,
+        height,
+        style,
+        className,
+      } = props;
+      const image = data.images.edges.find((n) => n.node.relativePath.endsWith(filename));
       if (!image) {
         // eslint-disable-next-line no-console
         console.error('icon not found');
@@ -49,13 +57,13 @@ const SmallIcon = (props) => (
       const { fixed } = image.node.childImageSharp;
       return (
         <Img
-          alt={props.alt}
-          loading={props.loading || 'lazy'}
+          alt={alt}
+          loading={loading || 'lazy'}
           fixed={fixed}
-          height={props.height || 20}
+          height={height || 20}
           fadeIn={false}
-          style={props.style}
-          className={props.className}
+          style={style}
+          className={className}
         />
       );
     }}

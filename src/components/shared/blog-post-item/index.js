@@ -16,4 +16,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-export { default } from './blog-post-item';
+import BlogPostItem from './blog-post-item';
+
+export default BlogPostItem;

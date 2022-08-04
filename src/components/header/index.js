@@ -15,5 +15,6 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  */
+import Header from './header';
 
-export { default } from './header';
+export default Header;

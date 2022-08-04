@@ -15,5 +15,6 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  */
+import Footer from './footer';
 
-export { default } from './footer';
+export default Footer;
