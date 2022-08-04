@@ -537,6 +537,7 @@
       float: right;
       text-align: left;
       padding-bottom: 150px;
+      position: relative; /* Otherwise, the z-index: 0 on the image above causes it to overlap the button. */
 
       h2 {
         text-align: left;
