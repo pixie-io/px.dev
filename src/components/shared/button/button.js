@@ -20,7 +20,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
-import styles from './button.module.scss';
+import * as styles from './button.module.scss';
 
 const Button = ({
   to, className, children, onClick, outline, link,

@@ -17,14 +17,15 @@
  */
 
 import React from 'react';
+import 'react-multi-carousel/lib/styles.css';
+
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
-import styles from '../scss/pages/enterprise.module.scss';
+import Button from '../components/shared/button';
 import pixieLabsLogo from '../images/enterprise/pixie-labs-logo.svg';
 import moon from '../images/enterprise/moon.svg';
 import support from '../images/enterprise/support.svg';
-import 'react-multi-carousel/lib/styles.css';
-import Button from '../components/shared/button';
+import * as styles from '../scss/pages/enterprise.module.scss';
 
 const Enterprise = () => (
   <Layout transparentMenu>

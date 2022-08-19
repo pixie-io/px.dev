@@ -18,7 +18,7 @@
 
 import React, { useState } from 'react';
 import Cookies from 'js-cookie';
-import styles from './cookies-banner.module.scss';
+import * as styles from './cookies-banner.module.scss';
 
 const CookiesBanner = () => {
   const isBrowser = typeof window !== 'undefined';

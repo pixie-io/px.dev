@@ -17,7 +17,7 @@
  */
 
 import React, { useEffect, useRef, useState } from 'react';
-import withStyles from '@material-ui/core/styles/withStyles';
+import { withStyles } from '@mui/styles';
 
 const HeaderDropdown = withStyles(() => ({
   main: {

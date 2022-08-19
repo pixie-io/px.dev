@@ -16,4 +16,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-export { default } from './button';
+import Button from './button';
+
+export default Button;

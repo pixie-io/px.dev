@@ -21,7 +21,7 @@ import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 import PropTypes from 'prop-types';
-import styles from './blog-post-item.module.scss';
+import * as styles from './blog-post-item.module.scss';
 
 const BlogPostItem = ({ post }) => {
   const {
@@ -54,8 +54,8 @@ const BlogPostItem = ({ post }) => {
 };
 BlogPostItem.propTypes = {
   post: PropTypes.shape({
-    frontmatter: PropTypes.object,
-    fields: PropTypes.object,
+    frontmatter: PropTypes.oneOfType([PropTypes.object]),
+    fields: PropTypes.oneOfType([PropTypes.object]),
   }).isRequired,
 };
 

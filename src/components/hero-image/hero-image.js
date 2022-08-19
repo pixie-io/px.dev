@@ -18,7 +18,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './hero-image.module.scss';
+import * as styles from './hero-image.module.scss';
 
 const HeroImage = ({ img }) => (
   <img className={styles.heroImageWrapper} src={img} alt='' />

@@ -18,7 +18,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 
-import styles from './category-drop.module.scss';
+import * as styles from './category-drop.module.scss';
 import dropIcon from '../../images/drop-arrow-down.svg';
 import contactFormRecipients from '../shared/contact-form-recipients';
 

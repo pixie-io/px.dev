@@ -16,10 +16,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import withStyles from '@material-ui/core/styles/withStyles';
-import { Box, Tooltip } from '@material-ui/core';
-import Highlight, { defaultProps } from 'prism-react-renderer';
 import React from 'react';
+import { withStyles } from '@mui/styles';
+import { Box, Tooltip } from '@mui/material';
+import Highlight, { defaultProps } from 'prism-react-renderer';
 import copyBtn from '../images/copy-btn.svg';
 
 const CodeRenderer = withStyles((theme) => ({

@@ -46,6 +46,7 @@ export const JobPostsProvider = ({ children }) => {
   }, []);
 
   return (
+    // eslint-disable-next-line react/jsx-no-constructed-context-values
     <JobPostsContext.Provider value={{ loading, list: data }}>
       <div>{children}</div>
     </JobPostsContext.Provider>

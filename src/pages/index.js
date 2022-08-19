@@ -17,14 +17,17 @@
  */
 
 import React, { useEffect, useRef } from 'react';
+import 'react-multi-carousel/lib/styles.css';
+
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 import Button from '../components/shared/button';
 import CategoryButton from '../components/category-button/category-button';
-import styles from '../scss/pages/index.module.scss';
 import PoiTooltip from '../components/poi-tooltip/poi-tooltip';
-import spaceGuys from '../images/homepage/space-illustration.svg';
+import Illustration from '../components/illustration';
+import { isInViewport } from '../components/utils';
 
+import spaceGuys from '../images/homepage/space-illustration.svg';
 import kubernetes from '../images/homepage/side-icons/kubernet.png';
 import linux from '../images/homepage/side-icons/linux.png';
 import serviceHealth from '../images/homepage/side-icons/service-health.svg';
@@ -44,9 +47,7 @@ import pxIconLive from '../images/homepage/pixie-live-icon.svg';
 import pxIconMeta from '../images/homepage/pixie-meta-icon.svg';
 import pixieGraph from '../images/homepage/kube-environment.svg';
 
-import 'react-multi-carousel/lib/styles.css';
-import Illustration from '../components/illustration';
-import { isInViewport } from '../components/utils';
+import * as styles from '../scss/pages/index.module.scss';
 
 /*
 import {
@@ -171,7 +172,6 @@ const Homepage = () => {
                 <video controls={false} muted width='100%' ref={video1} playsInline>
                   <source
                     src={videoCli}
-
                     type='video/webm'
                   />
                   <source
@@ -250,7 +250,6 @@ const Homepage = () => {
             </div>
           </div>
           <div
-            className={styles.rotatedOrnament}
             style={{
               width: '297px',
               height: '46px',

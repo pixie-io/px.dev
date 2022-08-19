@@ -36,6 +36,13 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "quotes": [2, "single", "avoid-escape"]
+        "quotes": [2, "single", "avoid-escape"],
+        "react/function-component-definition": [
+            2,
+            {
+              "namedComponents": "arrow-function",
+              "unnamedComponents": "arrow-function"
+            }
+        ]
     }
 }
