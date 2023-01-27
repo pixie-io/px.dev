@@ -25,7 +25,7 @@ import github from '../../images/footer/github-icon.svg';
 
 const Footer = ({ whiteFooter }) => (
   <footer className={`${whiteFooter ? styles.whitefooter : ''} ${styles.footer}`} style={{ position: 'relative' }}>
-    <p align='center'>
+    <p style={{ textAlign: 'center' }}>
       We are a
       {' '}
       <a href='https://cncf.io/' target='_blank' rel='noreferrer'>Cloud Native Computing Foundation</a>
