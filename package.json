@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "pixie-website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "The px.dev website",
+  "license": "Apache-2.0 and CC-BY-4.0",
+  "author": "Pixie Labs <support@pixielabs.ai>",
   "dependencies": {
     "@emotion/css": "^11.9.0",
     "@emotion/react": "^11.9.3",
@@ -70,10 +70,6 @@
     "gatsby-plugin-sitemap": "^5.19.0",
     "prettier": "^2.7.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -82,16 +78,8 @@
     "serve": "gatsby serve",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}' && git ls-files '**/*.tsx' '**/*.ts' '**/*.js' '**/*.jsx' '**/*.scss' '**/*.py' | xargs -n1 tools/licenses/checker.py -f",
     "lint-fix": "eslint '**/*.{js,jsx,ts,tsx}' --fix",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "prepublish": "npm run snyk-protect",
     "snyk-protect": "snyk-protect"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "snyk": true
 }
