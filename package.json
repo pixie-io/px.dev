@@ -2,7 +2,7 @@
   "name": "pixie-website",
   "version": "0.1.0",
   "description": "The px.dev website",
-  "license": "Apache-2.0 and CC-BY-4.0",
+  "license": "Apache-2.0 AND CC-BY-4.0",
   "author": "Pixie Labs <support@pixielabs.ai>",
   "dependencies": {
     "@emotion/css": "^11.9.0",
