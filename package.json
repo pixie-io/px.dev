@@ -39,7 +39,7 @@
     "gatsby-remark-images": "^6.19.0",
     "gatsby-source-filesystem": "^4.19.0",
     "gatsby-theme-material-ui": "^5.2.0",
-    "gatsby-transformer-remark": "^5.19.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "4.19.0",
     "js-cookie": "^3.0.1",
     "node-fetch": "^2.6.0",
