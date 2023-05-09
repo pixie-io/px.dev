@@ -63,10 +63,16 @@ const Founder = ({ img, name, position }) => (
 const CommunityPage = () => {
   const events = [
     {
-      title: 'Pixienaut Monthly - January',
-      date: 'January 27, 2022',
-      location: 'Online (Zoom)',
-      link: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=YTVnZ2EybXBxOWZ1bW4zYjNjcnRnampicmpfMjAyMjAxMjdUMTgzMDAwWiBwaXhpZWxhYnMuYWlfMW84N3ZqdDc4bXI2cWFtOGdhM3BodjFkZTRAZw&tmsrc=pixielabs.ai_1o87vjt78mr6qam8ga3phv1de4%40group.calendar.google.com',
+      title: 'Pixienaut Monthly - US',
+      date: 'Every 2nd Tuesday, 9:00am UTC-7',
+      location: 'Online (Google Meet)',
+      link: 'https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NDlmMmUxdm82c21sdXZsYWk0ajlhaGpqN2JfMjAyMzA1MDlUMTYwMDAwWiBjXzU5MDRjZmY3N2E3N2E4ZjMzNDE2Y2YyNDM4MjhmNjhkZjkxYzNjMTNlZTdiZDk0YWM4NTMyZGI4ODZjZWMyOTFAZw&tmsrc=c_5904cff77a77a8f33416cf243828f68df91c3c13ee7bd94ac8532db886cec291%40group.calendar.google.com&scp=ALL',
+    },
+    {
+      title: 'Pixienaut Monthly - EMEA',
+      date: 'Every 4th Tuesday, 6:00pm UTC-7',
+      location: 'Online (Google Meet)',
+      link: 'https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NzJrODZiM2x2OGJ0bHE2YTZxbnI0bXZncWdfMjAyMzA1MjRUMDEwMDAwWiBjXzU5MDRjZmY3N2E3N2E4ZjMzNDE2Y2YyNDM4MjhmNjhkZjkxYzNjMTNlZTdiZDk0YWM4NTMyZGI4ODZjZWMyOTFAZw&tmsrc=c_5904cff77a77a8f33416cf243828f68df91c3c13ee7bd94ac8532db886cec291%40group.calendar.google.com&scp=ALL',
     },
   ];
   const scrollToSectionId = (section) => {
@@ -237,9 +243,8 @@ const CommunityPage = () => {
 
                 <h2>Attend Pixienaut Meetups</h2>
                 <p className={styles.heroSubtitle}>
-                  Every month, Pixienauts around the world organize meetups,
-                  lunch and learns, and meetups to share what they’re building
-                  with Pixie
+                  Twice a month, Pixienauts around the world organize meetups
+                  and office hours to share what they’re building with Pixie.
                 </p>
               </div>
               <div className='col-2' />
