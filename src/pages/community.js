@@ -179,9 +179,9 @@ const CommunityPage = () => {
                       <img src={meetup} alt='' />
                     </div>
                     <p>
-                      Attend a monthly
+                      Attend a
                       <span className={styles.whiteLink} onClick={() => scrollToSectionId('events-section')}>
-                        Community meetup
+                        Community meeting
                       </span>
                       to interact with others and ask questions.
                     </p>
@@ -261,7 +261,7 @@ const CommunityPage = () => {
                       </div>
                       <div className={`col-4 ${styles.eventItemDetails}`}>
                         <a href={event.link}>
-                          <Button type='button'>Register</Button>
+                          <Button type='button'>Join</Button>
                         </a>
                       </div>
                     </div>
