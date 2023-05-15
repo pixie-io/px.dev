@@ -63,16 +63,10 @@ const Founder = ({ img, name, position }) => (
 const CommunityPage = () => {
   const events = [
     {
-      title: 'Pixienaut Monthly - US',
-      date: 'Every 2nd Tuesday, 9:00am UTC-7',
+      title: 'Pixie Community Meeting / Office Hours',
+      date: ['Every 2nd Tuesday, 9:00am UTC-7', 'Every 4th Tuesday, 6:00pm UTC-7'],
       location: 'Online (Google Meet)',
-      link: 'https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NDlmMmUxdm82c21sdXZsYWk0ajlhaGpqN2JfMjAyMzA1MDlUMTYwMDAwWiBjXzU5MDRjZmY3N2E3N2E4ZjMzNDE2Y2YyNDM4MjhmNjhkZjkxYzNjMTNlZTdiZDk0YWM4NTMyZGI4ODZjZWMyOTFAZw&tmsrc=c_5904cff77a77a8f33416cf243828f68df91c3c13ee7bd94ac8532db886cec291%40group.calendar.google.com&scp=ALL',
-    },
-    {
-      title: 'Pixienaut Monthly - EMEA',
-      date: 'Every 4th Tuesday, 6:00pm UTC-7',
-      location: 'Online (Google Meet)',
-      link: 'https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NzJrODZiM2x2OGJ0bHE2YTZxbnI0bXZncWdfMjAyMzA1MjRUMDEwMDAwWiBjXzU5MDRjZmY3N2E3N2E4ZjMzNDE2Y2YyNDM4MjhmNjhkZjkxYzNjMTNlZTdiZDk0YWM4NTMyZGI4ODZjZWMyOTFAZw&tmsrc=c_5904cff77a77a8f33416cf243828f68df91c3c13ee7bd94ac8532db886cec291%40group.calendar.google.com&scp=ALL',
+      link: 'https://calendar.google.com/calendar/embed?src=c_5904cff77a77a8f33416cf243828f68df91c3c13ee7bd94ac8532db886cec291%40group.calendar.google.com&ctz=UTC',
     },
   ];
   const scrollToSectionId = (section) => {
@@ -113,11 +107,10 @@ const CommunityPage = () => {
               <div className='row'>
                 <div className='col-2' />
                 <div className='col-8'>
-                  <h1>Be a Pixienaut</h1>
                   <p className={styles.heroSubtitle}>
                     Pixie isn’t just a platform, it’s the community and the
                     shared expertise around observability and debugging.
-                    If you are interested in becoming a Pixienaut,
+                    If you are interested in joining the community,
                     you’ve come to the right place!
                   </p>
                 </div>
@@ -188,9 +181,9 @@ const CommunityPage = () => {
                     <p>
                       Attend a monthly
                       <span className={styles.whiteLink} onClick={() => scrollToSectionId('events-section')}>
-                        Pixienaut meetup
+                        Community meetup
                       </span>
-                      to hear updates on the Pixie project and ask questions of the maintainers.
+                      to interact with others and ask questions.
                     </p>
                   </li>
                   <li>
@@ -241,10 +234,10 @@ const CommunityPage = () => {
               <div className='col-8'>
                 <div className={styles.marker} style={{ margin: '20px auto' }} />
 
-                <h2>Attend Pixienaut Meetups</h2>
+                <h2>Attend Community Meetings</h2>
                 <p className={styles.heroSubtitle}>
-                  Twice a month, Pixienauts around the world organize meetups
-                  and office hours to share what they’re building with Pixie.
+                  Twice a month, come to our community meetings to
+                  ask questions and learn more about Pixie.
                 </p>
               </div>
               <div className='col-2' />
@@ -258,7 +251,7 @@ const CommunityPage = () => {
                       <div className={`col-8 ${styles.eventItemTitle}`}>
                         <p>
                           {event.title}
-                          <span>{event.date}</span>
+                          {event.date.map((date) => (<span>{date}</span>))}
                         </p>
 
                         <span>
