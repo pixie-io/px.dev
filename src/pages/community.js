@@ -107,6 +107,7 @@ const CommunityPage = () => {
               <div className='row'>
                 <div className='col-2' />
                 <div className='col-8'>
+                  <h1>Join the Community</h1>
                   <p className={styles.heroSubtitle}>
                     Pixie isn’t just a platform, it’s the community and the
                     shared expertise around observability and debugging.
