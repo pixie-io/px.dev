@@ -21,6 +21,7 @@ module.exports = {
     siteUrl: 'https://px.dev',
   },
   plugins: [
+    'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
