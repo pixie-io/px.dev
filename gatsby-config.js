@@ -21,13 +21,39 @@ module.exports = {
     siteUrl: 'https://px.dev',
   },
   plugins: [
-    'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
         id: 'GTM-W8Q4XLK',
         includeInDevelopment: false,
         defaultDataLayer: { platform: 'gatsby' },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {
+        allPageHeaders: [
+          'Content-Security-Policy: '
+            + "base-uri 'self';"
+            + "default-src 'self';"
+            + "connect-src 'self' https://stats.g.doubleclick.net https://www.google-analytics.com/j/collect;"
+            + "frame-src 'self' https://app.netlify.com;"
+            + "font-src 'self' data: https://fonts.gstatic.com;"
+            + "form-action 'self';"
+            + "img-src 'self' data: https://analytics.twitter.com https://d33wubrfki0l68.cloudfront.net https://t.co https://www.google.com;"
+            + "media-src 'self' https://d33wubrfki0l68.cloudfront.net;"
+            + "object-src 'none';"
+            + "script-src 'self' 'unsafe-inline' https://cdn.segment.io https://d33wubrfki0l68.cloudfront.net https://js.hs-scripts.com/8260834.js https://netlify-cdp-loader.netlify.app/netlify.js https://static.ads-twitter.com/uwt.js https://www.google-analytics.com/analytics.js https://www.googletagmanager.com/gtm.js;"
+            + "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;"
+            + 'report-to default;'
+            + 'report-uri https://6703fcfa5dc750f546d44b0af80c78d5.report-uri.com/r/d/csp/enforce',
+          'Permissions-Policy: camera=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), vibrate=()',
+          'Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://6703fcfa5dc750f546d44b0af80c78d5.report-uri.com/a/d/g"}],"include_subdomains":true}',
+          'Referrer-Policy: strict-origin-when-cross-origin',
+          'X-Content-Type-Options: nosniff',
+          'X-Frame-Options: SAMEORIGIN',
+          'X-XSS-Protection: 1; mode=block',
+        ],
       },
     },
     'gatsby-plugin-react-helmet',
