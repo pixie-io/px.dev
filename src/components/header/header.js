@@ -227,9 +227,9 @@ const Header = ({ whiteHeader, transparentMenu }) => {
                 </a>
               </li>
             </ul>
-            <Link to='https://www.linuxfoundation.org/terms' target='_blank' rel='noreferrer'>Terms of Service</Link>
+            <a href='https://www.linuxfoundation.org/terms' target='_blank' rel='noreferrer'>Terms of Service</a>
             <br />
-            <Link to='https://www.linuxfoundation.org/privacy' target='_blank' rel='noreferrer'>Privacy Policy</Link>
+            <a href='https://www.linuxfoundation.org/privacy' target='_blank' rel='noreferrer'>Privacy Policy</a>
           </div>
         </div>
         <IconButton onClick={() => setOpen(true)} className='hide-desktop'>

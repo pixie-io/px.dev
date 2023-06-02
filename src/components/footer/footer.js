@@ -18,7 +18,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
 import * as styles from './footer.module.scss';
 import cncfLogo from '../../images/footer/cncf-white.svg';
 import github from '../../images/footer/github-icon.svg';
@@ -35,11 +34,11 @@ const Footer = ({ whiteFooter }) => (
     <img src={cncfLogo} alt='CNCF logo' className={styles.logo} />
     <div className={styles.copyrightBar}>
       <div className={styles.verticalCenter}>
-        <Link to='https://www.linuxfoundation.org/terms' target='_blank' rel='noreferrer' className={styles.mutedLink}>Terms of Service</Link>
+        <a href='https://www.linuxfoundation.org/terms' target='_blank' rel='noreferrer' className={styles.mutedLink}>Terms of Service</a>
         <span>
           |
         </span>
-        <Link to='https://www.linuxfoundation.org/privacy' target='_blank' rel='noreferrer' className={styles.mutedLink}>Privacy Policy</Link>
+        <a href='https://www.linuxfoundation.org/privacy' target='_blank' rel='noreferrer' className={styles.mutedLink}>Privacy Policy</a>
       </div>
       <div className={styles.centerContent}>
         Copyright © 2018- The Pixie Authors. All Rights Reserved.
