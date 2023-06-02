@@ -36,7 +36,7 @@ module.exports = {
           'Content-Security-Policy: '
             + "base-uri 'self';"
             + "default-src 'self';"
-            + "connect-src 'self' https://stats.g.doubleclick.net https://www.google-analytics.com/j/collect;"
+            + "connect-src 'self' https://api.segment.io https://cdn.segment.io https://stats.g.doubleclick.net https://www.google-analytics.com/j/collect;"
             + "frame-src 'self' https://app.netlify.com;"
             + "font-src 'self' data: https://fonts.gstatic.com;"
             + "form-action 'self';"
