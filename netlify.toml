@@ -2,15 +2,6 @@
   publish ="public/"
   command = "yarn install && yarn lint && gatsby build"
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Permissions-Policy = "camera=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), vibrate=()"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "SAMEORIGIN"
-    X-XSS-Protection = "1; mode=block"
-
 [[redirects]]
   from = "/blog"
   to = "https://blog.px.dev"
