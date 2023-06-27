@@ -72,7 +72,8 @@
     "prettier": "^2.7.1"
   },
   "resolutions": {
-    "gatsby-plugin-react-svg/svg-react-loader/loader-utils": "^1.4.1"
+    "gatsby-plugin-react-svg/svg-react-loader/loader-utils": "^1.4.1",
+    "semver": "^7.5.3"
   },
   "scripts": {
     "build": "gatsby build",
