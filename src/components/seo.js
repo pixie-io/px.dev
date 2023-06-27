@@ -147,7 +147,7 @@ const SEO = ({
 };
 
 SEO.defaultProps = {
-  meta: [],
+  meta: {},
   description: '',
   type: 'website',
 };
