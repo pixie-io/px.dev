@@ -71,6 +71,10 @@
     "gatsby-plugin-sitemap": "^5.19.0",
     "prettier": "^2.7.1"
   },
+  "resolutions": {
+    "gatsby-plugin-react-svg/svg-react-loader/loader-utils": "^1.4.1",
+    "semver": "^7.5.3"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
