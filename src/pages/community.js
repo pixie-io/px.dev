@@ -33,7 +33,6 @@ import meetup from '../images/community/icons/meetup.svg';
 import twitter from '../images/community/icons/twitter.svg';
 import governance from '../images/community/icons/governance.svg';
 import zain from '../images/about/zain.png';
-import ishan from '../images/about/ishan.png';
 import a1 from '../images/about/avatars/a1.png';
 import a2 from '../images/about/avatars/a2.png';
 import a3 from '../images/about/avatars/a3.png';
@@ -43,12 +42,11 @@ import a6 from '../images/about/avatars/a6.png';
 import a7 from '../images/about/avatars/a7.png';
 import a8 from '../images/about/avatars/a8.png';
 import a9 from '../images/about/avatars/a9.png';
-import a11 from '../images/about/avatars/Pete Stevenson@2x.png';
-import a13 from '../images/about/avatars/Ryan Cheng@2x.png';
+import a12 from '../images/about/avatars/Pete Stevenson@2x.png';
 import jaana from '../images/about/avatars/jaana.png';
 import hightower from '../images/about/avatars/hightower.png';
 import dax from '../images/about/avatars/dax.png';
-import a10 from '../images/about/avatars/a10.png';
+import a11 from '../images/about/avatars/a11.png';
 import you from '../images/about/avatars/you-avatar.svg';
 import vectorLine from '../images/about/vector-line.svg';
 
@@ -289,162 +287,85 @@ const CommunityPage = () => {
                   img={zain}
                   name='Zain Asgar'
                   position={(
-                    <>
-                      GM/GVP, New Relic
-                      <br />
-                      {' '}
-                      Founder/CEO, Pixie
-                    </>
-                  )}
-                />
-                <Founder
-                  img={ishan}
-                  name='Ishan Mukherjee'
-                  position={(
-                    <>
-                      VP Marketing, New Relic
-                      <br />
-                      {' '}
-                      Founder/CPO, Pixie
-                    </>
+                    <a href='https://github.com/zasgar'>@zasgar</a>
                   )}
                 />
                 <Founder
                   img={a1}
                   name='Michelle Nguyen'
                   position={(
-                    <>
-                      Principal SWE, New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer, Pixie
-                    </>
+                    <a href='https://github.com/aimichelle'>@aimichelle</a>
                   )}
                 />
                 <Founder
                   img={a2}
                   name='Phillip Kuznetsov'
                   position={(
-                    <>
-                      Lead SWE, New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer, Pixie
-                    </>
+                    <a href='https://github.com/philkuz'>@philkuz</a>
                   )}
                 />
                 <Founder
                   img={a3}
                   name='Yaxiong Zhao'
                   position={(
-                    <>
-                      Principal SWE, New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer, Pixie
-                    </>
+                    <a href='https://github.com/yzhao1012'>@yzhao1012</a>
                   )}
                 />
                 <Founder
                   img={a4}
                   name='Omid Azizi'
                   position={(
-                    <>
-                      Principal SWE, New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer, Pixie
-                    </>
+                    <a href='https://github.com/oazizi000'>@oazizi000</a>
                   )}
                 />
                 <Founder
                   img={a5}
                   name='Natalie Serrino'
                   position={(
-                    <>
-                      Principal SWE, New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer, Pixie
-                    </>
+                    <a href='https://github.com/nserrino'>@nserrino</a>
+
                   )}
                 />
                 <Founder
                   img={a6}
                   name='James Bartlett'
                   position={(
-                    <>
-                      Senior SWE, New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer, Pixie
-                    </>
+                    <a href='https://github.com/JamesMBartlett'>@JamesMBartlett</a>
                   )}
                 />
                 <Founder
                   img={a7}
                   name='Hannah Troisi'
                   position={(
-                    <>
-                      Senior DevRel, New Relic
-                      <br />
-                      {' '}
-                      Founding DevRel, Pixie
-                    </>
+                    <a href='https://github.com/htroisi'>@htroisi</a>
                   )}
                 />
                 <Founder
                   img={a8}
                   name='Nick Lanam'
                   position={(
-                    <>
-                      Lead SWE, New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer, Pixie
-                    </>
+                    <a href='https://github.com/NickLanam'>@NickLanam</a>
                   )}
                 />
                 <Founder
                   img={a9}
                   name='Vihang Mehta'
                   position={(
-                    <>
-                      Principal SWE, New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer, Pixie
-                    </>
+                    <a href='https://github.com/vihangm'>@vihangm</a>
+                  )}
+                />
+                <Founder
+                  img={a12}
+                  name='Pete Stevenson'
+                  position={(
+                    <a href='https://github.com/etep'>@etep</a>
                   )}
                 />
                 <Founder
                   img={a11}
-                  name='Pete Stevenson'
+                  name='Dom Delnano'
                   position={(
-                    <>
-                      Principal SWE, New Relic
-                      <br />
-                      {' '}
-                      Founding Engineer, Pixie
-                    </>
-                  )}
-                />
-                <Founder
-                  img={a13}
-                  name='Ryan Cheng'
-                  position={(
-                    <>
-                      SWE, New Relic
-                    </>
-                  )}
-                />
-                <Founder
-                  img={a10}
-                  name='James Thomas'
-                  position={(
-                    <>
-                      Research Intern, New Relic
-                    </>
+                    <a href='https://github.com/ddelnano'>@ddelnano</a>
                   )}
                 />
                 <div className={styles.youLine}>
@@ -482,26 +403,12 @@ const CommunityPage = () => {
                   <Founder
                     img={zain}
                     name='Zain Asgar'
-                    position={(
-                      <>
-                        GM/GVP - Pixie & Open Source,
-                        <br />
-                        {' '}
-                        New Relic
-                      </>
-                    )}
+                    position=''
                   />
                   <Founder
                     img={a1}
                     name='Michelle Nguyen'
-                    position={(
-                      <>
-                        Principal Engineer,
-                        <br />
-                        {' '}
-                        New Relic
-                      </>
-                    )}
+                    position=''
                   />
                 </div>
 
