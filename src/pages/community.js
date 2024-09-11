@@ -403,26 +403,12 @@ const CommunityPage = () => {
                   <Founder
                     img={zain}
                     name='Zain Asgar'
-                    position={(
-                      <>
-                        GM/GVP - Pixie & Open Source,
-                        <br />
-                        {' '}
-                        New Relic
-                      </>
-                    )}
+                    position=''
                   />
                   <Founder
                     img={a1}
                     name='Michelle Nguyen'
-                    position={(
-                      <>
-                        Principal Engineer,
-                        <br />
-                        {' '}
-                        New Relic
-                      </>
-                    )}
+                    position=''
                   />
                 </div>
 
