@@ -22,9 +22,9 @@ import 'react-multi-carousel/lib/styles.css';
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 import Button from '../components/shared/button';
-import pixieLabsLogo from '../images/enterprise/pixie-labs-logo.svg';
+import newRelicLogo from '../images/enterprise/new-relic-logo.svg';
+import cosmicLogo from '../images/enterprise/cosmic-logo.svg';
 import moon from '../images/enterprise/moon.svg';
-import support from '../images/enterprise/support.svg';
 import * as styles from '../scss/pages/enterprise.module.scss';
 
 const Enterprise = () => (
@@ -49,14 +49,14 @@ const Enterprise = () => (
           <div className='row flex-row-desktop'>
             <div className='col-1 ' />
             <div className='col-5'>
-              <a href='https://pixielabs.ai/' target='_blank' rel='noopener noreferrer'>
+              <a href='https://docs.px.dev/installing-pixie/install-guides/hosted-pixie/cosmic-cloud' target='_blank' rel='noopener noreferrer'>
                 <div className={styles.heroButton}>
-                  <img src={pixieLabsLogo} alt='pixie logo' />
+                  <img src={cosmicLogo} alt='Cosmic logo' />
                   <div>
-                    <h5>Pixie</h5>
+                    <h5>Cosmic Cloud</h5>
                     <p>
                       100% free hosted version of the open source project.
-                      A community offering by New Relic.
+                      A community offering by the maintainers of Pixie.
                       ❤️
                     </p>
                   </div>
@@ -64,18 +64,19 @@ const Enterprise = () => (
               </a>
             </div>
             <div className='col-5'>
-
-              <div className={styles.heroButtonCenter}>
-                <img src={support} alt='pixie logo' />
-                <div>
-                  <h5>Offering Pixie Support?</h5>
-                  <p>
-                    Add your company
-                  </p>
+              <a href='https://docs.px.dev/installing-pixie/install-guides/hosted-pixie/new-relic-cloud' target='_blank' rel='noopener noreferrer'>
+                <div className={styles.heroButton}>
+                  <img src={newRelicLogo} alt='New Relic logo' />
+                  <div>
+                    <h5>New Relic Cloud</h5>
+                    <p>
+                      A free hosted version of the open source project.
+                    </p>
+                  </div>
                 </div>
-              </div>
-
+              </a>
             </div>
+
             <div className='col-1 ' />
           </div>
           <div className={styles.callout}>
