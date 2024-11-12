@@ -25,7 +25,6 @@ import Button from '../components/shared/button';
 import newRelicLogo from '../images/enterprise/new-relic-logo.svg';
 import cosmicLogo from '../images/enterprise/cosmic-logo.svg';
 import moon from '../images/enterprise/moon.svg';
-import support from '../images/enterprise/support.svg';
 import * as styles from '../scss/pages/enterprise.module.scss';
 
 const Enterprise = () => (
