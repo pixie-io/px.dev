@@ -11,6 +11,10 @@
   to = "https://docs.px.dev"
 
 [[redirects]]
+  from = "/kernel-headers"
+  to = "https://github.com/pixie-io/pixie/blob/main/src/stirling/kernel_headers_faq.md"
+
+[[redirects]]
   from = "https://perf.px.dev/*"
   to = "https://lookerstudio.google.com/reporting/9701de3b-f906-4dd2-a1e9-48ca0b1e07e6/page/Kdn3C"
   status = 301
