@@ -81,16 +81,22 @@ const Header = ({ whiteHeader, transparentMenu }) => {
         <div className={styles.newsBar}>
 
           <span className='hide-not-desktop'>
-            Export Pixie data in the OpenTelemetry format.
+          🎉️ Meet us in Atlanta for KubeCon + CloudNativeCon North America · Nov 10-13 ·
             {' '}
-            <a href='http://blog.px.dev/plugin-system/' target='_blank' rel='noreferrer'>
-              Learn more
+            <a href='https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/register/?utm_source=px-dev&utm_medium=homepage&utm_campaign=10608228-KubeCon-NA-2025&utm_content=hero' target='_blank'>
+            Register Today!
             </a>
             {' '}
-             🚀
+            🥳️
           </span>
           <span className='hide-desktop'>
-            <a href='http://blog.px.dev/plugin-system/' target='_blank' rel='noreferrer'>Pixie has an OpenTelemetry plugin!</a>
+          🎉️ Meet us in Atlanta for KubeCon + CloudNativeCon North America · Nov 10-13 ·
+            {' '}
+            <a href='https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/register/?utm_source=px-dev&utm_medium=homepage&utm_campaign=10608228-KubeCon-NA-2025&utm_content=hero' target='_blank'>
+            Register Today!
+            </a>
+            {' '}
+            🥳️
           </span>
           <div
             className={`${styles.newsBarClose} hide-desktop`}
