@@ -83,7 +83,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
           <span className='hide-not-desktop'>
           🎉️ Meet us in Atlanta for KubeCon + CloudNativeCon North America · Nov 10-13 ·
             {' '}
-            <a href='https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/register/?utm_source=px-dev&utm_medium=homepage&utm_campaign=10608228-KubeCon-NA-2025&utm_content=hero' target='_blank'>
+            <a href='https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/register/?utm_source=px-dev&utm_medium=homepage&utm_campaign=10608228-KubeCon-NA-2025&utm_content=hero' target='_blank' rel='noreferrer'>
             Register Today!
             </a>
             {' '}
@@ -92,7 +92,7 @@ const Header = ({ whiteHeader, transparentMenu }) => {
           <span className='hide-desktop'>
           🎉️ Meet us in Atlanta for KubeCon + CloudNativeCon North America · Nov 10-13 ·
             {' '}
-            <a href='https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/register/?utm_source=px-dev&utm_medium=homepage&utm_campaign=10608228-KubeCon-NA-2025&utm_content=hero' target='_blank'>
+            <a href='https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/register/?utm_source=px-dev&utm_medium=homepage&utm_campaign=10608228-KubeCon-NA-2025&utm_content=hero' target='_blank' rel='noreferrer'>
             Register Today!
             </a>
             {' '}
